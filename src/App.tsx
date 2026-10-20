@@ -29,11 +29,14 @@ import {
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
 import { sampleWorkspace } from "./lib/sample";
+import { FreshReader } from "./FreshReader";
+import { retainedKeepIds } from "./lib/recipient";
 import { maskConflicts } from "./lib/geometry";
 import { findRoutes, minimumRegionCut } from "./lib/graph";
 import { exportWorkspace, type ExportResult } from "./lib/redaction";
 import {
   RectSchema,
+  readablePredicate,
   validateEvidence,
   type Region,
   type Source,
@@ -186,6 +189,15 @@ export default function App() {
       ),
     [allRoutes.paths.length],
   );
+  useEffect(() => {
+    if (inspector) return;
+    const visiblePath = allRoutes.paths[pathIndex] ?? [];
+    setSelectedRegion((current) =>
+      visiblePath.some((edge) => edge.regionId === current)
+        ? current
+        : (visiblePath[0]?.regionId ?? ""),
+    );
+  }, [allRoutes, pathIndex, inspector]);
   const activeRegion = workspace.regions.find((r) => r.id === selectedRegion);
   const target = workspace.entities.find((e) => e.id === workspace.protectedTo);
   const start = workspace.entities.find(
@@ -286,8 +298,15 @@ export default function App() {
     }
     discardResult();
     setMasks(new Set(recommendation.regionIds));
-    if (recommendation.regionIds[0])
-      setSelectedRegion(recommendation.regionIds[0]);
+    const visible = path.find((edge) =>
+      recommendation.regionIds.includes(edge.regionId),
+    );
+    setSelectedRegion(
+      visible?.regionId ??
+        path[0]?.regionId ??
+        recommendation.regionIds[0] ??
+        "",
+    );
   }
   async function doExport() {
     setExporting(true);
@@ -429,7 +448,7 @@ export default function App() {
             <div className="bench-meta">
               <span className="local-dot" />{" "}
               {workspace.origin === "sample"
-                ? "Sample stays in your browser"
+                ? "Local sample · optional cloud check"
                 : "Images held in memory"}
               <span className="bench-meta-divider" />
               <span>{workspace.sources.length} sources</span>
@@ -494,7 +513,7 @@ export default function App() {
                                   setSelectedRegion(region.id);
                                   setInspector(source.id);
                                 }}
-                                aria-label={`Inspect ${from.label} ${edge.predicate} ${to.label}`}
+                                aria-label={`Inspect ${from.label} ${readablePredicate(edge.predicate)} ${to.label}`}
                               >
                                 {masks.has(region.id) ? (
                                   <X size={17} />
@@ -507,7 +526,7 @@ export default function App() {
                             <span className="provenance-predicate">
                               {masks.has(region.id)
                                 ? "Known link removed"
-                                : edge.predicate}
+                                : readablePredicate(edge.predicate)}
                             </span>
                             <article
                               className={`document-card ${selectedRegion === region.id ? "selected" : ""} ${masks.has(region.id) ? "has-mask" : ""}`}
@@ -655,8 +674,8 @@ export default function App() {
                             sourceForRegion(edge.regionId)?.id ?? null,
                           );
                         }}
-                        aria-label={`Inspect ${edge.predicate}`}
-                        title={edge.predicate}
+                        aria-label={`Inspect ${readablePredicate(edge.predicate)}`}
+                        title={readablePredicate(edge.predicate)}
                       >
                         {masks.has(edge.regionId) ? (
                           <X size={15} />
@@ -677,11 +696,7 @@ export default function App() {
                 </div>
                 <p>
                   {path.length
-                    ? workspace.origin === "upload"
-                      ? `Follow ${path.length} explicit links, then inspect each source region to check the proposed connection.`
-                      : pathIndex === 0
-                        ? "A shared client reference connects the incident to a project — and the project to its customer."
-                        : "A second route uses the operations channel. Editing only the client reference would leave this connection intact."
+                    ? `This route uses ${path.length} explicit links across ${new Set(path.map((edge) => workspace.regions.find((r) => r.id === edge.regionId)?.sourceId)).size} sources. Each arrow opens its exact evidence region.`
                     : "No supported path connects these endpoints in the current evidence."}
                 </p>
               </div>
@@ -909,7 +924,7 @@ export default function App() {
           <div className="notice">
             <ScanLine size={17} />
             <span>
-              {suggested} AI-proposed links need your review. Open each source,
+              {suggested} proposed links need your review. Open each source,
               correct any region, then confirm or reject its evidence.
             </span>
             <button
@@ -946,7 +961,7 @@ export default function App() {
           </span>
           <span>
             {workspace.origin === "sample"
-              ? "Fictional sample · No images sent to a server"
+              ? "Sample stays local unless you run a fresh reading"
               : "Cloud analysis disclosed before upload"}
             <span className="footer-dot">·</span>
             <button onClick={() => setModal("about")}>
@@ -1009,8 +1024,9 @@ export default function App() {
             </ol>
             <div className="info-box">
               This prototype checks known evidence in supplied files. It does
-              not detect every possible inference, re-run OCR on exports, or
-              certify that a file is safe to share. The demo is fictional and
+              not detect every possible inference or certify that a file is safe
+              to share. Optional fresh reading sends exported pixels to a new
+              model context, with separate consent. The demo is fictional and
               its annotations are deterministic. New bundles use OpenAI only
               after your consent.
             </div>
@@ -1026,7 +1042,16 @@ export default function App() {
           onClose={() => setModal(null)}
           wide
         >
-          <OutputPanel result={result} onClose={() => setModal(null)} />
+          <OutputPanel
+            result={result}
+            workspace={workspace}
+            onReview={(next) => {
+              const nextKept = retainedKeepIds(kept, next, result);
+              replaceWorkspace(next);
+              setKept(nextKept);
+            }}
+            onClose={() => setModal(null)}
+          />
         </Dialog>
       )}
     </>
@@ -1164,7 +1189,7 @@ function SourceInspector({
                             ?.label
                         }
                       </strong>{" "}
-                      {edge.predicate}{" "}
+                      {readablePredicate(edge.predicate)}{" "}
                       <strong>
                         {
                           workspace.entities.find((e) => e.id === edge.to)
@@ -1184,7 +1209,7 @@ function SourceInspector({
                           : "Confirmed by you"
                         : edge.status === "rejected"
                           ? "Rejected"
-                          : "Suggested by AI"}
+                          : "Needs review"}
                     </span>
                     {(workspace.origin === "upload" ||
                       edge.status !== "confirmed" ||
@@ -1593,9 +1618,13 @@ function ImportDialog({
 }
 function OutputPanel({
   result,
+  workspace,
+  onReview,
   onClose,
 }: {
   result: ExportResult;
+  workspace: Workspace;
+  onReview: (next: Workspace) => void;
   onClose: () => void;
 }) {
   const [packing, setPacking] = useState(false);
@@ -1603,7 +1632,7 @@ function OutputPanel({
     return {
       version: 1,
       scope:
-        "Known evidence regions only. No OCR re-analysis or privacy guarantee.",
+        "This report covers known-region pixels and detected routes only. Any optional fresh reading is separate. No privacy guarantee.",
       checks: {
         decodedExportedPngBytes: true,
         opaqueMaskPixels: true,
@@ -1678,7 +1707,7 @@ function OutputPanel({
         </span>
         <span>
           <Check size={15} /> {result.verifiedRegionIds.length} opaque mask
-          regions
+          region{result.verifiedRegionIds.length === 1 ? "" : "s"}
         </span>
         <span>
           <Check size={15} /> Unmasked pixels preserved
@@ -1721,9 +1750,15 @@ function OutputPanel({
         {result.passed
           ? "The verified regions disconnect every detected path."
           : `${result.remainingRoutes} detected route(s) remain; review your repair.`}{" "}
-        Not checked: missed evidence, new inferences, or other files. No OCR was
-        rerun on these exports.
+        Pixel checks do not assess missed evidence, new inferences, or other
+        files. An optional fresh model reading below is a separate observation.
       </div>
+      <FreshReader
+        key={result.files[0]?.url}
+        result={result}
+        workspace={workspace}
+        onReview={onReview}
+      />
       <div className="output-actions">
         <button className="text-button" onClick={downloadReport}>
           <ArrowDownToLine size={14} /> Download verification report

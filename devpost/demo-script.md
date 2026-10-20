@@ -2,12 +2,12 @@
 
 This is a recording guide for the working app. It is not a claim that a video has already been recorded.
 
-1. **0:00–0:20 — The problem.** Open the labeled fictional sample. Explain that three apparently incomplete screenshots can name the customer behind a confidential incident when combined.
-2. **0:20–0:55 — The evidence.** Follow Incident 042 → C-17 → Project Cedar → Northstar Health. Open the real source regions, then switch to the second route through #cedar-ops.
-3. **0:55–1:15 — Why one obvious edit fails.** Mask only the client reference. Show the remaining-route badge. Reset or choose the all-path recommendation.
-4. **1:15–1:45 — The precise repair.** Apply the recommended customer-name mask, keeping project and incident details visible. Explain that this is minimal among the known candidate regions.
-5. **1:45–2:15 — Real output.** Export, show the actual decoded-pixel checks, and open a downloaded PNG. Download the ZIP with its neutral report.
-6. **2:15–2:40 — Beyond the sample.** Briefly show the real upload disclosure, new evidence from a separately prepared bundle, and review/correction controls. State that this checks known evidence, not every possible inference.
-7. **2:40–2:50 — Access.** Show the public repository and local startup command. Human-authored reflection and final submission copy should be written by the learner.
+1. **0:00–0:15 — The publishing decision.** “I want to publish this case study. The customer credit is public; their connection to this internal incident is confidential.” Open the labeled fictional sample.
+2. **0:15–0:45 — Evidence, not a score.** Trace Incident 042 → C-17 → Project Cedar → Northstar Health. Inspect a real source rectangle. Switch to the shorter operations-channel route; its source order changes because the evidence changes.
+3. **0:45–1:05 — A repair must cover both routes.** Mask only the client reference and show one route still remaining. Choose the exact minimal repair: one customer-name mask cuts both known routes.
+4. **1:05–1:35 — Preserve the point of publishing.** “But that public credit matters.” Mark the customer region **Keep visible**. The conflicting mask disappears. Find the new repair: two smaller incident identifiers masked, customer credit intact, zero known routes remaining.
+5. **1:35–2:00 — The artifact has to prove it.** Export, show decoded PNG checks and the kept-region pixel check. Open an actual output image with both masks; download the ZIP and neutral report.
+6. **2:00–2:35 — Ask a fresh reader.** Show the explicit consent and narrow question. The exported pixels and starting incident go to a new model context, without the protected answer or original graph. Show an actual completed result and its uncertainty. Do not promise a fixed model response; briefly cut waiting time if needed and disclose the edit.
+7. **2:35–2:50 — Honest boundaries and access.** Show that real new uploads use suggested evidence and editable bounds, then the public repository. “This checks known evidence and records another model observation. It does not certify privacy.” Human-authored reflection and final submission copy remain the learner’s work.
 
 Use only fictional sources in the public recording. Do not expose `.env`, private plans, real client screenshots, or personal learner context. A public GitHub repository and accessible actual demo video are required submission materials; deployment is optional.

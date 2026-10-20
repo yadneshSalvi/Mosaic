@@ -3,6 +3,7 @@ import express from "express";
 import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
 import { AnalysisError, analyzeImages } from "./analysis";
+import { readExportedBundle } from "./recipient";
 export function createApp() {
   const app = express();
   app.disable("x-powered-by");
@@ -19,7 +20,7 @@ export function createApp() {
     }),
   );
   app.post(
-    "/api/analyze",
+    ["/api/analyze", "/api/recipient-check"],
     (req, res, next) => {
       const origin = req.headers.origin;
       if (
@@ -48,7 +49,7 @@ export function createApp() {
       if (active >= 1) {
         res.status(429).json({
           error:
-            "Another bundle is being analyzed. Please wait for it to finish.",
+            "Another analysis is finishing or cancelling. Wait a moment, then retry.",
         });
         return;
       }
@@ -58,7 +59,11 @@ export function createApp() {
         if (!res.writableEnded) controller.abort();
       });
       try {
-        const result = await analyzeImages(req.body, {
+        const operation =
+          req.path === "/api/recipient-check"
+            ? readExportedBundle
+            : analyzeImages;
+        const result = await operation(req.body, {
           apiKey: process.env.OPENAI_API_KEY,
           model: process.env.OPENAI_MODEL,
           signal: controller.signal,

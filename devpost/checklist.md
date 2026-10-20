@@ -82,6 +82,11 @@ Activity mode: pending; reference map will remain independently useful.
 - Offline app map was generated and its relative links and function anchors verified. It is a reference route; no completed learner walkthrough is claimed.
 
 ## Approved Competitive Extension
-- [ ] Keep-visible pixel constraints, constrained cut, actual provenance canvas and preserved-pixel export checks.
-- [ ] Explicit-consent fresh-reader endpoint over actual exported bytes, bounded grounding, local target comparison and stale-result protection.
-- [ ] Integrated constrained repair/fresh-reader browser review, tests, source audit and updated demo evidence.
+- [x] Keep-visible pixel constraints, constrained cut, actual provenance canvas and preserved-pixel export checks.
+- [x] Explicit-consent fresh-reader endpoint over actual exported bytes, bounded grounding, local target comparison and stale-result protection.
+- [x] Integrated constrained repair/fresh-reader browser review, tests, source audit and updated demo evidence.
+
+- Preservation tranche passed 32 tests and an independent 500-graph constrained-cut oracle, including 89 impossible cases. Browser verification observed one name mask become two identifier masks while preserving every credit pixel; both masks appeared in every relevant preview. Impossible constraints and 390-pixel layouts passed.
+- Fresh-reader contract and emitted-artifact review passed 46 tests plus independent request-taint and review-byte checks. Live fictional baseline recovered Northstar Health without a protected-name hint; the preserved-credit repair returned no supported attribution. These are observations, not privacy proof. Integrated fresh-reader browser review subsequently passed both negative-observation and positive-recovery outcomes.
+
+- Final agent browser continuity passed: an intentionally omitted channel link was recovered from emitted PNGs, actual proposed boxes were inspected, verified customer-credit preservation carried into the new review, three proposals were confirmed, and one additional channel mask disconnected all detected routes. The resulting export verified three PNGs and the retained credit. Mobile layout/contrast and desktop console checks passed. This is agent verification, not learner approval.

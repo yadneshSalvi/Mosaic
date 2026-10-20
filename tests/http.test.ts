@@ -60,4 +60,27 @@ describe("local HTTP boundary", () => {
     expect(res.status).toBe(400);
     expect((await res.json()).error).toContain("agree to cloud analysis");
   });
+  it("applies strict context isolation and origin checks to the fresh-reader endpoint", async () => {
+    const extra = await fetch(`${base}/api/recipient-check`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        consent: true,
+        startingFact: "INC-1",
+        target: "forbidden",
+        sources: [],
+      }),
+    });
+    expect(extra.status).toBe(400);
+    expect((await extra.json()).error).toContain("Extra context fields");
+    const foreign = await fetch(`${base}/api/recipient-check`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Origin: "https://unrelated.example",
+      },
+      body: "{}",
+    });
+    expect(foreign.status).toBe(403);
+  });
 });

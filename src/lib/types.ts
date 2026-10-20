@@ -92,3 +92,6 @@ export function validateEvidence(raw: unknown, sourceIds: string[]): Evidence {
   // Identity is explicit: id AND type. No automatic token/fuzzy merging happens here.
   return data;
 }
+
+export const readablePredicate = (predicate: string) =>
+  predicate.replace(/_+/g, " ");
