@@ -27,8 +27,8 @@ export function sampleWorkspace(): Workspace {
       {
         id: "directory",
         name: "03-customer-directory.png",
-        title: "Customer directory",
-        description: "An account workspace overview",
+        title: "Public project credit",
+        description: "A public credit that the author needs to preserve",
         width: 1000,
         height: 700,
         url: "/samples/directory.png",

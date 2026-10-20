@@ -1,4 +1,5 @@
-import type { Evidence, Relation } from "./types";
+import type { Evidence, Relation, Source } from "./types";
+import { maskConflicts } from "./geometry";
 export type RouteResult = { paths: Relation[][]; complete: boolean };
 export function findRoutes(
   evidence: Evidence,
@@ -40,9 +41,16 @@ export function findRoutes(
 export type CutResult = {
   regionIds: string[];
   exact: boolean;
+  feasible?: boolean;
   reason?: string;
 };
-export function minimumRegionCut(evidence: Evidence): CutResult {
+export function minimumRegionCut(
+  evidence: Evidence,
+  options: {
+    keepRegionIds?: Set<string>;
+    sources?: Pick<Source, "id" | "width" | "height">[];
+  } = {},
+): CutResult {
   const result = findRoutes(evidence);
   if (!result.complete)
     return {
@@ -52,9 +60,22 @@ export function minimumRegionCut(evidence: Evidence): CutResult {
         "The graph has too many routes for a complete search. Review a smaller bundle.",
     };
   if (!result.paths.length) return { regionIds: [], exact: true };
-  const candidates = [
+  const allCandidates = [
     ...new Set(result.paths.flatMap((p) => p.map((e) => e.regionId))),
-  ].sort();
+  ];
+  const keep = options.keepRegionIds ?? new Set<string>();
+  if (keep.size && !options.sources)
+    throw new Error(
+      "Source dimensions are required for keep-visible constraints",
+    );
+  const candidates = allCandidates
+    .filter(
+      (id) =>
+        !keep.size ||
+        maskConflicts(evidence.regions, options.sources!, new Set([id]), keep)
+          .length === 0,
+    )
+    .sort();
   if (candidates.length > 20)
     return {
       regionIds: [],
@@ -91,7 +112,9 @@ export function minimumRegionCut(evidence: Evidence): CutResult {
   }
   return {
     regionIds: [],
-    exact: false,
-    reason: "No supported repair was found.",
+    exact: true,
+    feasible: false,
+    reason:
+      "No repair satisfies all your Keep visible choices. Release a kept region or review the surviving route.",
   };
 }

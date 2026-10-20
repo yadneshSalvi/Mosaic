@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 import { zipSync, strToU8 } from "fflate";
 import { sampleWorkspace } from "./lib/sample";
+import { maskConflicts } from "./lib/geometry";
 import { findRoutes, minimumRegionCut } from "./lib/graph";
 import { exportWorkspace, type ExportResult } from "./lib/redaction";
 import {
@@ -93,6 +94,7 @@ function SourceImage({
   active,
   onRegionClick,
   large = false,
+  kept = new Set<string>(),
 }: {
   source: Source;
   regions: Region[];
@@ -100,6 +102,7 @@ function SourceImage({
   active?: string;
   onRegionClick?: (r: Region) => void;
   large?: boolean;
+  kept?: Set<string>;
 }) {
   return (
     <div className={`source-image ${large ? "large" : ""}`}>
@@ -108,7 +111,7 @@ function SourceImage({
         onRegionClick ? (
           <button
             key={r.id}
-            className={`region-box ${masked.has(r.id) ? "masked" : ""} ${active === r.id ? "active" : ""}`}
+            className={`region-box ${kept.has(r.id) ? "kept" : ""} ${masked.has(r.id) ? "masked" : ""} ${active === r.id ? "active" : ""}`}
             style={{
               left: `${r.rect.x * 100}%`,
               top: `${r.rect.y * 100}%`,
@@ -125,7 +128,7 @@ function SourceImage({
         ) : (
           <span
             key={r.id}
-            className={`region-box ${masked.has(r.id) ? "masked" : ""}`}
+            className={`region-box ${kept.has(r.id) ? "kept" : ""} ${masked.has(r.id) ? "masked" : ""}`}
             style={{
               left: `${r.rect.x * 100}%`,
               top: `${r.rect.y * 100}%`,
@@ -149,6 +152,7 @@ export default function App() {
   const [selectedRegion, setSelectedRegion] = useState("directory-customer");
   const [inspector, setInspector] = useState<string | null>(null);
   const [masks, setMasks] = useState<Set<string>>(new Set());
+  const [kept, setKept] = useState<Set<string>>(new Set());
   const [view, setView] = useState<"map" | "files">("map");
   const [modal, setModal] = useState<
     "import" | "about" | "goal" | "output" | null
@@ -163,8 +167,12 @@ export default function App() {
     [workspace, masks],
   );
   const recommendation = useMemo(
-    () => minimumRegionCut(workspace),
-    [workspace],
+    () =>
+      minimumRegionCut(workspace, {
+        keepRegionIds: kept,
+        sources: workspace.sources,
+      }),
+    [workspace, kept],
   );
   const pathIndex = Math.min(
     activePath,
@@ -208,6 +216,17 @@ export default function App() {
     [result],
   );
   function toggleMask(id: string) {
+    if (
+      !masks.has(id) &&
+      maskConflicts(workspace.regions, workspace.sources, new Set([id]), kept)
+        .length
+    ) {
+      setError(
+        "This region overlaps pixels marked Keep visible. Release that choice or use the recommended repair.",
+      );
+      return;
+    }
+    setError("");
     discardResult();
     setMasks((current) => {
       const next = new Set(current);
@@ -215,9 +234,53 @@ export default function App() {
       return next;
     });
   }
+  function toggleKeep(id: string) {
+    discardResult();
+    setError("");
+    const next = new Set(kept);
+    next.has(id) ? next.delete(id) : next.add(id);
+    setKept(next);
+    const conflicts = maskConflicts(
+      workspace.regions,
+      workspace.sources,
+      masks,
+      next,
+    );
+    if (conflicts.length) {
+      setMasks(
+        (current) =>
+          new Set(
+            [...current].filter(
+              (mask) => !conflicts.some((c) => c.maskId === mask),
+            ),
+          ),
+      );
+      setError(
+        "Conflicting masks were removed to preserve your Keep visible choice. Find a new repair when ready.",
+      );
+    }
+  }
+  function updateEvidence(next: Workspace) {
+    discardResult();
+    setWorkspace(next);
+    const conflicts = maskConflicts(next.regions, next.sources, masks, kept);
+    if (conflicts.length) {
+      setMasks(
+        (current) =>
+          new Set(
+            [...current].filter(
+              (id) => !conflicts.some((c) => c.maskId === id),
+            ),
+          ),
+      );
+      setError(
+        "The edited region overlaps kept pixels. Conflicting masks were removed.",
+      );
+    }
+  }
   function applyRepair() {
     setError("");
-    if (!recommendation.exact) {
+    if (!recommendation.exact || recommendation.feasible === false) {
       setError(recommendation.reason ?? "Unable to complete repair search");
       return;
     }
@@ -232,7 +295,7 @@ export default function App() {
     try {
       discardResult();
       const startedAt = revision.current;
-      const output = await exportWorkspace(workspace, masks);
+      const output = await exportWorkspace(workspace, masks, kept);
       if (startedAt !== revision.current) {
         output.files.forEach((f) => URL.revokeObjectURL(f.url));
         return;
@@ -249,6 +312,7 @@ export default function App() {
     discardResult();
     setWorkspace(next);
     setMasks(new Set());
+    setKept(new Set());
     setSelectedRegion(next.regions[0]?.id ?? "");
     setActivePath(0);
     setError("");
@@ -300,7 +364,8 @@ export default function App() {
               Small clues. <span>Unexpected connections.</span>
             </h1>
             <p>
-              One screenshot tells a story. Together, they might tell too much.
+              Review a case-study bundle before you publish. Small clues can
+              reveal more together.
             </p>
           </div>
           <div className="sample-label">
@@ -389,95 +454,138 @@ export default function App() {
                 </span>
               </div>
               {view === "map" ? (
-                <div
-                  className={`map-stage sources-${workspace.sources.length}`}
-                >
-                  <div className="route-track" aria-hidden="true">
-                    <div />
-                    <span className={repaired ? "cut" : ""}>
-                      {repaired ? <Check size={15} /> : <Link2 size={14} />}
-                    </span>
-                    <div />
-                    <span className={repaired ? "cut" : ""}>
-                      {repaired ? <Check size={15} /> : <Link2 size={14} />}
-                    </span>
-                    <div />
-                  </div>
-                  {workspace.sources.map((source, i) => {
-                    const regions = workspace.regions.filter(
-                      (r) => r.sourceId === source.id,
-                    );
-                    const isActive = regions.some(
-                      (r) => r.id === selectedRegion,
-                    );
-                    return (
-                      <article
-                        key={source.id}
-                        className={`document-card doc-${i} ${isActive ? "selected" : ""} ${regions.some((r) => masks.has(r.id)) ? "has-mask" : ""}`}
-                      >
-                        <button
-                          className="document-top"
-                          onClick={() => setInspector(source.id)}
-                        >
-                          <span className="doc-num">
-                            {String(i + 1).padStart(2, "0")}
-                          </span>
-                          <span>{source.title}</span>
-                          <Maximize2 size={13} />
-                        </button>
-                        <div
-                          className="document-preview"
-                          onClick={() => setInspector(source.id)}
-                        >
-                          <SourceImage
-                            source={source}
-                            regions={regions}
-                            masked={masks}
-                            active={selectedRegion}
-                            onRegionClick={(r) => {
-                              setSelectedRegion(r.id);
-                              setInspector(source.id);
-                            }}
-                          />
-                        </div>
-                        <button
-                          className="document-bottom"
-                          onClick={() => {
-                            setSelectedRegion(regions[0]?.id ?? "");
-                            setInspector(source.id);
-                          }}
-                        >
-                          <span className="file-chip">
-                            <FileImage size={12} />{" "}
-                            {source.url.startsWith("data:image/jpeg")
-                              ? "JPG"
-                              : "PNG"}
-                          </span>
-                          <span>
-                            {regions.length} evidence{" "}
-                            {regions.length === 1 ? "region" : "regions"}
-                          </span>
-                          <ArrowUpRight size={14} />
-                        </button>
-                        <div className="document-fact">
-                          <span className="fact-dot" />
-                          {regions.some((r) => masks.has(r.id))
-                            ? `${regions.filter((r) => masks.has(r.id)).length} region${regions.filter((r) => masks.has(r.id)).length === 1 ? "" : "s"} masked`
-                            : i === 0
-                              ? start?.label
-                              : i === workspace.sources.length - 1
-                                ? target?.label
-                                : regions[0]?.quote || "Source evidence"}
-                        </div>
-                      </article>
-                    );
-                  })}
-                  <div className="canvas-footnote">
+                <div className={`provenance-stage path-length-${path.length}`}>
+                  {path.length === 0 ? (
+                    <div className="no-path">
+                      <GitBranch size={30} />
+                      <strong>No supported path between these facts</strong>
+                      <p>
+                        Inspect the source files or choose another association.
+                        No connection is drawn without evidence.
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="provenance-route">
+                      {path.map((edge, i) => {
+                        const region = workspace.regions.find(
+                          (r) => r.id === edge.regionId,
+                        )!;
+                        const source = workspace.sources.find(
+                          (source) => source.id === region.sourceId,
+                        )!;
+                        const from = workspace.entities.find(
+                          (e) => e.id === edge.from,
+                        )!;
+                        const to = workspace.entities.find(
+                          (e) => e.id === edge.to,
+                        )!;
+                        const sourceNumber =
+                          workspace.sources.findIndex(
+                            (s) => s.id === source.id,
+                          ) + 1;
+                        return (
+                          <div className="provenance-step" key={edge.id}>
+                            <div
+                              className={`provenance-relation ${masks.has(region.id) ? "severed" : ""}`}
+                            >
+                              <span>{from.label}</span>
+                              <button
+                                onClick={() => {
+                                  setSelectedRegion(region.id);
+                                  setInspector(source.id);
+                                }}
+                                aria-label={`Inspect ${from.label} ${edge.predicate} ${to.label}`}
+                              >
+                                {masks.has(region.id) ? (
+                                  <X size={17} />
+                                ) : (
+                                  <ArrowRight size={17} />
+                                )}
+                              </button>
+                              <strong>{to.label}</strong>
+                            </div>
+                            <span className="provenance-predicate">
+                              {masks.has(region.id)
+                                ? "Known link removed"
+                                : edge.predicate}
+                            </span>
+                            <article
+                              className={`document-card ${selectedRegion === region.id ? "selected" : ""} ${masks.has(region.id) ? "has-mask" : ""}`}
+                            >
+                              <button
+                                className="document-top"
+                                onClick={() => {
+                                  setSelectedRegion(region.id);
+                                  setInspector(source.id);
+                                }}
+                              >
+                                <span className="doc-num">
+                                  {String(sourceNumber).padStart(2, "0")}
+                                </span>
+                                <span>{source.title}</span>
+                                <Maximize2 size={13} />
+                              </button>
+                              <div className="document-preview">
+                                <SourceImage
+                                  source={source}
+                                  regions={workspace.regions.filter(
+                                    (r) =>
+                                      r.sourceId === source.id &&
+                                      (r.id === region.id ||
+                                        masks.has(r.id) ||
+                                        kept.has(r.id)),
+                                  )}
+                                  masked={masks}
+                                  kept={kept}
+                                  active={selectedRegion}
+                                  onRegionClick={(r) => {
+                                    setSelectedRegion(r.id);
+                                    setInspector(source.id);
+                                  }}
+                                />
+                              </div>
+                              <button
+                                className="document-bottom"
+                                onClick={() => {
+                                  setSelectedRegion(region.id);
+                                  setInspector(source.id);
+                                }}
+                              >
+                                <FileImage size={13} />
+                                <span>
+                                  Source {sourceNumber} · {region.label}
+                                </span>
+                                <ArrowUpRight size={13} />
+                              </button>
+                            </article>
+                            <button
+                              className={`keep-chip ${kept.has(region.id) ? "active" : ""}`}
+                              onClick={() => toggleKeep(region.id)}
+                              aria-pressed={kept.has(region.id)}
+                            >
+                              <LockKeyhole size={12} />
+                              {kept.has(region.id)
+                                ? "Kept visible"
+                                : "Keep visible"}
+                            </button>
+                            {i < path.length - 1 && (
+                              <span
+                                className="provenance-next"
+                                aria-hidden="true"
+                              >
+                                <ChevronRight size={18} />
+                              </span>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                  <div className="provenance-legend">
                     <Fingerprint size={14} />
                     <span>
-                      {workspace.origin === "sample"
-                        ? "The clues are ordinary. Their connection is what matters."
-                        : "Each connection should be checked against its source."}
+                      Every arrow has a source. The same file can support more
+                      than one step.
                     </span>
                   </div>
                 </div>
@@ -709,9 +817,11 @@ export default function App() {
             <p>
               {repaired
                 ? `${masks.size} region${masks.size === 1 ? "" : "s"} selected · ${currentRoutes.paths.length} detected routes remaining`
-                : masks.size
-                  ? "This repair is incomplete. Find the minimal repair to cover every detected route."
-                  : "Find the fewest evidence regions to mask while preserving the rest of your screenshots."}
+                : recommendation.feasible === false
+                  ? "Release a kept region to make a repair possible."
+                  : masks.size
+                    ? "This repair is incomplete. Find the minimal repair to cover every detected route."
+                    : "Find the fewest evidence regions to mask while preserving the rest of your screenshots."}
             </p>
           </div>
           <div className="repair-actions">
@@ -732,6 +842,7 @@ export default function App() {
                 exporting ||
                 (!repaired && !allRoutes.paths.length) ||
                 !allRoutes.complete ||
+                recommendation.feasible === false ||
                 (repaired && suggested > 0)
               }
               onClick={repaired ? doExport : applyRepair}
@@ -761,6 +872,37 @@ export default function App() {
               This graph has too many routes for a complete search. Exact repair
               is unavailable; analyze a smaller bundle.
             </span>
+          </div>
+        )}
+        {kept.size > 0 && (
+          <div className="keep-summary">
+            <LockKeyhole size={16} />
+            <span>
+              <strong>
+                {kept.size} region{kept.size === 1 ? "" : "s"} kept visible.
+              </strong>{" "}
+              {!recommendation.exact
+                ? (recommendation.reason ?? "An exact repair is unavailable.")
+                : recommendation.feasible === false
+                  ? "No known repair can satisfy every preservation choice."
+                  : `${recommendation.regionIds.length} candidate mask${recommendation.regionIds.length === 1 ? "" : "s"} can disconnect the detected routes without changing kept pixels.`}
+            </span>
+            <button
+              className="text-button"
+              onClick={() => {
+                discardResult();
+                setKept(new Set());
+                setError("");
+              }}
+            >
+              Release all
+            </button>
+          </div>
+        )}
+        {recommendation.feasible === false && (
+          <div className="notice" role="status">
+            <LockKeyhole size={16} />
+            <span>{recommendation.reason}</span>
           </div>
         )}
         {suggested > 0 && (
@@ -821,11 +963,10 @@ export default function App() {
           setSelectedRegion={setSelectedRegion}
           masks={masks}
           toggleMask={toggleMask}
+          kept={kept}
+          toggleKeep={toggleKeep}
           onClose={() => setInspector(null)}
-          onChange={(next) => {
-            discardResult();
-            setWorkspace(next);
-          }}
+          onChange={updateEvidence}
         />
       )}
       {modal === "import" && (
@@ -897,6 +1038,8 @@ function SourceInspector({
   selectedRegion,
   setSelectedRegion,
   masks,
+  kept,
+  toggleKeep,
   toggleMask,
   onClose,
   onChange,
@@ -906,6 +1049,8 @@ function SourceInspector({
   selectedRegion: string;
   setSelectedRegion: (id: string) => void;
   masks: Set<string>;
+  kept: Set<string>;
+  toggleKeep: (id: string) => void;
   toggleMask: (id: string) => void;
   onClose: () => void;
   onChange: (w: Workspace) => void;
@@ -977,6 +1122,7 @@ function SourceInspector({
                 : regions
             }
             masked={showMasks ? masks : new Set()}
+            kept={kept}
             active={selected?.id}
             onRegionClick={(r) => setSelectedRegion(r.id)}
           />
@@ -1083,7 +1229,30 @@ function SourceInspector({
                   </div>
                 ))}
               <button
+                className={`outline-button full keep-action ${kept.has(selected.id) ? "active" : ""}`}
+                onClick={() => toggleKeep(selected.id)}
+                aria-pressed={kept.has(selected.id)}
+              >
+                <LockKeyhole size={15} />
+                {kept.has(selected.id)
+                  ? "Kept visible · release"
+                  : "Keep this visible"}
+              </button>
+              <p className="keep-explanation">
+                Preserve these pixels in every repair, even when another mask
+                overlaps them.
+              </p>
+              <button
                 className="outline-button full"
+                disabled={
+                  !masks.has(selected.id) &&
+                  maskConflicts(
+                    workspace.regions,
+                    workspace.sources,
+                    new Set([selected.id]),
+                    kept,
+                  ).length > 0
+                }
                 onClick={() => toggleMask(selected.id)}
               >
                 {masks.has(selected.id) ? (
@@ -1439,6 +1608,7 @@ function OutputPanel({
         decodedExportedPngBytes: true,
         opaqueMaskPixels: true,
         preservedUnmaskedPixels: true,
+        keptRegionsPreserved: result.keptRegionIds.length,
         remainingDetectedRoutes: result.remainingRoutes,
         completeRouteSearch: result.complete,
       },
@@ -1513,6 +1683,14 @@ function OutputPanel({
         <span>
           <Check size={15} /> Unmasked pixels preserved
         </span>
+        {result.keptRegionIds.length > 0 && (
+          <span>
+            <LockKeyhole size={15} />
+            {result.keptRegionIds.length} kept region
+            {result.keptRegionIds.length === 1 ? "" : "s"} checked pixel by
+            pixel
+          </span>
+        )}
       </div>
       <div className="output-files">
         {result.files.map((file) => (

@@ -1,37 +1,8 @@
-import type { Rect, Region, Source, Workspace } from "./types";
+import type { Region, Source, Workspace } from "./types";
 import { findRoutes } from "./graph";
+import { pixelRect, assertMaskPlan, verifyKeptPixels } from "./geometry";
+export { pixelRect } from "./geometry";
 export const MASK = [24, 27, 34, 255] as const;
-export type PixelRect = { x: number; y: number; width: number; height: number };
-export function pixelRect(
-  rect: Rect,
-  width: number,
-  height: number,
-): PixelRect {
-  if (
-    ![width, height].every((n) => Number.isInteger(n) && n > 0) ||
-    ![rect.x, rect.y, rect.width, rect.height].every(Number.isFinite) ||
-    rect.x < 0 ||
-    rect.y < 0 ||
-    rect.x >= 1 ||
-    rect.y >= 1 ||
-    rect.width <= 0 ||
-    rect.height <= 0 ||
-    rect.x + rect.width > 1 ||
-    rect.y + rect.height > 1
-  )
-    throw new Error("Invalid redaction bounds");
-  const x = Math.floor(rect.x * width),
-    y = Math.floor(rect.y * height);
-  const result = {
-    x,
-    y,
-    width: Math.min(width, Math.ceil((rect.x + rect.width) * width)) - x,
-    height: Math.min(height, Math.ceil((rect.y + rect.height) * height)) - y,
-  };
-  if (result.width < 1 || result.height < 1)
-    throw new Error("Redaction region has no pixels");
-  return result;
-}
 export function verifyPixels(
   original: Uint8ClampedArray | Uint8Array,
   output: Uint8ClampedArray | Uint8Array,
@@ -94,6 +65,8 @@ function canvasFor(image: HTMLImageElement, flatten = true) {
   return { canvas, ctx };
 }
 export type ExportFile = {
+  sourceId: string;
+  keptRegionIds: string[];
   name: string;
   url: string;
   blob: Blob;
@@ -104,6 +77,7 @@ export type ExportFile = {
   preserved: boolean;
 };
 export type ExportResult = {
+  keptRegionIds: string[];
   files: ExportFile[];
   remainingRoutes: number;
   complete: boolean;
@@ -114,7 +88,14 @@ export async function exportSource(
   source: Source,
   regions: Region[],
   index: number,
+  kept: Region[] = [],
 ): Promise<ExportFile> {
+  assertMaskPlan(
+    [...regions, ...kept.filter((k) => !regions.some((r) => r.id === k.id))],
+    [source],
+    new Set(regions.map((r) => r.id)),
+    new Set(kept.map((r) => r.id)),
+  );
   const original = await decode(source.url);
   const { canvas, ctx } = canvasFor(original);
   if (canvas.width !== source.width || canvas.height !== source.height)
@@ -140,18 +121,33 @@ export async function exportSource(
       reopened.naturalHeight !== canvas.height
     )
       throw new Error("Export dimensions changed");
+    const after = decoded.ctx.getImageData(
+      0,
+      0,
+      canvas.width,
+      canvas.height,
+    ).data;
+    const keptRegionIds = verifyKeptPixels(
+      before,
+      after,
+      canvas.width,
+      canvas.height,
+      kept,
+    );
     const check = verifyPixels(
       before,
-      decoded.ctx.getImageData(0, 0, canvas.width, canvas.height).data,
+      after,
       canvas.width,
       canvas.height,
       regions,
     );
-    if (!check.passed)
+    if (!check.passed || keptRegionIds.length !== kept.length)
       throw new Error(
         "Exported pixels did not match the requested repair. No verified output was produced.",
       );
     return {
+      sourceId: source.id,
+      keptRegionIds,
       name: `mosaic-${String(index + 1).padStart(2, "0")}.png`,
       url,
       blob,
@@ -169,7 +165,9 @@ export async function exportSource(
 export async function exportWorkspace(
   workspace: Workspace,
   removed: Set<string>,
+  kept: Set<string> = new Set(),
 ): Promise<ExportResult> {
+  assertMaskPlan(workspace.regions, workspace.sources, removed, kept);
   const files: ExportFile[] = [];
   try {
     for (let i = 0; i < workspace.sources.length; i++)
@@ -180,12 +178,16 @@ export async function exportWorkspace(
             (r) => r.sourceId === workspace.sources[i].id && removed.has(r.id),
           ),
           i,
+          workspace.regions.filter(
+            (r) => r.sourceId === workspace.sources[i].id && kept.has(r.id),
+          ),
         ),
       );
     const verifiedRegionIds = files.flatMap((f) => f.verifiedRegions);
     const result = findRoutes(workspace, new Set(verifiedRegionIds));
     return {
       files,
+      keptRegionIds: files.flatMap((f) => f.keptRegionIds),
       remainingRoutes: result.paths.length,
       complete: result.complete,
       verifiedRegionIds,

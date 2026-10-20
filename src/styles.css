@@ -2224,3 +2224,419 @@ h1 > span {
   color: #6077b7;
   box-shadow: 0 1px 3px #45597c10;
 }
+
+/* The primary canvas follows evidence edges, never upload order. */
+.provenance-stage {
+  padding: 26px 24px 20px;
+  min-height: 345px;
+}
+.provenance-route {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 0 2px 14px;
+}
+.provenance-step {
+  position: relative;
+  min-width: 0;
+  flex: 1;
+  max-width: 265px;
+}
+.provenance-step .document-card {
+  width: 100%;
+  max-width: none;
+  transform: none;
+}
+.provenance-relation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 42px;
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: center;
+  color: #586b95;
+}
+.provenance-relation > span,
+.provenance-relation > strong {
+  flex: 1;
+  overflow-wrap: anywhere;
+  font-weight: 550;
+}
+.provenance-relation > button {
+  padding: 3px;
+  border: 0;
+  background: none;
+  color: #5978d8;
+}
+.provenance-relation.severed {
+  color: #547964;
+}
+.provenance-relation.severed > button {
+  color: #4e8066;
+}
+.provenance-predicate {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #6c7890;
+  margin: 0 0 14px;
+  min-height: 32px;
+}
+.provenance-next {
+  position: absolute;
+  right: -22px;
+  top: 13px;
+  color: #7187bc;
+}
+.keep-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #dbe1ed;
+  border-radius: 5px;
+  background: #fffefa;
+  color: #65738e;
+  font-size: 11px;
+  padding: 7px 10px;
+  margin: 13px auto 0;
+}
+.keep-chip.active,
+.keep-action.active {
+  background: #fff8dd;
+  border-color: #dfcc8b;
+  color: #776020;
+}
+.provenance-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #65718a;
+  line-height: 1.6;
+}
+.region-box.kept {
+  border: 2px solid #ad8629;
+  background: #efd28122;
+  box-shadow: 0 0 0 2px #fff8;
+}
+.keep-explanation {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #657189;
+  margin-top: 9px;
+}
+.keep-summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff9e8;
+  border: 1px solid #e6d9ac;
+  border-radius: 7px;
+  padding: 14px 17px;
+  margin-top: 16px;
+  color: #75633b;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.keep-summary > span {
+  flex: 1;
+}
+.no-path {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  color: #6d7e9e;
+  text-align: center;
+}
+.no-path p {
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 380px;
+}
+.path-length-1 .provenance-step {
+  max-width: 350px;
+}
+.path-length-4 .provenance-step,
+.path-length-5 .provenance-step,
+.path-length-6 .provenance-step {
+  min-width: 200px;
+}
+.path-length-4 .provenance-route,
+.path-length-5 .provenance-route,
+.path-length-6 .provenance-route {
+  justify-content: flex-start;
+}
+/* Readability is maintained through spacing and weight, not low-contrast tiny text. */
+.micro-label,
+.eyebrow {
+  color: #626d80;
+  font-size: 11px;
+}
+.intro p,
+.protection-note,
+.sample-label div > span,
+.bench-meta,
+.canvas-hint,
+.path-switch,
+.path-panel > p,
+.insight-description,
+.scope-note > p,
+.page-footer,
+.page-footer button,
+.repair-copy p,
+.inspector-guidance,
+.form-body > p,
+.cloud-disclosure > p,
+.info-box {
+  color: #657084;
+  font-size: 12px;
+}
+.evidence-item strong,
+.evidence-item small,
+.evidence-heading,
+.quote-card blockquote,
+.quote-card .text-button,
+.chain-node,
+.view-tabs > button,
+.protection-copy > div,
+.protection-bar > .text-button,
+.notice,
+.notice .text-button {
+  font-size: 12px;
+  color: #576780;
+}
+.document-top,
+.document-bottom,
+.doc-num,
+.file-chip,
+.source-file-card small {
+  font-size: 11px;
+  color: #5f6c82;
+}
+.evidence-item small {
+  color: #65718a;
+}
+.canvas-caption {
+  gap: 16px;
+}
+.canvas-hint {
+  line-height: 1.5;
+}
+.insight-heading .micro-label,
+.path-panel-heading > .micro-label,
+.quote-card > .micro-label,
+.protection-copy > .micro-label,
+.cloud-disclosure > .micro-label {
+  font-size: 11px;
+  color: #637086;
+}
+.status-pill,
+.status-pill.resolved {
+  font-size: 11px;
+}
+.quote-card blockquote {
+  line-height: 1.65;
+}
+.path-chain {
+  row-gap: 9px;
+}
+.page-footer {
+  gap: 18px;
+  line-height: 1.7;
+}
+.page-footer > span:last-child {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.review-status,
+.review-buttons > button,
+.region-selector > button,
+.rect-editor > p,
+.rect-editor > label,
+.rect-editor input,
+.image-view-controls button,
+.selected-files > span,
+.selected-files small {
+  font-size: 12px;
+  color: #5e6d84;
+}
+.sample-label strong {
+  font-size: 12px;
+  color: #5e697c;
+}
+.inspector-image-footer {
+  font-size: 11px;
+  color: #5e6d85;
+}
+.scope-note {
+  color: #657084;
+}
+.output-file strong,
+.output-file span,
+.output-checks,
+.output-status p,
+.output-actions .text-button {
+  font-size: 12px;
+  color: #5d7168;
+}
+.scope-note > p {
+  line-height: 1.65;
+}
+.provenance-stage .document-bottom > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.protection-copy > .micro-label {
+  letter-spacing: 0.8px;
+}
+@media (max-width: 1200px) {
+  .provenance-stage {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .provenance-route {
+    gap: 20px;
+  }
+  .provenance-next {
+    right: -19px;
+  }
+  .document-top {
+    font-size: 11px;
+  }
+  .canvas-hint {
+    display: none;
+  }
+  .repair-copy p {
+    max-width: 450px;
+  }
+  .insight-heading {
+    align-items: flex-start;
+  }
+  .insight-heading .micro-label {
+    line-height: 1.6;
+  }
+  .page-footer > span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 650px) {
+  .provenance-stage {
+    padding: 24px 24px 18px;
+  }
+  .provenance-route {
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    overflow: visible;
+  }
+  .provenance-step,
+  .path-length-1 .provenance-step {
+    width: 100%;
+    max-width: 300px;
+    min-width: 0;
+  }
+  .provenance-next {
+    display: none;
+  }
+  .provenance-relation {
+    font-size: 13px;
+    min-height: 0;
+  }
+  .provenance-predicate {
+    min-height: 0;
+    font-size: 12px;
+    margin-bottom: 13px;
+  }
+  .provenance-legend {
+    align-items: flex-start;
+    font-size: 12px;
+    text-align: left;
+  }
+  .keep-chip {
+    font-size: 12px;
+  }
+  .protection-copy > div {
+    font-size: 11px;
+  }
+  .protection-copy > .micro-label {
+    font-size: 10px;
+  }
+  .protection-bar > .text-button {
+    font-size: 11px;
+  }
+  .page-footer > span,
+  .page-footer > span:last-child,
+  .page-footer button {
+    font-size: 11px;
+  }
+  .page-footer > span:last-child {
+    justify-content: flex-start;
+  }
+  .path-panel-heading > .micro-label {
+    font-size: 10px;
+  }
+  .path-switch {
+    font-size: 11px;
+  }
+  .chain-node {
+    font-size: 11px;
+  }
+  .keep-summary {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .keep-summary > .text-button {
+    margin-left: 25px;
+  }
+  .status-pill {
+    font-size: 11px;
+  }
+  .sample-label {
+    display: none;
+  }
+  .repair-copy h3 {
+    font-size: 13px;
+  }
+  .notice > span {
+    font-size: 12px;
+  }
+  .insight-panel h2 {
+    font-size: 23px;
+  }
+}
+/* Functional metadata must remain readable on each actual surface. */
+.workspace-crumb,
+.provenance-predicate {
+  color: #576478;
+  font-size: 12px;
+}
+.evidence-index,
+.evidence-heading > span:last-child,
+.view-tabs > button > span {
+  color: #526077;
+  font-size: 11px;
+}
+.evidence-index {
+  min-width: 21px;
+  height: 21px;
+}
+.chain-node.target {
+  color: #775315;
+}
+.status-pill {
+  color: #8b590e;
+  font-size: 12px;
+}
+.status-pill.resolved {
+  color: #26634e;
+}

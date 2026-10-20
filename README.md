@@ -43,7 +43,7 @@ For every exported PNG, Mosaic:
 - Compares every unmasked pixel with the decoded source canvas.
 - Recalculates directed paths using only evidence regions whose exported pixels were verified.
 
-The exact repair algorithm minimizes the number of distinct **candidate evidence regions**, breaking ties by normalized area. It enumerates all simple directed paths within strict bounds and declines an exact result if the search is incomplete. Independent visible occurrences retain independent evidence; an unmasked duplicate can keep a route alive.
+The exact repair algorithm minimizes the number of distinct **candidate evidence regions**, breaking ties by normalized area. Mark useful content **Keep visible** to exclude every overlapping pixel region from the repair. In the sample, preserving the public customer credit changes one name mask into two incident-identifier masks; the exported kept pixels are checked for exact preservation. It enumerates all simple directed paths within strict bounds and declines an exact result if the search is incomplete. Independent visible occurrences retain independent evidence; an unmasked duplicate can keep a route alive.
 
 This is **not a privacy guarantee**. The detector can miss facts, coordinates can be inaccurate, people can infer more than the graph represents, and files outside the bundle are unknown. The export check does **not** rerun OCR or model analysis. It proves removal of reviewed, known evidence pixels and disconnection of the detected graph, not universal anonymity. The UI and verification report preserve this distinction.
 
@@ -75,3 +75,7 @@ See the [scope](devpost/scope.md), [PRD](devpost/prd.md), [technical spec](devpo
 ## Hackathon status
 
 Built using the Devpost Build With AI: Basics planning pack. Public planning documents precede implementation in Git history. Detailed working plans and personal learner context are intentionally ignored. The agent was explicitly authorized to implement autonomously; document statuses do not claim human review. The short actual demo video, human review/learning reflection, and final Devpost submission remain separate tasks. Deployment is optional and has not been performed.
+
+## License
+
+Mosaic source and original sample assets are available under the [MIT License](LICENSE). Dependencies and bundled DM Sans / Manrope fonts retain their own licenses.
