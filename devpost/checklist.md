@@ -9,7 +9,7 @@ Build mode: fast, under explicit autonomous implementation authorization. Human 
 
 ## Slices
 
-- [ ] **1. Inspect an actual cross-file association**
+- [x] **1. Inspect an actual cross-file association**
   Becomes usable: The fixture workspace, source inspector and two source-backed routes work.
   Why now: Kernel first; every later action has actual evidence.
   PRD ref: `prd.md > Evidence inspection`
@@ -19,7 +19,7 @@ Build mode: fast, under explicit autonomous implementation authorization. Human 
   Learner check: Open a source and follow both routes.
   Commit: `Build inspectable evidence workspace`
 
-- [ ] **2. Repair and verify exported pixels**
+- [x] **2. Repair and verify exported pixels**
   Becomes usable: A minimal region cut, previews and real verified PNG downloads.
   Why now: Proves the distinctive loop before API complexity.
   PRD ref: `prd.md > Repair planning`
@@ -68,3 +68,7 @@ Reflection: not requested or invented.
 Activity mode: pending; reference map will remain independently useful.
 
 ## Revisions
+
+- The first two slices were verified together: 12 graph/raster tests, TypeScript and Vite build passed; parent inspected real sources and exported bytes in the in-app browser. The third slice API landed with six additional trust-boundary tests; live analysis remains under review.
+- The output verifier now rejects zero-coverage/out-of-bounds rectangles and reads emitted PNG alpha without compositing; independent audit found these edge cases before release.
+- Per-region confirmation provenance and an export revision guard were added so edited fixture evidence can be reviewed and an outdated in-flight export cannot replace a newer workspace.

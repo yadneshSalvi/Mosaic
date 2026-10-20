@@ -1,0 +1,23 @@
+import type { Workspace } from './types';
+export function sampleWorkspace(): Workspace {
+return {
+ title: 'The Cedar case study', origin: 'sample', protectedFrom: 'incident:042', protectedTo: 'customer:northstar',
+ sources: [
+ {id:'support',name:'01-support-incident.png',title:'Support incident',description:'An internal incident report',width:1000,height:700,url:'/samples/support.png'},
+ {id:'registry',name:'02-project-registry.png',title:'Project registry',description:'A project handoff spreadsheet',width:1000,height:700,url:'/samples/registry.png'},
+ {id:'directory',name:'03-customer-directory.png',title:'Customer directory',description:'An account workspace overview',width:1000,height:700,url:'/samples/directory.png'}],
+ entities:[{id:'incident:042',label:'Incident 042',type:'incident'},{id:'client:C-17',label:'C-17',type:'client_code'},{id:'project:cedar',label:'Project Cedar',type:'project'},{id:'customer:northstar',label:'Northstar Health',type:'customer'},{id:'channel:cedar-ops',label:'#cedar-ops',type:'channel'}],
+ regions:[
+ {id:'support-client',sourceId:'support',label:'Client reference',quote:'CLIENT REFERENCE: C-17',rect:{x:.70,y:.24,width:.15,height:.08}},
+ {id:'registry-project',sourceId:'registry',label:'Project mapping',quote:'C-17 → Project Cedar',rect:{x:.085,y:.475,width:.50,height:.085}},
+ {id:'directory-customer',sourceId:'directory',label:'Customer name',quote:'Northstar Health',rect:{x:.10,y:.395,width:.49,height:.09}},
+ {id:'support-channel',sourceId:'support',label:'Escalation channel',quote:'ESCALATION CHANNEL: #cedar-ops',rect:{x:.10,y:.77,width:.27,height:.075}}
+ ],
+ relations:[
+ {id:'r1',from:'incident:042',to:'client:C-17',predicate:'references client',regionId:'support-client',status:'confirmed',confirmedBy:'fixture'},
+ {id:'r2',from:'client:C-17',to:'project:cedar',predicate:'belongs to project',regionId:'registry-project',status:'confirmed',confirmedBy:'fixture'},
+ {id:'r3',from:'project:cedar',to:'customer:northstar',predicate:'is delivered for',regionId:'directory-customer',status:'confirmed',confirmedBy:'fixture'},
+ {id:'r4',from:'incident:042',to:'channel:cedar-ops',predicate:'escalates in',regionId:'support-channel',status:'confirmed',confirmedBy:'fixture'},
+ {id:'r5',from:'channel:cedar-ops',to:'customer:northstar',predicate:'is the customer channel',regionId:'directory-customer',status:'confirmed',confirmedBy:'fixture'}]
+};
+}
