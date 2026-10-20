@@ -29,7 +29,7 @@ Build mode: fast, under explicit autonomous implementation authorization. Human 
   Learner check: Toggle one incomplete repair, then recommended repair and export.
   Commit: `Add minimal repair and verified raster export`
 
-- [ ] **3. Analyze and review a new bundle**
+- [x] **3. Analyze and review a new bundle**
   Becomes usable: Consent-gated uploads yield suggested source-backed facts.
   Why now: Generalize a working loop beyond fixtures.
   PRD ref: `prd.md > New bundles`
@@ -61,8 +61,8 @@ Build mode: fast, under explicit autonomous implementation authorization. Human 
 - [ ] Optional edit and transfer reflection addressed
 - [ ] `devpost/app-map.html` generated from finished code, checked, and shown
 
-Activity and evidence: implementation authorized; no human learning activity claimed.
-Route and stops: to be derived from actual finished code.
+Activity and evidence: graph and emitted-byte verification were implemented and tested; offline reference map prepared. No human learning activity claimed.
+Route and stops: reference-only route: `src/App.tsx > applyRepair`, `src/lib/graph.ts > minimumRegionCut`, `src/lib/redaction.ts > exportWorkspace`; not toured by the learner.
 Edit outcome: not performed.
 Reflection: not requested or invented.
 Activity mode: pending; reference map will remain independently useful.
@@ -72,3 +72,7 @@ Activity mode: pending; reference map will remain independently useful.
 - The first two slices were verified together: 12 graph/raster tests, TypeScript and Vite build passed; parent inspected real sources and exported bytes in the in-app browser. The third slice API landed with six additional trust-boundary tests; live analysis remains under review.
 - The output verifier now rejects zero-coverage/out-of-bounds rectangles and reads emitted PNG alpha without compositing; independent audit found these edge cases before release.
 - Per-region confirmation provenance and an export revision guard were added so edited fixture evidence can be reviewed and an outdated in-flight export cannot replace a newer workspace.
+
+- Live extraction of an independent fictional three-file bundle succeeded with a different association; strict model-schema bounds and one corrective retry were added after an earlier invalid model result. Full integrated browser verification remains separate.
+- Full-resolution originals now stay intact; only provider copies resize to 1600 pixels. A ZIP download and neutral verification report make the delivered artifact convenient without leaking redacted identifiers.
+- Sharp and Vitest were updated to patched releases after dependency audit; the resulting audit reports zero vulnerabilities.

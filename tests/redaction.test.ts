@@ -1,11 +1,79 @@
-import { describe, it, expect } from 'vitest';
-import sharp from 'sharp';
-import { MASK, pixelRect, verifyPixels } from '../src/lib/redaction';
-import { RectSchema, type Region } from '../src/lib/types';
-const region:Region={id:'r',sourceId:'s',quote:'sensitive',label:'name',rect:{x:.155,y:.255,width:.255,height:.255}};
-describe('actual exported raster verification',()=>{
- it('rounds outward and rejects invalid/zero-coverage bounds',()=>{expect(pixelRect(region.rect,10,10)).toEqual({x:1,y:2,width:4,height:4});for(const rect of [{x:1,y:0,width:.0000005,height:.1},{x:0,y:0,width:0,height:.1},{x:0,y:0,width:NaN,height:.1},{x:.9,y:0,width:.2,height:.1}]){expect(()=>pixelRect(rect,10,10)).toThrow();expect(RectSchema.safeParse(rect).success).toBe(false);}});
- it('verifies fresh encoded PNG bytes, opaque masks and preserved content',async()=>{const width=80,height=60;const original=await sharp({create:{width,height,channels:4,background:'#ccddef'}}).raw().toBuffer();const exported=Buffer.from(original);const box=pixelRect(region.rect,width,height);for(let y=box.y;y<box.y+box.height;y++)for(let x=box.x;x<box.x+box.width;x++)for(let c=0;c<4;c++)exported[(y*width+x)*4+c]=MASK[c];const bytes=await sharp(exported,{raw:{width,height,channels:4}}).png().toBuffer();const decoded=await sharp(bytes).ensureAlpha().raw().toBuffer();expect(verifyPixels(original,decoded,width,height,[region])).toEqual({verified:['r'],preserved:true,passed:true});const metadata=await sharp(bytes).metadata();expect(metadata.exif).toBeUndefined();expect(metadata.format).toBe('png');});
- it('does not accept an unpainted region or nonopaque emitted pixels',()=>{const original=new Uint8Array(10*10*4).fill(255);expect(verifyPixels(original,original,10,10,[region]).passed).toBe(false);const output=Uint8Array.from(original);const r=pixelRect(region.rect,10,10);for(let y=r.y;y<r.y+r.height;y++)for(let x=r.x;x<r.x+r.width;x++){const i=(y*10+x)*4;output.set([24,27,34,254],i)}expect(verifyPixels(original,output,10,10,[region]).passed).toBe(false)});
- it('rejects changed unmasked pixels and dimensions',()=>{const original=new Uint8Array(400).fill(255);const output=Uint8Array.from(original);output[0]=0;expect(verifyPixels(original,output,10,10,[]).passed).toBe(false);expect(()=>verifyPixels(original,new Uint8Array(20),10,10,[])).toThrow();});
+import { describe, it, expect } from "vitest";
+import sharp from "sharp";
+import { MASK, pixelRect, verifyPixels } from "../src/lib/redaction";
+import { RectSchema, type Region } from "../src/lib/types";
+const region: Region = {
+  id: "r",
+  sourceId: "s",
+  quote: "sensitive",
+  label: "name",
+  rect: { x: 0.155, y: 0.255, width: 0.255, height: 0.255 },
+};
+describe("actual exported raster verification", () => {
+  it("rounds outward and rejects invalid/zero-coverage bounds", () => {
+    expect(pixelRect(region.rect, 10, 10)).toEqual({
+      x: 1,
+      y: 2,
+      width: 4,
+      height: 4,
+    });
+    for (const rect of [
+      { x: 1, y: 0, width: 0.0000005, height: 0.1 },
+      { x: 0, y: 0, width: 0, height: 0.1 },
+      { x: 0, y: 0, width: NaN, height: 0.1 },
+      { x: 0.9, y: 0, width: 0.2, height: 0.1 },
+    ]) {
+      expect(() => pixelRect(rect, 10, 10)).toThrow();
+      expect(RectSchema.safeParse(rect).success).toBe(false);
+    }
+  });
+  it("verifies fresh encoded PNG bytes, opaque masks and preserved content", async () => {
+    const width = 80,
+      height = 60;
+    const original = await sharp({
+      create: { width, height, channels: 4, background: "#ccddef" },
+    })
+      .raw()
+      .toBuffer();
+    const exported = Buffer.from(original);
+    const box = pixelRect(region.rect, width, height);
+    for (let y = box.y; y < box.y + box.height; y++)
+      for (let x = box.x; x < box.x + box.width; x++)
+        for (let c = 0; c < 4; c++) exported[(y * width + x) * 4 + c] = MASK[c];
+    const bytes = await sharp(exported, { raw: { width, height, channels: 4 } })
+      .png()
+      .toBuffer();
+    const decoded = await sharp(bytes).ensureAlpha().raw().toBuffer();
+    expect(verifyPixels(original, decoded, width, height, [region])).toEqual({
+      verified: ["r"],
+      preserved: true,
+      passed: true,
+    });
+    const metadata = await sharp(bytes).metadata();
+    expect(metadata.exif).toBeUndefined();
+    expect(metadata.format).toBe("png");
+  });
+  it("does not accept an unpainted region or nonopaque emitted pixels", () => {
+    const original = new Uint8Array(10 * 10 * 4).fill(255);
+    expect(verifyPixels(original, original, 10, 10, [region]).passed).toBe(
+      false,
+    );
+    const output = Uint8Array.from(original);
+    const r = pixelRect(region.rect, 10, 10);
+    for (let y = r.y; y < r.y + r.height; y++)
+      for (let x = r.x; x < r.x + r.width; x++) {
+        const i = (y * 10 + x) * 4;
+        output.set([24, 27, 34, 254], i);
+      }
+    expect(verifyPixels(original, output, 10, 10, [region]).passed).toBe(false);
+  });
+  it("rejects changed unmasked pixels and dimensions", () => {
+    const original = new Uint8Array(400).fill(255);
+    const output = Uint8Array.from(original);
+    output[0] = 0;
+    expect(verifyPixels(original, output, 10, 10, []).passed).toBe(false);
+    expect(() =>
+      verifyPixels(original, new Uint8Array(20), 10, 10, []),
+    ).toThrow();
+  });
 });

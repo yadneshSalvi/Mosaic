@@ -6,7 +6,7 @@ implementation_authorization: delegated by user; human document review pending
 # Mosaic — Technical Spec
 
 ## How This Works, In Plain Language
-The browser keeps the screenshots and draws the evidence links. A small graph routine follows explicit relationships between typed entities. A repair routine finds source regions that every detected route depends on. The browser paints black rectangles into fresh images, opens the new PNG bytes again and checks that the expected pixels really changed. For new bundles only, a local server sends explicitly consented images to a vision model; the model proposes links and the user reviews them.
+The browser keeps the screenshots and draws the evidence links. A small graph routine follows explicit relationships between typed entities. A repair routine finds source regions that every detected route depends on. The browser paints black rectangles into fresh images, opens the new PNG bytes again and checks that the expected pixels really changed. For new bundles only, a local server sends explicitly consented images to a vision model; the model proposes links and the user reviews them, with editable region bounds and quotes.
 
 ## The Core Journey Through the System
 Implements `prd.md > The Core Journey`. Fixture PNGs and annotations load into the same typed workspace used for imports. Selection highlights source regions. Graph functions enumerate routes, then find a region cut. Export functions paint masks, encode PNG, decode bytes and verify pixels. The output report uses observed masked regions to rerun route search. Import dialog calls the local analysis endpoint only with consent; validated proposed evidence replaces workspace after success.
@@ -29,6 +29,9 @@ Implements `prd.md > Look and Feel`: CSS variables for warm paper/ink/cobalt; re
 `src/lib/redaction.ts`: outward-rounded pixel rectangles, fresh canvas encode, decode emitted bytes, opaque-mask and preserved-pixel verification. Implements `prd.md > Export verification`.
 ### Analysis boundary
 `server/index.ts` and `server/analysis.ts`: consent, request/size/schema/decode checks, OpenAI request with timeout, sanitized failures. All provider links become suggested. Implements `prd.md > New bundles`.
+### Full-resolution source preservation
+The browser receives the original image data and correctly oriented dimensions. Only a separate provider copy is resized to 1600 pixels; export uses the full-resolution decoded source. Fonts are self-hosted. ZIP/report downloads use neutral filenames and omit quotes, protected labels and source identifiers.
+
 ### Fictional sample
 `src/lib/sample.ts`, `public/samples/*.png` and generation script. Actual raster images with deterministic annotated regions; no API call, clearly labeled. Uses the same graph and export code.
 
@@ -55,7 +58,7 @@ Mosaic/
 ```
 
 ## External Services and Dependencies
-OpenAI Chat Completions at `https://api.openai.com/v1/chat/completions`, bearer server-only key, image data URLs plus protected association, strict JSON-schema response. Use a vision-capable model set by OPENAI_MODEL (default gpt-4.1); model availability is checked empirically. [Official API reference](https://platform.openai.com/docs/api-reference/chat/create). Billing and limits depend on configured account; app imposes request bounds and timeout, never quotes an unverified cost. No images are persisted by the application; provider processing/data policies still apply and are disclosed.
+OpenAI Chat Completions at `https://api.openai.com/v1/chat/completions`, bearer server-only key, image data URLs plus protected association, strict JSON-schema response. Use a vision-capable model set by OPENAI_MODEL (default gpt-5.4); model availability was checked with independent fictional uploads. Provider JSON has bounded strings/arrays/coordinates and one validation-guided retry within a shared 90-second timeout. [Official API reference](https://platform.openai.com/docs/api-reference/chat/create). Billing and limits depend on configured account; app imposes request bounds and timeout, never quotes an unverified cost. No images are persisted by the application; provider processing/data policies still apply and are disclosed.
 
 ## Important Failure Modes
 - Incorrect/ambiguous extraction → suggested facts, exact source preview and explicit confirmation; no automatic confirmed identity.
