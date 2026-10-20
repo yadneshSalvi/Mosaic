@@ -71,3 +71,15 @@ Raster files only avoid hidden PDF layers. No persistence avoids storing sensiti
 
 ## Decisions and Open Issues
 No learner uncertainty was independently supplied; do not invent one. Implementation risk: model coordinates need grounded user review. Post-export proof is pixel removal of known evidence, not exhaustive re-OCR or privacy certification. Human review and demo recording remain pending. Runtime docs and actual provider response are to be checked during implementation.
+
+## Approved Competitive Extension: Preserve Useful Content
+Under the user's explicit improvement direction, Mosaic will support keep-visible source regions as hard pixel constraints. Shared outward-rounded geometry will reject any candidate or manual mask intersecting kept pixels, regardless of region ID. Exact cut search will distinguish infeasible constraints from incomplete search. Pinning content invalidates stale outputs and removes conflicting masks; actual exports will independently verify kept pixels.
+
+The sample's third source becomes a public project credit: customer identity is intentionally useful while its association with the incident remains confidential. Keeping the credit visible changes the optimal candidate cut from one name mask to two incident identifier masks.
+
+The main evidence canvas will render actual selected-path relationships and source-region provenance, including repeated use of one source and arbitrary source ordering. Decorative source-order links will be removed.
+
+## Approved Competitive Extension: Fresh Reader
+An optional explicit-consent request will send only actual exported PNG bytes under neutral IDs and the starting incident/fact to a new model context. The request must reject a protected target field and omit the original graph, quotes, filenames and annotations. A bounded response will propose customer attributions with source-backed evidence; supported attributions require a valid graph path. The browser compares these names to the protected target locally.
+
+The UI separates pixel verification from this fresh reading and distinguishes recovered association, ambiguous/different attribution, starting fact absent, no supported attribution, not run and error. A fresh context using the same provider is not independent-provider validation or a privacy guarantee. Reader findings are inspected on the actual exported images and only enter original evidence review through an explicit user action as suggested links. All asynchronous results are tied to their export version.

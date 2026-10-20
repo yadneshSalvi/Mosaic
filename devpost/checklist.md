@@ -80,3 +80,8 @@ Activity mode: pending; reference map will remain independently useful.
 - Integrated parent browser review passed the real upload→review→repair→export flow and ZIP integrity/pixel comparison. At 390 pixels there was no document overflow; source inspection and partial-repair feedback worked. A desktop document-caption/footnote overlap was corrected by reserving vertical space.
 - Agent implementation verification is complete: 25 tests, TypeScript/build, formatting and zero-vulnerability dependency audit. Human checkpoint/review/reflection boxes deliberately remain unchecked.
 - Offline app map was generated and its relative links and function anchors verified. It is a reference route; no completed learner walkthrough is claimed.
+
+## Approved Competitive Extension
+- [ ] Keep-visible pixel constraints, constrained cut, actual provenance canvas and preserved-pixel export checks.
+- [ ] Explicit-consent fresh-reader endpoint over actual exported bytes, bounded grounding, local target comparison and stale-result protection.
+- [ ] Integrated constrained repair/fresh-reader browser review, tests, source audit and updated demo evidence.

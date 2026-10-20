@@ -58,3 +58,10 @@ No privacy percentage, no 'safe to share' guarantee, no arbitrary image upload t
 
 ## Open Questions
 Human document/visual review remains pending. Provider extraction quality and coordinate grounding are empirical risks to verify with a fictional live request, not assumptions of correctness.
+
+## Approved Extension: Keep Visible and Read the Exports
+The author can mark a source region **Keep visible**. Every repair must preserve those actual pixels, including against overlapping masks. If no known candidate repair satisfies the choices, Mosaic explains the conflict without silently dropping a preservation constraint. The useful public customer credit remains visible while its incident-identifying links are removed.
+
+Every connector in the main evidence view must correspond to an actual relation with source-region provenance. File order cannot imply graph order, and multiple edges may come from one source.
+
+After export, the author may explicitly consent to a fresh model reading of the emitted PNGs plus the starting fact only. The model is not given the protected answer or original graph. Proposed customer associations are locally compared and remain reviewable observations. No result certifies privacy; errors and abstentions remain distinct. New evidence can be returned to review explicitly, never automatically confirmed.
