@@ -447,13 +447,13 @@ h1 > span {
   color: #a0a5af;
 }
 .map-stage {
-  height: 324px;
+  height: 370px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 33px;
-  padding: 0 28px 20px;
+  padding: 0 28px 64px;
 }
 .document-card {
   position: relative;
@@ -1680,9 +1680,9 @@ h1 > span {
     margin-top: 13px;
   }
   .map-stage {
-    height: 340px;
+    height: 385px;
     gap: 40px;
-    padding: 0 35px 25px;
+    padding: 0 35px 70px;
   }
   .document-card {
     width: calc((100% - 80px) / 3);

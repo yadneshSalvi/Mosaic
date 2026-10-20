@@ -16,9 +16,15 @@ Unit tests encode new PNG bytes with Sharp, decode those bytes, and run the same
 
 ## New-file proof
 
-Two CLI live requests analyzed independent fictional PNGs created outside the built-in sample. Both successful requests returned the new chain INC-42 → CX-908 → Juniper → Northstar Studio (three source-backed links). An earlier browser request returned structurally invalid model evidence and failed closed; provider constraints and one validation-guided correction attempt were added. All model output is forced to suggested, with required source review before export. The parent then completed the real browser upload flow: all three proposed regions visibly covered the independent two-row relationships, every link was confirmed, and a one-region minimal repair left zero detected routes. Actual ZIP byte inspection and mobile review are recorded below when finished.
+Two CLI live requests analyzed independent fictional PNGs created outside the built-in sample. Both successful requests returned the new chain INC-42 → CX-908 → Juniper → Northstar Studio (three source-backed links). An earlier browser request returned structurally invalid model evidence and failed closed; provider constraints and one validation-guided correction attempt were added. All model output is forced to suggested, with required source review before export. The parent then completed the real browser upload flow: all three proposed regions visibly covered the independent two-row relationships, every link was confirmed, and a one-region minimal repair left zero detected routes. The parent downloaded the actual upload-flow ZIP: CRC passed for exactly four generic members (three PNGs plus report). Independent raw-RGBA comparison showed 82,128 opaque changed pixels in the chosen source and zero changed pixels in the other two sources. The report contained counts only.
 
 Independent API checks covered missing consent, identical endpoints, count/id/MIME mismatch, over-limit images, provider status injection, invalid graph references, sanitized errors/refusals/truncation and `store: false`. A full-resolution test confirmed that a 2400-pixel source remains intact while only the model copy shrinks to 1600 pixels; an EXIF-rotated JPEG also preserved its oriented dimensions.
+
+## Responsive and release checks
+
+The parent tested a 390-pixel mobile viewport: document width remained 390 pixels, source inspection was legible and scrollable, and an incomplete client-reference mask showed one of two routes remaining. A desktop graph-caption collision was identified and corrected by reserving more space below the staggered document cards. The compact help control has an explicit accessible name.
+
+The final executed suite passes 25 tests across graph, raster, analysis and HTTP boundaries. TypeScript and the Vite production build pass; source formatting passes; `npm audit` reports zero vulnerabilities. Staged source and built client assets were scanned against actual local credential values without printing those values; no secrets or private paths were found. Offline app-map links and source anchors were checked against real files.
 
 ## Limits
 

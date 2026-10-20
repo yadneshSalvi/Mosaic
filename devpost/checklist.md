@@ -39,7 +39,7 @@ Build mode: fast, under explicit autonomous implementation authorization. Human 
   Learner check: Import PNGs, consent, inspect and confirm evidence.
   Commit: `Add consented image analysis and evidence review`
 
-- [ ] **4. Harden and document the complete journey**
+- [x] **4. Harden and document the complete journey**
   Becomes usable: Responsive, accessible, documented local app with auditable proof.
   Why now: Review integration and publication after core behavior works.
   PRD ref: `prd.md > States and Boundaries`
@@ -76,3 +76,7 @@ Activity mode: pending; reference map will remain independently useful.
 - Live extraction of an independent fictional three-file bundle succeeded with a different association; strict model-schema bounds and one corrective retry were added after an earlier invalid model result. Full integrated browser verification remains separate.
 - Full-resolution originals now stay intact; only provider copies resize to 1600 pixels. A ZIP download and neutral verification report make the delivered artifact convenient without leaking redacted identifiers.
 - Sharp and Vitest were updated to patched releases after dependency audit; the resulting audit reports zero vulnerabilities.
+
+- Integrated parent browser review passed the real upload→review→repair→export flow and ZIP integrity/pixel comparison. At 390 pixels there was no document overflow; source inspection and partial-repair feedback worked. A desktop document-caption/footnote overlap was corrected by reserving vertical space.
+- Agent implementation verification is complete: 25 tests, TypeScript/build, formatting and zero-vulnerability dependency audit. Human checkpoint/review/reflection boxes deliberately remain unchecked.
+- Offline app map was generated and its relative links and function anchors verified. It is a reference route; no completed learner walkthrough is claimed.
