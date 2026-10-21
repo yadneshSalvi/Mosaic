@@ -86,7 +86,9 @@ export async function readUpload(
       useCache: false,
       abortSignal: signal,
     });
-    if (!result?.stream || result.blob.size !== ticket.bytes)
+    // Content-Length may describe compressed transfer bytes or be absent.
+    // Enforce the signed size against the decoded stream below.
+    if (result?.statusCode !== 200 || !result.stream)
       throw new AnalysisError(
         "The temporary upload is missing or incomplete. Retry.",
       );
