@@ -210,6 +210,14 @@ export default function App() {
     masks.size > 0 &&
     currentRoutes.complete &&
     currentRoutes.paths.length === 0;
+  const isPublishingSample =
+    workspace.origin === "sample" &&
+    workspace.protectedFrom === "incident:042" &&
+    workspace.protectedTo === "customer:northstar";
+  const clientReferenceTrial =
+    isPublishingSample && masks.size === 1 && masks.has("support-client");
+  const canShowTrial =
+    isPublishingSample && (masks.size === 0 || clientReferenceTrial);
   const sourceForRegion = (id: string) =>
     workspace.sources.find(
       (s) => s.id === workspace.regions.find((r) => r.id === id)?.sourceId,
@@ -270,6 +278,33 @@ export default function App() {
       setError(
         "Conflicting masks were removed to preserve your Keep visible choice. Find a new repair when ready.",
       );
+    }
+  }
+  function tryClientReference() {
+    const id = "support-client";
+    if (
+      !masks.has(id) &&
+      maskConflicts(workspace.regions, workspace.sources, new Set([id]), kept)
+        .length
+    ) {
+      toggleMask(id);
+      return;
+    }
+    const next = new Set(masks);
+    next.has(id) ? next.delete(id) : next.add(id);
+    toggleMask(id);
+    setView("map");
+    const surviving = findRoutes(workspace, next).paths[0];
+    const index = surviving
+      ? allRoutes.paths.findIndex(
+          (candidate) =>
+            candidate.length === surviving.length &&
+            candidate.every((edge, i) => edge.id === surviving[i].id),
+        )
+      : -1;
+    if (index >= 0) {
+      setActivePath(index);
+      setSelectedRegion(surviving[0]?.regionId ?? "");
     }
   }
   function updateEvidence(next: Workspace) {
@@ -383,8 +418,9 @@ export default function App() {
               Small clues. <span>Unexpected connections.</span>
             </h1>
             <p>
-              Review a case-study bundle before you publish. Small clues can
-              reveal more together.
+              {isPublishingSample
+                ? "Publish the client work. Keep its private incident out of the story."
+                : "Review a case-study bundle before you publish. Small clues can reveal more together."}
             </p>
           </div>
           <div className="sample-label">
@@ -421,9 +457,17 @@ export default function App() {
               <strong>{target?.label}</strong>
             </div>
           </div>
-          <span className="protection-note">
-            Keep this connection confidential.
-          </span>
+          {isPublishingSample ? (
+            <div className="public-credit-brief">
+              <span className="micro-label">PUBLIC CREDIT TO KEEP</span>
+              <strong>{target?.label}</strong>
+              <span>The name can stay. The incident connection cannot.</span>
+            </div>
+          ) : (
+            <span className="protection-note">
+              Keep this connection confidential.
+            </span>
+          )}
           <button className="text-button" onClick={() => setModal("goal")}>
             Edit <ChevronRight size={14} />
           </button>
@@ -464,14 +508,50 @@ export default function App() {
                     : masks.size
                       ? `${currentRoutes.paths.length} of ${allRoutes.paths.length} routes remain`
                       : allRoutes.paths.length
-                        ? `${allRoutes.paths.length} detected disclosure routes`
+                        ? `${allRoutes.paths.length} detected disclosure route${allRoutes.paths.length === 1 ? "" : "s"}`
                         : "No detected route"}
                 </span>
-                <span className="canvas-hint">
-                  Click any source to inspect the evidence{" "}
-                  <ArrowUpRight size={13} />
-                </span>
+                {canShowTrial ? (
+                  <button
+                    className="sample-trial-button"
+                    onClick={tryClientReference}
+                    disabled={exporting}
+                  >
+                    {clientReferenceTrial ? (
+                      <>
+                        <RotateCcw size={13} /> Undo this trial
+                      </>
+                    ) : (
+                      <>
+                        Try hiding the client reference <ArrowRight size={14} />
+                      </>
+                    )}
+                  </button>
+                ) : (
+                  <span className="canvas-hint">
+                    Click any source to inspect the evidence{" "}
+                    <ArrowUpRight size={13} />
+                  </span>
+                )}
               </div>
+              {clientReferenceTrial && currentRoutes.paths.length > 0 && (
+                <div className="trial-result" role="status">
+                  <GitBranch size={17} aria-hidden="true" />
+                  <div>
+                    <strong>
+                      The client code is hidden. A connection remains.
+                    </strong>
+                    <p>
+                      {currentRoutes.paths.length} detected route
+                      {currentRoutes.paths.length === 1
+                        ? " still links"
+                        : "s still link"}{" "}
+                      the incident to the customer. Follow the surviving
+                      evidence below.
+                    </p>
+                  </div>
+                </div>
+              )}
               {view === "map" ? (
                 <div className={`provenance-stage path-length-${path.length}`}>
                   {path.length === 0 ? (

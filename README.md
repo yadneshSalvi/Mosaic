@@ -21,11 +21,13 @@ Open **http://localhost:5173**. The local API runs at **http://127.0.0.1:3001**.
 
 The sample contains three actual PNGs and five annotated relationships. Follow `Incident 042 → C-17 → Project Cedar → Northstar Health`, then inspect the alternate route through `#cedar-ops`. Masking only the client reference leaves that alternate route intact. The recommended customer-name region disconnects both detected routes.
 
-1. Open a source or select a route link to inspect its exact evidence.
-2. Choose **Find minimal repair** to see the one-mask repair. Mark the public customer credit **Keep visible**, then find the new two-identifier repair.
-3. Choose **Export & verify**. Mosaic creates fresh PNG bytes and decodes them again.
-4. Download each PNG, a neutral verification report, or the whole ZIP bundle.
+1. Read the publishing brief: the public customer credit can stay, while its connection to the internal incident should remain confidential. Open a source or select a route link to inspect its exact evidence.
+2. Choose **Try hiding the client reference**. The actual client-code region is masked, but the view follows the surviving operations-channel route. **Undo this trial** reverses that mask.
+3. Choose **Find minimal repair** to see the one-mask repair. Mark the public customer credit **Keep visible**, then find the new two-identifier repair.
+4. Choose **Export & verify**. Mosaic creates fresh PNG bytes and decodes them again. Download each PNG, a neutral verification report, or the whole ZIP bundle.
 5. Optionally consent to a **fresh reading** of the exported bytes and starting fact. Inspect any proposed attribution on the actual output.
+
+![The client-reference trial masks the client code while exposing the surviving operations-channel connection](docs/screenshots/incomplete-repair.webp)
 
 ## Analyze your own screenshots
 
@@ -56,7 +58,7 @@ After export, a separate opt-in sends the **exact emitted PNG bytes and starting
 
 ![Actual fresh-reader result recovering a customer association after a deliberately omitted-link review](docs/screenshots/fresh-reader.webp)
 
-*Actual app screenshot from an adversarial check: one link was deliberately omitted from the first review. The fresh reader recovered the surviving association from exported pixels. This is a model proposal to inspect, not a privacy verdict.*
+*Actual app screenshot from a deliberately omitted-link check: one link was left out of the first review. The fresh reader recovered the surviving association from exported pixels. This is a model proposal to inspect, not a privacy verdict.*
 
 The bounded response proposes customer attributions with source regions. A supported attribution needs an explicit path in its returned graph. The browser compares returned customer names to the protected target locally; ambiguous/different names, a missing starting fact, no attribution, cancellation and provider failure stay distinct. This is the same provider in a fresh context, **not an independent privacy certification**. The check currently supports customer targets only.
 
