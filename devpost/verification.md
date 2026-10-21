@@ -67,3 +67,7 @@ The parent agent verified production commit `0db2fef` at [mosaic-evidence.vercel
 - No temporary objects remained after the fresh-reader check. Successful reads delete the temporary request before provider analysis. Abandoned uploads older than one hour are eligible for the authenticated hourly cleanup job; a successful cron retention cycle has not been claimed here.
 
 The hosted transport preserves the exact request JSON in temporary private Vercel Blob storage and sends only a signed ticket through the function request. Fresh-reader PNGs are not recompressed or resized. Consent copy discloses temporary storage. Cleanup timing depends on successful service and cron operation. Hosting uses the existing account allowances; application code does not itself enforce an account-wide spending cap. Human final review, learning reflection, and Devpost submission remain pending.
+
+## Independent final-video audit — October 21, 2026
+
+Separate audit agents mapped the finished submission video to public-site actions and downloaded output evidence. The complete repair, independently decoded PNG pixels, separate deliberately incomplete review, first-attempt fresh-reader finding, returned-region inspection and reopening exported images all passed. See the [timestamped video verification](../docs/video-verification.md) for reproduction steps, independent pixel results and limits.
