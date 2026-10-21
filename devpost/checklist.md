@@ -90,3 +90,16 @@ Activity mode: pending; reference map will remain independently useful.
 - Fresh-reader contract and emitted-artifact review passed 46 tests plus independent request-taint and review-byte checks. Live fictional baseline recovered Northstar Health without a protected-name hint; the preserved-credit repair returned no supported attribution. These are observations, not privacy proof. Integrated fresh-reader browser review subsequently passed both negative-observation and positive-recovery outcomes.
 
 - Final agent browser continuity passed: an intentionally omitted channel link was recovered from emitted PNGs, actual proposed boxes were inspected, verified customer-credit preservation carried into the new review, three proposals were confirmed, and one additional channel mask disconnected all detected routes. The resulting export verified three PNGs and the retained credit. Mobile layout/contrast and desktop console checks passed. This is agent verification, not learner approval.
+
+## Production deployment
+
+- [x] Deploy the full app and Node AI API to [mosaic-evidence.vercel.app](https://mosaic-evidence.vercel.app).
+- [x] Preserve full-size upload transport using temporary private Vercel Blob storage, signed scoped upload tickets, exact decoded-byte limits, and cleanup after reads.
+- [x] Verify production health, sample incomplete repair, constrained repair, three exported PNGs, preserved pixels, and a completed fresh reading of actual exports.
+- [x] Verify a fictional 8,404,986-byte image bundle (about 11.2 MB JSON) through the hosted upload and analysis path; five returned links remain proposals for review.
+- [x] Verify unauthenticated private-Blob access is rejected and no temporary uploads remain after the fresh-reader check.
+- [x] Pass the current full suite: 52 tests across seven files, TypeScript, and production build.
+- [ ] Human final review and learning reflection completed.
+- [ ] Final Devpost submission completed.
+
+Hourly orphan cleanup is configured, but a completed scheduled retention cycle is not claimed. A fresh reading that returns no supported attribution is not a privacy guarantee. Production checks were performed by the agent; human checkpoints above remain unchanged.

@@ -2,6 +2,8 @@
 
 **Small clues. Unexpected connections.**
 
+[Open the live Mosaic app](https://mosaic-evidence.vercel.app). The fictional sample works immediately; live image analysis and fresh reading require separate consent.
+
 Mosaic is a working evidence desk for designers and developers preparing client case studies. It shows how individually incomplete screenshots can disclose an association when read together, then helps remove the specific evidence that connects them.
 
 The [submission film source](videos/mosaic-demo/README.md) includes the story, actual demo captures, word-timed narration, original music and reproducible 1080p60 rendering instructions.
@@ -74,6 +76,8 @@ Exported PNGs contain raster pixels rather than editable overlays or original EX
 
 ## Development and verification
 
+The current automated suite passes **52 tests across seven files**. Production browser checks cover sample repair, exact exported-pixel verification, fresh reading, and a fictional upload larger than the function request limit. See the [verification record](devpost/verification.md) for the observed results and their limits.
+
 ```sh
 npm test              # graph, raster, analysis and HTTP checks
 npm run build         # TypeScript and production bundle
@@ -97,7 +101,7 @@ See the [scope](devpost/scope.md), [PRD](devpost/prd.md), [technical spec](devpo
 
 ## Hackathon status
 
-Built using the Devpost Build With AI: Basics planning pack. Public planning documents precede implementation in Git history. Detailed working plans and personal learner context are intentionally ignored. The agent was explicitly authorized to implement autonomously; document statuses do not claim human review. The short actual demo video, human review/learning reflection, and final Devpost submission remain separate tasks. Deployment is optional and has not been performed.
+Built using the Devpost Build With AI: Basics planning pack. Public planning documents precede implementation in Git history. Detailed working plans and personal learner context are intentionally ignored. The agent was explicitly authorized to implement autonomously; document statuses do not claim human review. The short actual demo video, human review/learning reflection, and final Devpost submission remain separate tasks. The app is deployed on Vercel and its core workflow and live AI endpoints have passed agent browser checks; human approval and Devpost submission remain pending.
 
 ## License
 
@@ -105,6 +109,6 @@ Mosaic source and original sample assets are available under the [MIT License](L
 
 ## Vercel hosting
 
-Deploy this directory with the Vite preset. `api/index.ts` runs the same Express API on Node (including Sharp); `vercel.json` routes `/api/*` and sets a 300-second execution window. Configure server-only `OPENAI_API_KEY`, optional `OPENAI_MODEL`, `BLOB_READ_WRITE_TOKEN` for a **private** Blob store, and a random `CRON_SECRET`. For a custom domain set `MOSAIC_APP_ORIGIN` to its exact HTTPS origin. Vercel deployment/production domains are allowed automatically. Never prefix secrets with `VITE_`. `.vercelignore` excludes local environment files, plans, and video artifacts.
+Production is live at [mosaic-evidence.vercel.app](https://mosaic-evidence.vercel.app). Deploy this directory with the Vite preset. `api/index.ts` runs the same Express API on Node (including Sharp); `vercel.json` routes `/api/*` and sets a 300-second execution window. Configure server-only `OPENAI_API_KEY`, optional `OPENAI_MODEL`, `BLOB_READ_WRITE_TOKEN` for a **private** Blob store, and a random `CRON_SECRET`. For a custom domain set `MOSAIC_APP_ORIGIN` to its exact HTTPS origin. Vercel deployment/production domains are allowed automatically. Never prefix secrets with `VITE_`. `.vercelignore` excludes local environment files, plans, and video artifacts.
 
 The hosted browser uploads one exact JSON request directly to private Blob using a five-minute token limited to a server-generated path, content type, and declared byte count (34 MiB JSON maximum). The function receives only a signed, operation-bound ticket; it cannot fetch arbitrary client URLs. Source images remain in the browser and are not echoed back in responses. Fresh-reader PNG bytes are neither resized nor recompressed. The hourly authenticated cron deletes orphan uploads older than an hour. Monitor cleanup failures and Blob usage; storage, operations, transfer, functions, and OpenAI requests consume the account's existing allowances/credits. This application does not impose an account-wide spending cap or distributed rate limit.
