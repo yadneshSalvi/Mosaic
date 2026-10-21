@@ -68,7 +68,7 @@ The bounded response proposes customer attributions with source regions. A suppo
 
 ## Data and credentials
 
-The fictional sample and its graph/export loop run in the browser. The sample annotations are deterministic and labeled. Fonts are bundled locally. New uploads and optional fresh readings go through the loopback API to OpenAI only after their own explicit consent. The application does not persist images, requests, or extracted text, and does not log bodies or provider errors. OpenAI's own processing policies still apply; `store: false` is sent with analysis requests. Session images disappear on refresh. No analytics or database is included.
+The fictional sample and its graph/export loop run in the browser. The sample annotations are deterministic and labeled. Fonts are bundled locally. New uploads and optional fresh readings go through the Mosaic API to OpenAI only after their own explicit consent. Local runs use the loopback API without persistence. Hosted runs temporarily upload the exact request to a private Vercel Blob store to preserve the full 24 MB image limit without crossing the function request-size ceiling. The server deletes each upload immediately after reading it, including validation/read failures. Cancelled or abandoned uploads older than one hour are retried by hourly cleanup; deletion timing depends on successful service/cron operation. The app does not log bodies or provider errors. OpenAI's own processing policies still apply; `store: false` is sent with analysis requests. Session images disappear on refresh. No analytics or database is included.
 
 Exported PNGs contain raster pixels rather than editable overlays or original EXIF. Download filenames are neutral (`mosaic-01.png` etc.). The JSON report and ZIP do not contain original filenames, extracted quotes, entity labels, region IDs, or the protected association.
 
@@ -90,7 +90,7 @@ npm run samples       # regenerate the three fictional source PNGs
 - `src/FreshReader.tsx`: opt-in reading, cancellation, uncertainty and source inspection.
 - `src/lib/types.ts`: typed evidence and runtime cross-reference validation.
 - `server/analysis.ts`: real image decode, source preservation, structured extraction and one validation-guided retry.
-- `server/index.ts`: local-only HTTP boundary, origin/payload/concurrency restrictions and sanitized errors.
+- `server/index.ts`: HTTP boundary, origin/payload/concurrency restrictions and sanitized errors.
 - `src/App.tsx`: evidence workspace, review, region editing, repair and downloads.
 
 See the [scope](devpost/scope.md), [PRD](devpost/prd.md), [technical spec](devpost/spec.md), [build checklist](devpost/checklist.md), [verification record](devpost/verification.md), and offline [app map](devpost/app-map.html).
@@ -102,3 +102,9 @@ Built using the Devpost Build With AI: Basics planning pack. Public planning doc
 ## License
 
 Mosaic source and original sample assets are available under the [MIT License](LICENSE). Dependencies and bundled DM Sans / Manrope fonts retain their own licenses.
+
+## Vercel hosting
+
+Deploy this directory with the Vite preset. `api/index.ts` runs the same Express API on Node (including Sharp); `vercel.json` routes `/api/*` and sets a 300-second execution window. Configure server-only `OPENAI_API_KEY`, optional `OPENAI_MODEL`, `BLOB_READ_WRITE_TOKEN` for a **private** Blob store, and a random `CRON_SECRET`. For a custom domain set `MOSAIC_APP_ORIGIN` to its exact HTTPS origin. Vercel deployment/production domains are allowed automatically. Never prefix secrets with `VITE_`. `.vercelignore` excludes local environment files, plans, and video artifacts.
+
+The hosted browser uploads one exact JSON request directly to private Blob using a five-minute token limited to a server-generated path, content type, and declared byte count (34 MiB JSON maximum). The function receives only a signed, operation-bound ticket; it cannot fetch arbitrary client URLs. Source images remain in the browser and are not echoed back in responses. Fresh-reader PNG bytes are neither resized nor recompressed. The hourly authenticated cron deletes orphan uploads older than an hour. Monitor cleanup failures and Blob usage; storage, operations, transfer, functions, and OpenAI requests consume the account's existing allowances/credits. This application does not impose an account-wide spending cap or distributed rate limit.

@@ -1,3 +1,4 @@
+import { postImages } from "./lib/api";
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import {
   ArrowDownToLine,
@@ -1507,22 +1508,26 @@ function ImportDialog({
           }),
         })),
       );
-      const response = await fetch("/api/analyze", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sources, from, to, consent }),
-        signal: controller.current.signal,
-      });
-      const body = await response.json();
-      if (!response.ok)
-        throw new Error(body.error ?? "Analysis could not be completed");
+      const body = await postImages(
+        "analyze",
+        { sources, from, to, consent },
+        controller.current.signal,
+      );
+      const restoredSources: Source[] = body.sources.map(
+        (source: Omit<Source, "url">) => {
+          const original = sources.find((input) => input.id === source.id);
+          if (!original)
+            throw new Error("Analysis returned an unknown source.");
+          return { ...source, url: original.data };
+        },
+      );
       const evidence = validateEvidence(
         body.evidence,
         body.sources.map((s: Source) => s.id),
       );
       onImport({
         ...evidence,
-        sources: body.sources,
+        sources: restoredSources,
         title: "Untitled case study",
         origin: "upload",
       });
@@ -1603,9 +1608,11 @@ function ImportDialog({
           <span className="micro-label">BEFORE ANY IMAGES ARE SENT</span>
           <p>
             Analysis sends these screenshots and your chosen association to{" "}
-            <strong>OpenAI</strong> through the local Mosaic server. The app
-            does not save them. OpenAI’s processing policies apply. Proposed
-            links and coordinates need your review.
+            <strong>OpenAI</strong> through Mosaic. On the hosted site, requests
+            temporarily use private Vercel storage and are deleted after
+            retrieval; abandoned uploads are checked for cleanup hourly. Local
+            runs use no temporary storage. OpenAI’s processing policies apply.
+            Proposed links and coordinates need your review.
           </p>
           <label className="checkbox-label">
             <input

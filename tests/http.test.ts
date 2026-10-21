@@ -23,7 +23,11 @@ describe("local HTTP boundary", () => {
   it("reports capabilities without key material", async () => {
     const res = await fetch(`${base}/api/health`);
     const data = await res.json();
-    expect(data).toEqual({ ok: true, analysisAvailable: expect.any(Boolean) });
+    expect(data).toEqual({
+      ok: true,
+      analysisAvailable: expect.any(Boolean),
+      uploadTransport: "inline",
+    });
     expect(res.headers.get("cache-control")).toBe("no-store");
   });
   it("rejects an unrelated origin before analysis", async () => {

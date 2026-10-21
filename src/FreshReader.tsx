@@ -1,3 +1,4 @@
+import { postImages } from "./lib/api";
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowRight,
@@ -60,15 +61,7 @@ export function FreshReader({
     try {
       const request = await buildReaderRequest(result.files, start.label);
       if (version !== epoch.current || abort.signal.aborted) return;
-      const response = await fetch("/api/recipient-check", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(request),
-        signal: abort.signal,
-      });
-      const raw = await response.json();
-      if (!response.ok)
-        throw new Error(raw.error ?? "Fresh reading could not be completed.");
+      const raw = await postImages("recipient-check", request, abort.signal);
       const parsed = parseReaderResponse(
         raw,
         request.sources.map((s) => s.id),
@@ -180,7 +173,9 @@ export function FreshReader({
               />
               <span>
                 I agree to send these exported PNGs and “{start.label}” to
-                OpenAI for this fresh reading.
+                OpenAI for this fresh reading. Hosted requests temporarily use
+                private Vercel storage, deleted after retrieval; abandoned
+                uploads are checked for cleanup hourly.
               </span>
             </label>
           )}

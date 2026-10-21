@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
 import { AnalysisError, analyzeImages } from "./analysis";
 import { readExportedBundle } from "./recipient";
+import { readUpload, registerTransport } from "./transport";
 export function createApp() {
   const app = express();
   app.disable("x-powered-by");
@@ -17,34 +18,51 @@ export function createApp() {
     res.json({
       ok: true,
       analysisAvailable: Boolean(process.env.OPENAI_API_KEY),
+      uploadTransport: process.env.VERCEL ? "private-blob" : "inline",
     }),
   );
-  app.post(
-    ["/api/analyze", "/api/recipient-check"],
-    (req, res, next) => {
-      const origin = req.headers.origin;
-      if (
-        origin &&
-        ![
+  app.use("/api", (req, res, next) => {
+    if (req.method !== "POST") {
+      next();
+      return;
+    }
+    const origins = process.env.VERCEL
+      ? [process.env.VERCEL_URL, process.env.VERCEL_PROJECT_PRODUCTION_URL]
+          .filter(Boolean)
+          .map((host) => `https://${host}`)
+      : [
           "http://localhost:5173",
           "http://127.0.0.1:5173",
           "http://localhost:3001",
           "http://127.0.0.1:3001",
-        ].includes(origin)
-      ) {
-        res.status(403).json({
-          error:
-            "This local API accepts requests only from the Mosaic workspace.",
+        ];
+    if (process.env.MOSAIC_APP_ORIGIN)
+      origins.push(process.env.MOSAIC_APP_ORIGIN);
+    const origin = req.headers.origin;
+    if (
+      (origin && !origins.includes(origin)) ||
+      (process.env.VERCEL && !origin)
+    ) {
+      res
+        .status(403)
+        .json({
+          error: "This API accepts requests only from the Mosaic workspace.",
         });
-        return;
-      }
+      return;
+    }
+    next();
+  });
+  registerTransport(app);
+  app.post(
+    ["/api/analyze", "/api/recipient-check"],
+    (req, res, next) => {
       if (!req.is("application/json")) {
         res.status(415).json({ error: "Send a JSON image-analysis request." });
         return;
       }
       next();
     },
-    express.json({ limit: "34mb" }),
+    express.json({ limit: process.env.VERCEL ? "8kb" : "34mb" }),
     async (req, res) => {
       if (active >= 1) {
         res.status(429).json({
@@ -63,12 +81,23 @@ export function createApp() {
           req.path === "/api/recipient-check"
             ? readExportedBundle
             : analyzeImages;
-        const result = await operation(req.body, {
+        const input = process.env.VERCEL
+          ? await readUpload(req.body, req.path.slice(5), controller.signal)
+          : req.body;
+        const result = await operation(input, {
           apiKey: process.env.OPENAI_API_KEY,
           model: process.env.OPENAI_MODEL,
           signal: controller.signal,
         });
-        if (!res.destroyed) res.json(result);
+        if (!res.destroyed) {
+          // Source bytes stay in the browser; returning them would exceed hosted response limits.
+          if ("sources" in result)
+            res.json({
+              ...result,
+              sources: result.sources.map(({ url: _url, ...source }) => source),
+            });
+          else res.json(result);
+        }
       } catch (error) {
         if (!res.destroyed)
           res.status(error instanceof AnalysisError ? error.status : 500).json({

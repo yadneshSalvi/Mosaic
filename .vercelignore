@@ -1,0 +1,17 @@
+.env
+.env.*
+.git
+node_modules
+dist
+plans
+videos
+output
+outputs
+agent
+.agents
+.claude
+devpost
+docs
+tests
+*.log
+*.tsbuildinfo
