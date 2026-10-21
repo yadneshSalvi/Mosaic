@@ -457,16 +457,12 @@ export default function App() {
               <strong>{target?.label}</strong>
             </div>
           </div>
-          {isPublishingSample ? (
+          {isPublishingSample && (
             <div className="public-credit-brief">
               <span className="micro-label">PUBLIC CREDIT TO KEEP</span>
               <strong>{target?.label}</strong>
               <span>The name can stay. The incident connection cannot.</span>
             </div>
-          ) : (
-            <span className="protection-note">
-              Keep this connection confidential.
-            </span>
           )}
           <button className="text-button" onClick={() => setModal("goal")}>
             Edit <ChevronRight size={14} />
@@ -511,7 +507,7 @@ export default function App() {
                         ? `${allRoutes.paths.length} detected disclosure route${allRoutes.paths.length === 1 ? "" : "s"}`
                         : "No detected route"}
                 </span>
-                {canShowTrial ? (
+                {canShowTrial && (
                   <button
                     className="sample-trial-button"
                     onClick={tryClientReference}
@@ -527,29 +523,14 @@ export default function App() {
                       </>
                     )}
                   </button>
-                ) : (
-                  <span className="canvas-hint">
-                    Click any source to inspect the evidence{" "}
-                    <ArrowUpRight size={13} />
-                  </span>
                 )}
               </div>
               {clientReferenceTrial && currentRoutes.paths.length > 0 && (
                 <div className="trial-result" role="status">
                   <GitBranch size={17} aria-hidden="true" />
-                  <div>
-                    <strong>
-                      The client code is hidden. A connection remains.
-                    </strong>
-                    <p>
-                      {currentRoutes.paths.length} detected route
-                      {currentRoutes.paths.length === 1
-                        ? " still links"
-                        : "s still link"}{" "}
-                      the incident to the customer. Follow the surviving
-                      evidence below.
-                    </p>
-                  </div>
+                  <strong>
+                    The client code is hidden. A connection remains.
+                  </strong>
                 </div>
               )}
               {view === "map" ? (
@@ -682,10 +663,7 @@ export default function App() {
                   )}
                   <div className="provenance-legend">
                     <Fingerprint size={14} />
-                    <span>
-                      Every arrow has a source. The same file can support more
-                      than one step.
-                    </span>
+                    <span>The same file can support more than one step.</span>
                   </div>
                 </div>
               ) : (
@@ -823,8 +801,7 @@ export default function App() {
                 ) : allRoutes.paths.length ? (
                   <>
                     These sources connect <strong>{start?.label}</strong> to{" "}
-                    <strong>{target?.label}</strong>. The association emerges
-                    when they’re read together.
+                    <strong>{target?.label}</strong>.
                   </>
                 ) : (
                   "The current evidence does not connect these endpoints. Review the sources; an absent detected route is not a privacy guarantee."
@@ -1037,7 +1014,7 @@ export default function App() {
         )}
         <footer className="page-footer">
           <span>
-            <MosaicMark /> A little context changes everything.
+            <MosaicMark />
           </span>
           <span>
             {workspace.origin === "sample"
@@ -1082,9 +1059,6 @@ export default function App() {
         <Dialog title="See the whole picture." onClose={() => setModal(null)}>
           <div className="about-body">
             <MosaicMark />
-            <p className="lead">
-              Mosaic finds what screenshots can reveal <em>together</em>.
-            </p>
             <ol>
               <li>
                 <strong>Trace the evidence.</strong> Follow explicit,
@@ -1572,10 +1546,7 @@ function ImportDialog({
       }}
     >
       <form className="form-body import-form" onSubmit={analyze}>
-        <p>
-          Add the screenshots you plan to share. Tell Mosaic which association
-          you want to keep confidential.
-        </p>
+        <p>Add the screenshots you plan to share.</p>
         <label className={`upload-drop ${files.length ? "has-files" : ""}`}>
           <ImagePlus size={27} />
           <strong>
@@ -1775,10 +1746,6 @@ function OutputPanel({
               ? "Exported pixels checked. Detected routes disconnected."
               : "Pixel checks passed. Some detected routes remain."}
           </h3>
-          <p>
-            These are the newly encoded PNG files, reopened from their actual
-            bytes.
-          </p>
         </div>
       </div>
       <div className="output-checks">

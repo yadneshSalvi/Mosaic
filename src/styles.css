@@ -392,8 +392,8 @@ h1 > span {
   color: #5a431d;
   font-size: 13px;
 }
-.trial-result p {
-  margin-top: 3px;
+.protection-bar:not(:has(.public-credit-brief)) > .text-button {
+  margin-left: auto;
 }
 @media (max-width: 760px) {
   .protection-bar:has(.public-credit-brief) {
