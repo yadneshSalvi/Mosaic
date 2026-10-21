@@ -1,0 +1,18 @@
+{
+  "name": "mosaic-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.181 preview",
+    "check": "npx --yes hyperframes@0.8.181 check",
+    "render": "npx --yes hyperframes@0.8.181 render",
+    "publish": "npx --yes hyperframes@0.8.181 publish",
+    "stage:vendor": "node scripts/stage-vendor.mjs",
+    "build:video": "node scripts/build-video.mjs",
+    "carve:audio": "node scripts/carve.mjs --comp index.html --bed mosaic-music --voice mosaic-voice --strength 0.8"
+  },
+  "dependencies": {
+    "@hyperframes/core": "0.8.181",
+    "gsap": "3.14.2"
+  }
+}

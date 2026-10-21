@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "scope": "This report covers known-region pixels and detected routes only. Any optional fresh reading is separate. No privacy guarantee.",
+  "checks": {
+    "decodedExportedPngBytes": true,
+    "opaqueMaskPixels": true,
+    "preservedUnmaskedPixels": true,
+    "keptRegionsPreserved": 1,
+    "remainingDetectedRoutes": 0,
+    "completeRouteSearch": true
+  },
+  "files": [
+    {
+      "name": "mosaic-01.png",
+      "width": 1000,
+      "height": 700,
+      "bytes": 85679,
+      "maskedRegions": 2
+    },
+    {
+      "name": "mosaic-02.png",
+      "width": 1000,
+      "height": 700,
+      "bytes": 80196,
+      "maskedRegions": 0
+    },
+    {
+      "name": "mosaic-03.png",
+      "width": 1000,
+      "height": 700,
+      "bytes": 81952,
+      "maskedRegions": 0
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,10 @@
+{
+  "name": "models/gemini-3.1-flash-tts-preview",
+  "inputTokenLimit": 8192,
+  "outputTokenLimit": 16384,
+  "supportedGenerationMethods": [
+    "generateContent",
+    "countTokens",
+    "batchGenerateContent"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "scene": "replace-with-scene-id",
+  "source": "assets/capture/ACTUAL-CAPTURE@2x.png",
+  "sourceSize": [
+    1600,
+    1000
+  ],
+  "initial": {
+    "fit": "contain"
+  },
+  "beats": [
+    {
+      "at": 1.3,
+      "label": "arrive-before-narrated-evidence",
+      "rect": [
+        120,
+        180,
+        1100,
+        620
+      ],
+      "duration": 0.9
+    },
+    {
+      "at": 6.5,
+      "label": "read-detailed-proof",
+      "rect": [
+        700,
+        320,
+        600,
+        420
+      ],
+      "duration": 0.85
+    }
+  ],
+  "note": "Example geometry only. Replace source path and every rect using the corresponding actual capture. at is camera departure, not target arrival."
+}

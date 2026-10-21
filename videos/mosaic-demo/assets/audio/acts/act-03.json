@@ -1,0 +1,33 @@
+{
+  "provider": "Google Gemini Developer API",
+  "model": "gemini-3.1-flash-tts-preview",
+  "voice": "Charon",
+  "request_sha256": "531f59490e07e599de58517bfbd53f11822bf253ef61e03147ec1dda9a4f6dda",
+  "model_version": "gemini-3.1-flash-tts-preview",
+  "finish_reason": "STOP",
+  "usage": {
+    "promptTokenCount": 254,
+    "candidatesTokenCount": 763,
+    "totalTokenCount": 1017,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 254
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "AUDIO",
+        "tokenCount": 763
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "source_mime_type": "audio/l16; rate=24000; channels=1",
+  "original_duration_s": 30.52,
+  "trim_leading_s": 0.17,
+  "trim_trailing_s": 0.21,
+  "gain_db": -1.6301778841860834,
+  "duration_s": 30.14,
+  "audio_sha256": "43ed7c08d55217991dd03defcc5222c19901ccc7ad49316b6410e7ea029f6910"
+}

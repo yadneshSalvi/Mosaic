@@ -1,0 +1,93 @@
+{
+  "method": "Actual Deepgram words compared against locked script; punctuation, number formatting and named compound normalization only",
+  "normalized_similarity": 1.0,
+  "substantive_mismatches": [],
+  "word_timestamp_errors": [],
+  "low_confidence_words": [
+    {
+      "id": "w42",
+      "text": "a",
+      "word": "a",
+      "start": 20.404999,
+      "end": 20.805,
+      "confidence": 0.33154297
+    },
+    {
+      "id": "w68",
+      "text": "c",
+      "word": "c",
+      "start": 35.8,
+      "end": 36.2,
+      "confidence": 0.58203125
+    },
+    {
+      "id": "w75",
+      "text": "Star",
+      "word": "star",
+      "start": 38.92,
+      "end": 39.16,
+      "confidence": 0.46557617
+    },
+    {
+      "id": "w98",
+      "text": "but",
+      "word": "but",
+      "start": 50.555,
+      "end": 51.035,
+      "confidence": 0.59472656
+    },
+    {
+      "id": "w224",
+      "text": "screen",
+      "word": "screen",
+      "start": 111.2,
+      "end": 111.52,
+      "confidence": 0.6826172
+    },
+    {
+      "id": "w303",
+      "text": "reopen",
+      "word": "reopen",
+      "start": 149.85501,
+      "end": 150.41501,
+      "confidence": 0.7060547
+    }
+  ],
+  "acts": [
+    {
+      "id": "act-01",
+      "script_words": 60,
+      "recognized_words": 60,
+      "speech_duration_s": 27.61,
+      "effective_words_per_minute": 130.38754074610648
+    },
+    {
+      "id": "act-02",
+      "script_words": 66,
+      "recognized_words": 68,
+      "speech_duration_s": 33.32,
+      "effective_words_per_minute": 118.84753901560624
+    },
+    {
+      "id": "act-03",
+      "script_words": 66,
+      "recognized_words": 67,
+      "speech_duration_s": 30.14,
+      "effective_words_per_minute": 131.38686131386862
+    },
+    {
+      "id": "act-04",
+      "script_words": 75,
+      "recognized_words": 74,
+      "speech_duration_s": 35.58,
+      "effective_words_per_minute": 126.47554806070826
+    },
+    {
+      "id": "act-05",
+      "script_words": 63,
+      "recognized_words": 63,
+      "speech_duration_s": 29.97,
+      "effective_words_per_minute": 126.12612612612612
+    }
+  ]
+}

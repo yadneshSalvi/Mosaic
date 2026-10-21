@@ -1,0 +1,70 @@
+<template>
+  <style>
+  @font-face{font-family:"Manrope Variable";font-style:normal;font-weight:200 800;font-display:block;src:url("assets/fonts/manrope-latin-wght-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Sans Variable";font-style:normal;font-weight:100 1000;font-display:block;src:url("assets/fonts/dm-sans-latin-wght-normal.woff2") format("woff2");}
+
+  #root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;color:#24272f;font-family:"DM Sans Variable",sans-serif;font-synthesis:none;container-type:size;}
+  .clip{position:absolute;inset:0;}
+  .ground{background:#f8f8f5;}
+
+  #act-01-stage{position:absolute;left:96px;top:126px;width:1728px;height:858px;overflow:hidden;background:#f8f8f5;border:1px solid #e5e6e3;border-radius:12px;isolation:isolate;}
+  #act-01-world{position:absolute;left:0;top:0;width:1600px;height:1000px;transform-origin:0 0;will-change:transform;}
+  #act-01-world>img,#act-01-world>video{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:fill;}
+  #act-01-header{position:absolute;left:96px;right:96px;top:43px;display:flex;align-items:center;justify-content:space-between;gap:40px;color:#24272f;}
+  #act-01-brand{font-size:30px;line-height:1.2;letter-spacing:-.04em;font-weight:700;display:flex;align-items:center;gap:13px;}
+  #act-01-brand>img{display:block;width:32px;height:32px;}
+  #act-01-chapter{font-size:24px;line-height:1.25;font-weight:500;letter-spacing:.015em;}
+  #act-01-chapter>span{color:#3655e7;margin-right:14px;font-variant-numeric:tabular-nums;}
+  #act-01-footer{position:absolute;left:96px;right:96px;top:1016px;display:flex;justify-content:space-between;align-items:center;gap:32px;font-size:22px;line-height:1.4;color:#24272f;}
+  #act-01-proof{position:absolute;z-index:3;left:32px;bottom:24px;max-width:70%;padding:13px 18px;background:#f8f8f5;border:1px solid #e5e6e3;border-radius:7px;color:#24272f;font-size:27px;font-weight:500;line-height:1.25;}
+
+  .proof-tag{z-index:5;pointer-events:none;display:flex;justify-content:flex-end;align-items:flex-start;padding:84px 96px 0;}
+  .proof-tag>span{font-size:22px;font-weight:500;line-height:1.2;background:#f8f8f5;color:#24272f;border:1px solid #e5e6e3;border-radius:6px;padding:8px 13px;}
+  #act-01-intro{position:absolute;inset:0;background:#f8f8f5;z-index:4;}
+    #act-01-intro-copy{position:absolute;left:96px;top:215px;width:870px;}
+    .intro-kicker{font-size:25px;letter-spacing:.08em;text-transform:uppercase;color:#3655e7;font-weight:600;}
+    #act-01-intro h1{font-family:"Manrope Variable",sans-serif;font-size:158px;line-height:.98;letter-spacing:-.075em;font-weight:750;margin:35px 0 40px;}
+    #act-01-thesis{font-size:48px;line-height:1.2;letter-spacing:-.035em;margin:0;color:#3655e7;}
+    #act-01-credit-label{position:absolute;left:1040px;top:226px;font-size:24px;color:#24272f;}
+    #act-01-credit-crop{position:absolute;left:1040px;top:280px;width:784px;height:560px;overflow:hidden;background:#f8f8f5;border-top:1px solid #e5e6e3;border-bottom:1px solid #e5e6e3;}
+    #act-01-credit-image{position:absolute;left:-60px;top:-90px;width:1000px;height:700px;transform-origin:0 0;}
+    #act-01-header,#act-01-footer{z-index:6;}
+    #act-01-intro h1>span{display:block;}
+  </style>
+  <div id="root" data-composition-id="act-01" data-width="1920" data-height="1080" data-duration="30" data-fps="60">
+    <div id="act-01-ground" class="clip ground" data-start="0" data-duration="30" data-track-index="0"></div>
+    <div id="act-01-header"><div id="act-01-brand"><img src="assets/brand/favicon.svg" alt="" /><span>mosaic.</span></div><div id="act-01-chapter"><span>01</span>The publishing decision</div></div>
+  <div id="act-01-stage"><div id="act-01-world" data-layout-allow-overflow="true"><img id="act-01-still-0" class="clip" src="assets/capture/01-overview.webp" alt="Actual captured Mosaic software state" data-start="6.4667" data-duration="10.3667" data-track-index="2" />
+<video id="act-01-motion-1" class="clip" src="assets/capture/02-sources.mp4" data-start="16.833333333333332" data-duration="0.6" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-01-still-1" class="clip" src="assets/capture/02-sources.webp" alt="Actual captured Mosaic software state" data-start="17.4333" data-duration="12.5667" data-track-index="2" /></div></div>
+  <div id="act-01-footer"><span>Fictional sample · Actual software</span><span>Build with AI: Basics</span></div>
+    <div id="act-01-intro-clip" class="clip" data-start="0" data-duration="6.766666666666667" data-track-index="5"><div id="act-01-intro">
+    <div id="act-01-intro-copy"><div class="intro-kicker">A publishing decision</div><h1><span>Keep the</span><span>credit.</span></h1><p id="act-01-thesis">Break the connection.</p></div>
+    <div id="act-01-credit-label">Actual public project credit</div>
+    <div id="act-01-credit-crop"><img id="act-01-credit-image" src="assets/outputs/verified/mosaic-03.png" alt="Actual emitted customer directory showing Northstar Health credit" /></div>
+  </div></div>
+  </div>
+  <script>
+  const tl = gsap.timeline({paused:true});
+  tl.set("#act-01-world", {"x":177.6,"y":0,"scale":0.858,"transformOrigin":"0 0"}, 0);
+tl.addLabel("real-workspace", 6.466666666666667);
+tl.fromTo("#act-01-world", {"x":177.6,"y":0,"scale":0.858}, {"x":177.6,"y":0,"scale":0.858,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 6.466666666666667);
+tl.addLabel("publishing-brief", 10.416666666666666);
+tl.fromTo("#act-01-world", {"x":177.6,"y":0,"scale":0.858}, {"x":0,"y":0,"scale":1.08,"duration":1.05,"ease":"power3.inOut","immediateRender":false}, 10.416666666666666);
+tl.addLabel("three-real-source-images", 17.53333333333333);
+tl.fromTo("#act-01-world", {"x":0,"y":0,"scale":1.08}, {"x":-1.2073,"y":-438.8901,"scale":1.3414,"duration":0.85,"ease":"power3.inOut","immediateRender":false}, 17.53333333333333);
+tl.addLabel("support-incident", 19.7);
+tl.fromTo("#act-01-world", {"x":-1.2073,"y":-438.8901,"scale":1.3414}, {"x":0,"y":-1496.1,"scale":3.1,"duration":0.8,"ease":"power3.inOut","immediateRender":false}, 19.7);
+tl.addLabel("project-registry", 21.35);
+tl.fromTo("#act-01-world", {"x":0,"y":-1496.1,"scale":3.1}, {"x":-1133.95,"y":-1496.1,"scale":3.1,"duration":0.75,"ease":"power3.inOut","immediateRender":false}, 21.35);
+tl.addLabel("public-credit", 22.716666666666665);
+tl.fromTo("#act-01-world", {"x":-1133.95,"y":-1496.1,"scale":3.1}, {"x":-2304.2,"y":-1496.1,"scale":3.1,"duration":0.8,"ease":"power3.inOut","immediateRender":false}, 22.716666666666665);
+  tl.fromTo('#act-01-stage',{opacity:0},{opacity:1,duration:.45,immediateRender:false},6.266666666666667);
+
+  tl.fromTo('#act-01-intro-copy',{x:-25,opacity:.5},{x:0,opacity:1,duration:.55,ease:'power3.out'},0);
+    tl.fromTo('#act-01-credit-image',{scale:1.08,x:0,y:0},{scale:1.14,x:-28,y:-8,duration:2.1,ease:'power2.out'},0);
+    tl.fromTo('#act-01-thesis',{y:14,opacity:0},{y:0,opacity:1,duration:.6,ease:'power3.out'},3.0166666666666666);
+    tl.to('#act-01-intro',{opacity:0,duration:.3},6.446666666666667);
+  window.__timelines["act-01"] = tl;
+  </script>
+</template>

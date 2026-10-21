@@ -1,0 +1,14 @@
+node_modules/
+.hyperframes/
+.media/
+renders/
+capture/raw/
+__pycache__/
+*.pyc
+# Lossless FLAC stems are the reproducible production assets.
+assets/audio/*.wav
+assets/audio/acts/*.wav
+.thumbnails/
+.waveform-cache/
+assets/audio/**/*.wav
+assets/audio/qc-original/

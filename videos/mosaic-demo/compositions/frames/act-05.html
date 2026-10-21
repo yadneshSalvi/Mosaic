@@ -1,0 +1,100 @@
+<template>
+  <style>
+  @font-face{font-family:"Manrope Variable";font-style:normal;font-weight:200 800;font-display:block;src:url("assets/fonts/manrope-latin-wght-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Sans Variable";font-style:normal;font-weight:100 1000;font-display:block;src:url("assets/fonts/dm-sans-latin-wght-normal.woff2") format("woff2");}
+
+  #root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;color:#24272f;font-family:"DM Sans Variable",sans-serif;font-synthesis:none;container-type:size;}
+  .clip{position:absolute;inset:0;}
+  .ground{background:#f8f8f5;}
+
+  #act-05-stage{position:absolute;left:96px;top:126px;width:1728px;height:858px;overflow:hidden;background:#f8f8f5;border:1px solid #e5e6e3;border-radius:12px;isolation:isolate;}
+  #act-05-world{position:absolute;left:0;top:0;width:1600px;height:1000px;transform-origin:0 0;will-change:transform;}
+  #act-05-world>img,#act-05-world>video{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:fill;}
+  #act-05-header{position:absolute;left:96px;right:96px;top:43px;display:flex;align-items:center;justify-content:space-between;gap:40px;color:#24272f;}
+  #act-05-brand{font-size:30px;line-height:1.2;letter-spacing:-.04em;font-weight:700;display:flex;align-items:center;gap:13px;}
+  #act-05-brand>img{display:block;width:32px;height:32px;}
+  #act-05-chapter{font-size:24px;line-height:1.25;font-weight:500;letter-spacing:.015em;}
+  #act-05-chapter>span{color:#3655e7;margin-right:14px;font-variant-numeric:tabular-nums;}
+  #act-05-footer{position:absolute;left:96px;right:96px;top:1016px;display:flex;justify-content:space-between;align-items:center;gap:32px;font-size:22px;line-height:1.4;color:#24272f;}
+  #act-05-proof{position:absolute;z-index:3;left:32px;bottom:24px;max-width:70%;padding:13px 18px;background:#f8f8f5;border:1px solid #e5e6e3;border-radius:7px;color:#24272f;font-size:27px;font-weight:500;line-height:1.25;}
+
+  .proof-tag{z-index:5;pointer-events:none;display:flex;justify-content:flex-end;align-items:flex-start;padding:84px 96px 0;}
+  .proof-tag>span{font-size:22px;font-weight:500;line-height:1.2;background:#f8f8f5;color:#24272f;border:1px solid #e5e6e3;border-radius:6px;padding:8px 13px;}
+  #act-05-close{position:absolute;inset:0;background:#f8f8f5;z-index:6;}
+    #act-05-close-brand{position:absolute;left:96px;top:160px;display:flex;align-items:center;gap:22px;font-family:"Manrope Variable",sans-serif;font-size:74px;letter-spacing:-.06em;font-weight:750;}
+    #act-05-close-brand>svg{display:block;width:64px;height:64px;}
+    #act-05-close-line{position:absolute;left:96px;top:327px;width:1150px;margin:0;font-family:"Manrope Variable",sans-serif;font-size:92px;line-height:1.08;font-weight:700;letter-spacing:-.065em;}
+    #act-05-close-second{position:absolute;left:96px;top:464px;width:1050px;font-size:45px;line-height:1.3;letter-spacing:-.03em;margin:0;color:#3655e7;}
+    #act-05-repo{position:absolute;left:96px;top:700px;font-size:31px;letter-spacing:-.01em;line-height:1.4;border-top:1px solid #e5e6e3;padding-top:28px;width:1000px;}
+    #act-05-boundary{position:absolute;left:96px;top:910px;font-size:24px;line-height:1.4;}
+    #act-05-close-image{position:absolute;right:96px;top:640px;width:540px;height:225px;overflow:hidden;border-top:1px solid #e5e6e3;border-bottom:1px solid #e5e6e3;}
+    #act-05-close-image>img{position:absolute;left:-28px;top:-132px;width:650px;height:455px;}
+
+  </style>
+  <div id="root" data-composition-id="act-05" data-width="1920" data-height="1080" data-duration="33.0333" data-fps="60">
+    <div id="act-05-ground" class="clip ground" data-start="0" data-duration="33.0333" data-track-index="0"></div>
+    <div id="act-05-header"><div id="act-05-brand"><img src="assets/brand/favicon.svg" alt="" /><span>mosaic.</span></div><div id="act-05-chapter"><span>05</span>Another reading, an inspectable finding</div></div>
+  <div id="act-05-stage"><div id="act-05-world" data-layout-allow-overflow="true"><video id="act-05-motion-0" class="clip" src="assets/capture/13-separate-test-omit.mp4" data-start="0" data-duration="0.5" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-0" class="clip" src="assets/capture/13-separate-test-omit.webp" alt="Actual captured Mosaic software state" data-start="0.5" data-duration="4.5333" data-track-index="2" />
+<video id="act-05-motion-1" class="clip" src="assets/capture/14-separate-test-export.mp4" data-start="5.033333333333333" data-duration="0.6" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-1" class="clip" src="assets/capture/14-separate-test-export.webp" alt="Actual captured Mosaic software state" data-start="5.6333" data-duration="1.6" data-track-index="2" />
+<video id="act-05-motion-2" class="clip" src="assets/capture/15-fresh-reading-consent.mp4" data-start="7.2333333333333325" data-duration="0.733333" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-2" class="clip" src="assets/capture/15-fresh-reading-consent.webp" alt="Actual captured Mosaic software state" data-start="7.9667" data-duration="0.4167" data-track-index="2" />
+<video id="act-05-motion-3" class="clip" src="assets/capture/16-fresh-reading-start.mp4" data-start="8.383333333333333" data-duration="0.666667" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-3" class="clip" src="assets/capture/16-fresh-reading-start.webp" alt="Actual captured Mosaic software state" data-start="9.05" data-duration="0.5333" data-track-index="3" />
+<video id="act-05-motion-4" class="clip" src="assets/capture/17-fresh-reader-result.mp4" data-start="9.583333333333334" data-duration="0.933333" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-4" class="clip" src="assets/capture/17-fresh-reader-result.webp" alt="Actual captured Mosaic software state" data-start="10.5167" data-duration="2.9" data-track-index="3" />
+<video id="act-05-motion-5" class="clip" src="assets/capture/18-proposed-output-region.mp4" data-start="13.416666666666666" data-duration="0.4" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-5" class="clip" src="assets/capture/18-proposed-output-region.webp" alt="Actual captured Mosaic software state" data-start="13.8167" data-duration="2.3667" data-track-index="3" />
+<img id="act-05-still-6" class="clip" src="assets/capture/19-fresh-reader-summary.webp" alt="Actual captured Mosaic software state" data-start="16.1833" data-duration="0.7" data-track-index="4" />
+<video id="act-05-motion-7" class="clip" src="assets/capture/20-review-exported-bundle.mp4" data-start="16.883333333333333" data-duration="0.733008" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-7" class="clip" src="assets/capture/20-review-exported-bundle.webp" alt="Actual captured Mosaic software state" data-start="17.6163" data-duration="2.3337" data-track-index="4" />
+<video id="act-05-motion-8" class="clip" src="assets/capture/21-review-proposed-link.mp4" data-start="19.95" data-duration="1" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-05-still-8" class="clip" src="assets/capture/21-review-proposed-link.webp" alt="Actual captured Mosaic software state" data-start="20.95" data-duration="12.0833" data-track-index="4" /></div></div>
+  <div id="act-05-footer"><span>Fictional sample · Separate incomplete review</span><span>Separate test · Deliberately omitted link</span></div>
+    <div id="act-05-tag-838" class="clip proof-tag" data-start="8.3833" data-duration="2" data-track-index="5"><span>Processing time shortened</span></div>
+    <div id="act-05-close-clip" class="clip" data-start="26.616666666666667" data-duration="6.4166" data-track-index="6"><div id="act-05-close">
+      <div id="act-05-close-brand"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#2649eb"/><path d="M7 7h7v7H7zm11 0h7v7h-7zM7 18h7v7H7zm11 0h7v7h-7z" fill="#fff"/><path d="M18 18h7v7h-7z" fill="#b8c5ff"/></svg>
+<span>mosaic.</span></div>
+      <h2 id="act-05-close-line">Keep the useful story.</h2>
+      <p id="act-05-close-second">Inspect what you actually publish.</p>
+      <div id="act-05-repo">github.com/yadneshSalvi/Mosaic</div>
+      <div id="act-05-boundary">Known evidence checks. An inspectable model observation.</div>
+      <div id="act-05-close-image"><img src="assets/outputs/verified/mosaic-03.png" alt="The actual fully repaired bundle preserves public credit" /></div>
+    </div></div>
+  </div>
+  <script>
+  const tl = gsap.timeline({paused:true});
+  tl.set("#act-05-world", {"x":-16,"y":-121,"scale":1.1,"transformOrigin":"0 0"}, 0);
+tl.addLabel("deliberately-rejected-channel-link", 0.6);
+tl.fromTo("#act-05-world", {"x":-16,"y":-121,"scale":1.1}, {"x":-680.4211,"y":-308.5789,"scale":1.5053,"duration":0.8,"ease":"power3.inOut","immediateRender":false}, 0.6);
+tl.addLabel("separate-incomplete-export", 5.033333333333333);
+tl.fromTo("#act-05-world", {"x":-680.4211,"y":-308.5789,"scale":1.5053}, {"x":0,"y":-111,"scale":1.08,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 5.033333333333333);
+tl.addLabel("real-consent-and-run", 7.2333333333333325);
+tl.fromTo("#act-05-world", {"x":0,"y":-111,"scale":1.08}, {"x":-324.8545,"y":-628.0681,"scale":1.4861,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 7.2333333333333325);
+tl.addLabel("real-running-state", 8.383333333333333);
+tl.fromTo("#act-05-world", {"x":-324.8545,"y":-628.0681,"scale":1.4861}, {"x":-324.8545,"y":-628.0681,"scale":1.4861,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 8.383333333333333);
+tl.addLabel("actual-positive-fresh-reader-result", 9.583333333333334);
+tl.fromTo("#act-05-world", {"x":-324.8545,"y":-628.0681,"scale":1.4861}, {"x":-348.6316,"y":-450.1579,"scale":1.5158,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 9.583333333333334);
+tl.addLabel("proposed-association-with-source-path", 10.383333333333335);
+tl.fromTo("#act-05-world", {"x":-348.6316,"y":-450.1579,"scale":1.5158}, {"x":-404.9777,"y":-539.9942,"scale":1.5872,"duration":0.7,"ease":"power3.inOut","immediateRender":false}, 10.383333333333335);
+tl.addLabel("returned-region-on-exported-pixels", 13.416666666666666);
+tl.fromTo("#act-05-world", {"x":-404.9777,"y":-539.9942,"scale":1.5872}, {"x":-752.0991,"y":-574.096,"scale":2.2291,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 13.416666666666666);
+tl.addLabel("channel-region-and-returned-relation", 13.916666666666666);
+tl.fromTo("#act-05-world", {"x":-752.0991,"y":-574.096,"scale":2.2291}, {"x":-409.7393,"y":-463.8079,"scale":1.5872,"duration":0.7,"ease":"power3.inOut","immediateRender":false}, 13.916666666666666);
+tl.addLabel("inspectable-proposal", 16.183333333333334);
+tl.fromTo("#act-05-world", {"x":-409.7393,"y":-463.8079,"scale":1.5872}, {"x":-348.6316,"y":-450.1579,"scale":1.5158,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 16.183333333333334);
+tl.addLabel("review-exported-bundle", 16.883333333333333);
+tl.fromTo("#act-05-world", {"x":-348.6316,"y":-450.1579,"scale":1.5158}, {"x":0,"y":-57,"scale":1.08,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 16.883333333333333);
+tl.addLabel("proposal-requires-human-review", 19.95);
+tl.fromTo("#act-05-world", {"x":0,"y":-57,"scale":1.08}, {"x":-16,"y":-121,"scale":1.1,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 19.95);
+tl.addLabel("needs-review-not-privacy-certification", 23.416666666666664);
+tl.fromTo("#act-05-world", {"x":-16,"y":-121,"scale":1.1}, {"x":-2809.5,"y":-1269.8,"scale":3.1,"duration":0.75,"ease":"power3.inOut","immediateRender":false}, 23.416666666666664);
+
+  tl.to('#act-05-stage',{opacity:0,duration:.3},26.616666666666667);
+  tl.fromTo('#act-05-close',{opacity:0},{opacity:1,duration:.45,immediateRender:false},26.616666666666667);
+    tl.fromTo('#act-05-close-line',{x:-16,opacity:.3},{x:0,opacity:1,duration:.65,ease:'power3.out',immediateRender:false},26.616666666666667);
+    tl.fromTo('#act-05-close-second',{y:12,opacity:0},{y:0,opacity:1,duration:.6,ease:'power2.out',immediateRender:false},27.21666666666667);
+  window.__timelines["act-05"] = tl;
+  </script>
+</template>

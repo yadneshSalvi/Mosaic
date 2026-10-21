@@ -1,0 +1,889 @@
+{
+  "schema": "mosaic-actual-demo/v1",
+  "total_duration_s": 165.61,
+  "word_timing_ready": true,
+  "audio_stems_ready": true,
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60
+  },
+  "source": {
+    "width": 1600,
+    "height": 1000
+  },
+  "stage": {
+    "x": 96,
+    "y": 126,
+    "width": 1728,
+    "height": 858
+  },
+  "acts": [
+    {
+      "start": 0,
+      "end": 30,
+      "duration": 30,
+      "id": "act-01",
+      "events": [
+        {
+          "at": 6.466666666666667,
+          "source": "01-overview",
+          "motion": false
+        },
+        {
+          "at": 16.833333333333332,
+          "source": "02-sources"
+        }
+      ],
+      "poses": [
+        {
+          "at": 6.466666666666667,
+          "pose": {
+            "x": 177.6,
+            "y": 0,
+            "scale": 0.858
+          },
+          "duration": 0.01,
+          "label": "real-workspace"
+        },
+        {
+          "at": 10.416666666666666,
+          "rect": [
+            60,
+            241,
+            1480,
+            92
+          ],
+          "duration": 1.05,
+          "label": "publishing-brief"
+        },
+        {
+          "at": 17.53333333333333,
+          "rect": [
+            80,
+            488,
+            1130,
+            318
+          ],
+          "duration": 0.85,
+          "label": "three-real-source-images"
+        },
+        {
+          "at": 19.7,
+          "rect": [
+            94,
+            505,
+            345,
+            232
+          ],
+          "duration": 0.8,
+          "label": "support-incident"
+        },
+        {
+          "at": 21.35,
+          "rect": [
+            474,
+            505,
+            341,
+            232
+          ],
+          "duration": 0.75,
+          "label": "project-registry"
+        },
+        {
+          "at": 22.716666666666665,
+          "rect": [
+            852,
+            505,
+            340,
+            232
+          ],
+          "duration": 0.8,
+          "label": "public-credit"
+        }
+      ]
+    },
+    {
+      "start": 30,
+      "end": 64.86666666666666,
+      "duration": 34.8667,
+      "id": "act-02",
+      "events": [
+        {
+          "at": 0,
+          "source": "03-read-together"
+        },
+        {
+          "at": 10.083333333333334,
+          "source": "04-inspect-client"
+        },
+        {
+          "at": 16.25,
+          "source": "05-incomplete-mask"
+        },
+        {
+          "at": 22.7,
+          "source": "06-channel-evidence"
+        }
+      ],
+      "poses": [
+        {
+          "at": 1.3,
+          "rect": [
+            224,
+            232,
+            870,
+            85
+          ],
+          "duration": 0.9,
+          "label": "read-real-route"
+        },
+        {
+          "at": 4.433333333333334,
+          "rect": [
+            225,
+            333,
+            555,
+            253
+          ],
+          "duration": 0.85,
+          "label": "client-to-registry"
+        },
+        {
+          "at": 7.55,
+          "rect": [
+            514,
+            333,
+            554,
+            253
+          ],
+          "duration": 0.85,
+          "label": "registry-to-credit"
+        },
+        {
+          "at": 10.083333333333334,
+          "pose": {
+            "x": -16,
+            "y": -121,
+            "scale": 1.1
+          },
+          "duration": 0.01,
+          "label": "open-real-inspector"
+        },
+        {
+          "at": 12.95,
+          "rect": [
+            752,
+            344,
+            578,
+            230
+          ],
+          "duration": 0.8,
+          "label": "exact-client-pixels-and-source-quote"
+        },
+        {
+          "at": 16.25,
+          "pose": {
+            "x": 0,
+            "y": -111,
+            "scale": 1.08
+          },
+          "duration": 0.01,
+          "label": "run-client-mask-trial"
+        },
+        {
+          "at": 19.85,
+          "rect": [
+            80,
+            430,
+            1130,
+            325
+          ],
+          "duration": 0.85,
+          "label": "one-route-still-remains"
+        },
+        {
+          "at": 22.7,
+          "pose": {
+            "x": -16,
+            "y": -121,
+            "scale": 1.1
+          },
+          "duration": 0.01,
+          "label": "open-surviving-evidence"
+        },
+        {
+          "at": 26.466666666666665,
+          "rect": [
+            305,
+            475,
+            1024,
+            280
+          ],
+          "duration": 0.9,
+          "label": "surviving-channel-source-evidence"
+        }
+      ]
+    },
+    {
+      "start": 64.86666666666666,
+      "end": 96.01666666666667,
+      "duration": 31.15,
+      "id": "act-03",
+      "events": [
+        {
+          "at": 0,
+          "source": "07-undo-trial"
+        },
+        {
+          "at": 2.4,
+          "source": "08-one-mask-repair"
+        },
+        {
+          "at": 5.233333333333333,
+          "source": "09-customer-mask"
+        },
+        {
+          "at": 13.683333333333334,
+          "source": "10-keep-credit"
+        },
+        {
+          "at": 17.966666666666665,
+          "source": "11-two-mask-repair"
+        }
+      ],
+      "poses": [
+        {
+          "at": 2.4,
+          "pose": {
+            "x": 0,
+            "y": -57,
+            "scale": 1.08
+          },
+          "duration": 0.01,
+          "label": "one-mask-repair"
+        },
+        {
+          "at": 5.233333333333333,
+          "pose": {
+            "x": -16,
+            "y": -121,
+            "scale": 1.1
+          },
+          "duration": 0.01,
+          "label": "covered-customer-credit"
+        },
+        {
+          "at": 9.366666666666667,
+          "rect": [
+            320,
+            355,
+            660,
+            285
+          ],
+          "duration": 0.85,
+          "label": "cost-of-customer-name-mask"
+        },
+        {
+          "at": 13.683333333333334,
+          "rect": [
+            1035,
+            355,
+            300,
+            365
+          ],
+          "duration": 0.7,
+          "label": "actual-keep-visible-control"
+        },
+        {
+          "at": 15.083333333333334,
+          "rect": [
+            320,
+            355,
+            660,
+            285
+          ],
+          "duration": 0.8,
+          "label": "credit-preserved"
+        },
+        {
+          "at": 17.966666666666665,
+          "pose": {
+            "x": 0,
+            "y": -57,
+            "scale": 1.08
+          },
+          "duration": 0.01,
+          "label": "new-two-mask-repair"
+        },
+        {
+          "at": 18.966666666666665,
+          "rect": [
+            225,
+            237,
+            265,
+            256
+          ],
+          "duration": 0.9,
+          "label": "two-identifiers-in-incident"
+        },
+        {
+          "at": 20.416666666666668,
+          "rect": [
+            801,
+            237,
+            268,
+            295
+          ],
+          "duration": 0.8,
+          "label": "public-credit-intact"
+        },
+        {
+          "at": 22.816666666666666,
+          "rect": [
+            1228,
+            99,
+            292,
+            210
+          ],
+          "duration": 0.9,
+          "label": "two-edits-both-routes-broken"
+        },
+        {
+          "at": 25.316666666666666,
+          "rect": [
+            80,
+            872,
+            750,
+            60
+          ],
+          "duration": 0.9,
+          "label": "bounded-candidate-masks-under-keep-visible-choice"
+        }
+      ]
+    },
+    {
+      "start": 96.01666666666667,
+      "end": 132.58333333333334,
+      "duration": 36.5667,
+      "id": "act-04",
+      "events": [
+        {
+          "at": 0,
+          "source": "12-export-verify"
+        },
+        {
+          "at": 24.216666666666665,
+          "source": "12-export-verify",
+          "motion": false
+        }
+      ],
+      "poses": [
+        {
+          "at": 5.083333333333333,
+          "rect": [
+            275,
+            118,
+            1050,
+            125
+          ],
+          "duration": 0.9,
+          "label": "actual-export-verification-checklist"
+        },
+        {
+          "at": 11.916666666666666,
+          "rect": [
+            275,
+            118,
+            1050,
+            125
+          ],
+          "duration": 0.4,
+          "label": "check-the-emitted-bytes"
+        },
+        {
+          "at": 24.216666666666665,
+          "rect": [
+            290,
+            725,
+            1015,
+            245
+          ],
+          "duration": 0.01,
+          "label": "separate-fresh-reader-request-scope"
+        },
+        {
+          "at": 25.95,
+          "rect": [
+            295,
+            870,
+            390,
+            65
+          ],
+          "duration": 0.9,
+          "label": "only-exported-pixels-and-starting-fact"
+        },
+        {
+          "at": 31.55,
+          "rect": [
+            690,
+            870,
+            610,
+            65
+          ],
+          "duration": 0.9,
+          "label": "protected-hint-and-original-graph-withheld"
+        }
+      ],
+      "outputs": {
+        "start": 16.633333333333333,
+        "end": 24.216666666666665
+      }
+    },
+    {
+      "start": 132.58333333333334,
+      "end": 165.61666666666667,
+      "duration": 33.0333,
+      "id": "act-05",
+      "events": [
+        {
+          "at": 0,
+          "source": "13-separate-test-omit"
+        },
+        {
+          "at": 5.033333333333333,
+          "source": "14-separate-test-export"
+        },
+        {
+          "at": 7.2333333333333325,
+          "source": "15-fresh-reading-consent"
+        },
+        {
+          "at": 8.383333333333333,
+          "source": "16-fresh-reading-start"
+        },
+        {
+          "at": 9.583333333333334,
+          "source": "17-fresh-reader-result"
+        },
+        {
+          "at": 13.416666666666666,
+          "source": "18-proposed-output-region"
+        },
+        {
+          "at": 16.183333333333334,
+          "source": "19-fresh-reader-summary",
+          "motion": false
+        },
+        {
+          "at": 16.883333333333333,
+          "source": "20-review-exported-bundle"
+        },
+        {
+          "at": 19.95,
+          "source": "21-review-proposed-link"
+        }
+      ],
+      "poses": [
+        {
+          "at": 0.6,
+          "rect": [
+            1030,
+            240,
+            310,
+            500
+          ],
+          "duration": 0.8,
+          "label": "deliberately-rejected-channel-link"
+        },
+        {
+          "at": 5.033333333333333,
+          "pose": {
+            "x": 0,
+            "y": -111,
+            "scale": 1.08
+          },
+          "duration": 0.01,
+          "label": "separate-incomplete-export"
+        },
+        {
+          "at": 7.2333333333333325,
+          "rect": [
+            290,
+            570,
+            1020,
+            290
+          ],
+          "duration": 0.01,
+          "label": "real-consent-and-run"
+        },
+        {
+          "at": 8.383333333333333,
+          "rect": [
+            290,
+            570,
+            1020,
+            290
+          ],
+          "duration": 0.01,
+          "label": "real-running-state"
+        },
+        {
+          "at": 9.583333333333334,
+          "rect": [
+            300,
+            463,
+            1000,
+            234
+          ],
+          "duration": 0.01,
+          "label": "actual-positive-fresh-reader-result"
+        },
+        {
+          "at": 10.383333333333335,
+          "rect": [
+            322,
+            548,
+            955,
+            125
+          ],
+          "duration": 0.7,
+          "label": "proposed-association-with-source-path"
+        },
+        {
+          "at": 13.416666666666666,
+          "rect": [
+            385,
+            350,
+            680,
+            200
+          ],
+          "duration": 0.01,
+          "label": "returned-region-on-exported-pixels"
+        },
+        {
+          "at": 13.916666666666666,
+          "rect": [
+            325,
+            385,
+            955,
+            355
+          ],
+          "duration": 0.7,
+          "label": "channel-region-and-returned-relation"
+        },
+        {
+          "at": 16.183333333333334,
+          "rect": [
+            300,
+            463,
+            1000,
+            234
+          ],
+          "duration": 0.01,
+          "label": "inspectable-proposal"
+        },
+        {
+          "at": 16.883333333333333,
+          "pose": {
+            "x": 0,
+            "y": -57,
+            "scale": 1.08
+          },
+          "duration": 0.01,
+          "label": "review-exported-bundle"
+        },
+        {
+          "at": 19.95,
+          "pose": {
+            "x": -16,
+            "y": -121,
+            "scale": 1.1
+          },
+          "duration": 0.01,
+          "label": "proposal-requires-human-review"
+        },
+        {
+          "at": 23.416666666666664,
+          "rect": [
+            1035,
+            433,
+            300,
+            230
+          ],
+          "duration": 0.75,
+          "label": "needs-review-not-privacy-certification"
+        }
+      ],
+      "closing": 26.616666666666667
+    }
+  ],
+  "cues": [
+    {
+      "act": "act-01",
+      "phrase": "For a designer",
+      "time_s": 6.466666666666667,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.25
+    },
+    {
+      "act": "act-01",
+      "phrase": "Mosaic helps",
+      "time_s": 10.416666666666666,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.7
+    },
+    {
+      "act": "act-01",
+      "phrase": "This is a fictional bundle",
+      "time_s": 16.833333333333332,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.3
+    },
+    {
+      "act": "act-01",
+      "phrase": "a support incident",
+      "time_s": 19.7,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.7
+    },
+    {
+      "act": "act-01",
+      "phrase": "a project registry",
+      "time_s": 21.35,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-01",
+      "phrase": "and a customer directory",
+      "time_s": 22.716666666666665,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-01",
+      "phrase": "Its connection",
+      "time_s": 3.0166666666666666,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    },
+    {
+      "act": "act-02",
+      "phrase": "These are source-backed links",
+      "time_s": 10.083333333333334,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.2
+    },
+    {
+      "act": "act-02",
+      "phrase": "inspect the exact pixels",
+      "time_s": 12.95,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-02",
+      "phrase": "Now try hiding",
+      "time_s": 16.25,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.15
+    },
+    {
+      "act": "act-02",
+      "phrase": "but one route remains",
+      "time_s": 19.85,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.7
+    },
+    {
+      "act": "act-02",
+      "phrase": "The operations channel",
+      "time_s": 22.7,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    },
+    {
+      "act": "act-02",
+      "phrase": "The alternate route",
+      "time_s": 26.466666666666665,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-02",
+      "phrase": "through client",
+      "time_s": 4.433333333333334,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-02",
+      "phrase": "to Northstar",
+      "time_s": 7.55,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-03",
+      "phrase": "Mosaic finds a one-mask repair",
+      "time_s": 2.4,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    },
+    {
+      "act": "act-03",
+      "phrase": "cover the shared customer name",
+      "time_s": 5.233333333333333,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.2
+    },
+    {
+      "act": "act-03",
+      "phrase": "But that erases",
+      "time_s": 9.366666666666667,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.7
+    },
+    {
+      "act": "act-03",
+      "phrase": "Mark that region Keep visible",
+      "time_s": 13.683333333333334,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.15
+    },
+    {
+      "act": "act-03",
+      "phrase": "Two identifiers",
+      "time_s": 17.966666666666665,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.3
+    },
+    {
+      "act": "act-03",
+      "phrase": "the public credit stays intact",
+      "time_s": 20.416666666666668,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-03",
+      "phrase": "Mosaic finds the fewest",
+      "time_s": 22.816666666666666,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-03",
+      "phrase": "allowed by that preservation choice",
+      "time_s": 25.316666666666666,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.7
+    },
+    {
+      "act": "act-04",
+      "phrase": "decodes those actual files again",
+      "time_s": 5.083333333333333,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.65
+    },
+    {
+      "act": "act-04",
+      "phrase": "This is an output check",
+      "time_s": 11.916666666666666,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.7
+    },
+    {
+      "act": "act-04",
+      "phrase": "Open the outputs",
+      "time_s": 16.633333333333333,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.15
+    },
+    {
+      "act": "act-04",
+      "phrase": "public credit intact in the directory",
+      "time_s": 20.95,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.4
+    },
+    {
+      "act": "act-04",
+      "phrase": "A separate consented fresh reading",
+      "time_s": 24.216666666666665,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    },
+    {
+      "act": "act-04",
+      "phrase": "sends only exported images",
+      "time_s": 25.95,
+      "basis": "Deepgram word onset",
+      "offset_s": -1
+    },
+    {
+      "act": "act-04",
+      "phrase": "The protected answer",
+      "time_s": 31.55,
+      "basis": "Deepgram word onset",
+      "offset_s": -1
+    },
+    {
+      "act": "act-05",
+      "phrase": "one channel link was left out",
+      "time_s": 4.033333333333333,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.7
+    },
+    {
+      "act": "act-05",
+      "phrase": "After export",
+      "time_s": 8.133333333333333,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.2
+    },
+    {
+      "act": "act-05",
+      "phrase": "the fresh reader proposes",
+      "time_s": 9.433333333333334,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    },
+    {
+      "act": "act-05",
+      "phrase": "Inspect its returned region",
+      "time_s": 13.416666666666666,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    },
+    {
+      "act": "act-05",
+      "phrase": "then reopen the exported bundle",
+      "time_s": 16.883333333333333,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.15
+    },
+    {
+      "act": "act-05",
+      "phrase": "This checks known evidence",
+      "time_s": 20.05,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    },
+    {
+      "act": "act-05",
+      "phrase": "It does not certify privacy",
+      "time_s": 24.016666666666666,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.3
+    },
+    {
+      "act": "act-05",
+      "phrase": "Keep the useful story",
+      "time_s": 26.616666666666667,
+      "basis": "Deepgram word onset",
+      "offset_s": -0.1
+    }
+  ]
+}

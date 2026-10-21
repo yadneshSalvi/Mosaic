@@ -1,0 +1,30 @@
+{
+  "narration": {
+    "integrated_lufs": -22.09,
+    "true_peak_dbtp": -3.18,
+    "loudness_range_lu": 4.5,
+    "duration_s": 165.610042,
+    "bytes": 3557737
+  },
+  "music": {
+    "integrated_lufs": -42.06,
+    "true_peak_dbtp": -32.53,
+    "loudness_range_lu": 1.7,
+    "duration_s": 165.61,
+    "bytes": 4197209
+  },
+  "effects": {
+    "integrated_lufs": -48.48,
+    "true_peak_dbtp": -36.85,
+    "loudness_range_lu": 2.6,
+    "duration_s": 165.61,
+    "bytes": 165733
+  },
+  "master-audition": {
+    "integrated_lufs": -16.31,
+    "true_peak_dbtp": -1.5,
+    "loudness_range_lu": 4.2,
+    "duration_s": 165.61,
+    "bytes": 7822439
+  }
+}

@@ -1,0 +1,69 @@
+<template>
+  <style>
+  @font-face{font-family:"Manrope Variable";font-style:normal;font-weight:200 800;font-display:block;src:url("assets/fonts/manrope-latin-wght-normal.woff2") format("woff2");}
+@font-face{font-family:"DM Sans Variable";font-style:normal;font-weight:100 1000;font-display:block;src:url("assets/fonts/dm-sans-latin-wght-normal.woff2") format("woff2");}
+
+  #root{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;color:#24272f;font-family:"DM Sans Variable",sans-serif;font-synthesis:none;container-type:size;}
+  .clip{position:absolute;inset:0;}
+  .ground{background:#f8f8f5;}
+
+  #act-03-stage{position:absolute;left:96px;top:126px;width:1728px;height:858px;overflow:hidden;background:#f8f8f5;border:1px solid #e5e6e3;border-radius:12px;isolation:isolate;}
+  #act-03-world{position:absolute;left:0;top:0;width:1600px;height:1000px;transform-origin:0 0;will-change:transform;}
+  #act-03-world>img,#act-03-world>video{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:fill;}
+  #act-03-header{position:absolute;left:96px;right:96px;top:43px;display:flex;align-items:center;justify-content:space-between;gap:40px;color:#24272f;}
+  #act-03-brand{font-size:30px;line-height:1.2;letter-spacing:-.04em;font-weight:700;display:flex;align-items:center;gap:13px;}
+  #act-03-brand>img{display:block;width:32px;height:32px;}
+  #act-03-chapter{font-size:24px;line-height:1.25;font-weight:500;letter-spacing:.015em;}
+  #act-03-chapter>span{color:#3655e7;margin-right:14px;font-variant-numeric:tabular-nums;}
+  #act-03-footer{position:absolute;left:96px;right:96px;top:1016px;display:flex;justify-content:space-between;align-items:center;gap:32px;font-size:22px;line-height:1.4;color:#24272f;}
+  #act-03-proof{position:absolute;z-index:3;left:32px;bottom:24px;max-width:70%;padding:13px 18px;background:#f8f8f5;border:1px solid #e5e6e3;border-radius:7px;color:#24272f;font-size:27px;font-weight:500;line-height:1.25;}
+
+  .proof-tag{z-index:5;pointer-events:none;display:flex;justify-content:flex-end;align-items:flex-start;padding:84px 96px 0;}
+  .proof-tag>span{font-size:22px;font-weight:500;line-height:1.2;background:#f8f8f5;color:#24272f;border:1px solid #e5e6e3;border-radius:6px;padding:8px 13px;}
+
+  </style>
+  <div id="root" data-composition-id="act-03" data-width="1920" data-height="1080" data-duration="31.15" data-fps="60">
+    <div id="act-03-ground" class="clip ground" data-start="0" data-duration="31.15" data-track-index="0"></div>
+    <div id="act-03-header"><div id="act-03-brand"><img src="assets/brand/favicon.svg" alt="" /><span>mosaic.</span></div><div id="act-03-chapter"><span>03</span>Keep the credit</div></div>
+  <div id="act-03-stage"><div id="act-03-world" data-layout-allow-overflow="true"><video id="act-03-motion-0" class="clip" src="assets/capture/07-undo-trial.mp4" data-start="0" data-duration="0.933333" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-03-still-0" class="clip" src="assets/capture/07-undo-trial.webp" alt="Actual captured Mosaic software state" data-start="0.9333" data-duration="1.4667" data-track-index="2" />
+<video id="act-03-motion-1" class="clip" src="assets/capture/08-one-mask-repair.mp4" data-start="2.4" data-duration="0.666016" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-03-still-1" class="clip" src="assets/capture/08-one-mask-repair.webp" alt="Actual captured Mosaic software state" data-start="3.066" data-duration="2.1673" data-track-index="2" />
+<video id="act-03-motion-2" class="clip" src="assets/capture/09-customer-mask.mp4" data-start="5.233333333333333" data-duration="0.9" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-03-still-2" class="clip" src="assets/capture/09-customer-mask.webp" alt="Actual captured Mosaic software state" data-start="6.1333" data-duration="7.55" data-track-index="2" />
+<video id="act-03-motion-3" class="clip" src="assets/capture/10-keep-credit.mp4" data-start="13.683333333333334" data-duration="0.666016" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-03-still-3" class="clip" src="assets/capture/10-keep-credit.webp" alt="Actual captured Mosaic software state" data-start="14.3493" data-duration="3.6173" data-track-index="3" />
+<video id="act-03-motion-4" class="clip" src="assets/capture/11-two-mask-repair.mp4" data-start="17.966666666666665" data-duration="0.7" data-media-start="0" data-playback-rate="1" data-track-index="1" muted playsinline preload="auto"></video>
+<img id="act-03-still-4" class="clip" src="assets/capture/11-two-mask-repair.webp" alt="Actual captured Mosaic software state" data-start="18.6667" data-duration="12.4833" data-track-index="3" /></div></div>
+  <div id="act-03-footer"><span>Fictional sample · Actual software</span><span>Build with AI: Basics</span></div>
+    <div id="act-03-tag-2042" class="clip proof-tag" data-start="20.4167" data-duration="10.7333" data-track-index="5"><span>Keep the credit</span></div>
+  </div>
+  <script>
+  const tl = gsap.timeline({paused:true});
+  tl.set("#act-03-world", {"x":0,"y":-111,"scale":1.08,"transformOrigin":"0 0"}, 0);
+tl.addLabel("one-mask-repair", 2.4);
+tl.fromTo("#act-03-world", {"x":0,"y":-111,"scale":1.08}, {"x":0,"y":-57,"scale":1.08,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 2.4);
+tl.addLabel("covered-customer-credit", 5.233333333333333);
+tl.fromTo("#act-03-world", {"x":0,"y":-57,"scale":1.08}, {"x":-16,"y":-121,"scale":1.1,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 5.233333333333333);
+tl.addLabel("cost-of-customer-name-mask", 9.366666666666667);
+tl.fromTo("#act-03-world", {"x":-16,"y":-121,"scale":1.1}, {"x":-628.823,"y":-713.5837,"scale":2.2967,"duration":0.85,"ease":"power3.inOut","immediateRender":false}, 9.366666666666667);
+tl.addLabel("actual-keep-visible-control", 13.683333333333334);
+tl.fromTo("#act-03-world", {"x":-628.823,"y":-713.5837,"scale":2.2967}, {"x":-1571.2069,"y":-679.3273,"scale":2.062,"duration":0.7,"ease":"power3.inOut","immediateRender":false}, 13.683333333333334);
+tl.addLabel("credit-preserved", 15.083333333333334);
+tl.fromTo("#act-03-world", {"x":-1571.2069,"y":-679.3273,"scale":2.062}, {"x":-628.823,"y":-713.5837,"scale":2.2967,"duration":0.8,"ease":"power3.inOut","immediateRender":false}, 15.083333333333334);
+tl.addLabel("new-two-mask-repair", 17.966666666666665);
+tl.fromTo("#act-03-world", {"x":-628.823,"y":-713.5837,"scale":2.2967}, {"x":0,"y":-57,"scale":1.08,"duration":0.01,"ease":"power3.inOut","immediateRender":false}, 17.966666666666665);
+tl.addLabel("two-identifiers-in-incident", 18.966666666666665);
+tl.fromTo("#act-03-world", {"x":0,"y":-57,"scale":1.08}, {"x":-187.0382,"y":-644.088,"scale":2.94,"duration":0.9,"ease":"power3.inOut","immediateRender":false}, 18.966666666666665);
+tl.addLabel("public-credit-intact", 20.416666666666668);
+tl.fromTo("#act-03-world", {"x":-187.0382,"y":-644.088,"scale":2.94}, {"x":-1521.4594,"y":-551.9723,"scale":2.5513,"duration":0.8,"ease":"power3.inOut","immediateRender":false}, 20.416666666666668);
+tl.addLabel("two-edits-both-routes-broken", 22.816666666666666);
+tl.fromTo("#act-03-world", {"x":-1521.4594,"y":-551.9723,"scale":2.5513}, {"x":-3232,"y":-203.4,"scale":3.1,"duration":0.9,"ease":"power3.inOut","immediateRender":false}, 22.816666666666666);
+tl.addLabel("bounded-candidate-masks-under-keep-visible-choice", 25.316666666666666);
+tl.fromTo("#act-03-world", {"x":-3232,"y":-203.4,"scale":3.1}, {"x":-55.5789,"y":-1163.0526,"scale":2.0211,"duration":0.9,"ease":"power3.inOut","immediateRender":false}, 25.316666666666666);
+
+
+
+  window.__timelines["act-03"] = tl;
+  </script>
+</template>

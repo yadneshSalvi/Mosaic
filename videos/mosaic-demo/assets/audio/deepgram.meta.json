@@ -1,0 +1,23 @@
+{
+  "provider": "Deepgram",
+  "model": "nova-3",
+  "audio_sha256": "bda561a8ee978d3f5e35e7099ab1d9e41e83498fc62fa9209e6e343595c1c433",
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "01a15d16-dd21-7471-936b-72301548ab25",
+    "sha256": "bda561a8ee978d3f5e35e7099ab1d9e41e83498fc62fa9209e6e343595c1c433",
+    "created": "2026-10-21T06:12:24.657Z",
+    "duration": 165.61,
+    "channels": 1,
+    "models": [
+      "2187e11a-3532-4498-b076-81fa530bdd49"
+    ],
+    "model_info": {
+      "2187e11a-3532-4498-b076-81fa530bdd49": {
+        "name": "general-nova-3",
+        "version": "2025-07-31.0",
+        "arch": "nova-3"
+      }
+    }
+  }
+}

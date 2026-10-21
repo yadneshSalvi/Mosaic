@@ -1,0 +1,5436 @@
+{
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "01a15d1e-6e80-7990-9ec8-559cf4244497",
+    "sha256": "1ef4e2d8fcefb33d91a8425b7726cd5793433bf84ebd1ed8c48019d9bc52f270",
+    "created": "2026-10-21T06:20:41.886Z",
+    "duration": 165.63194,
+    "channels": 1,
+    "models": [
+      "2187e11a-3532-4498-b076-81fa530bdd49"
+    ],
+    "model_info": {
+      "2187e11a-3532-4498-b076-81fa530bdd49": {
+        "name": "general-nova-3",
+        "version": "2025-07-31.0",
+        "arch": "nova-3"
+      }
+    }
+  },
+  "results": {
+    "channels": [
+      {
+        "alternatives": [
+          {
+            "transcript": "The customer credit is public. Its connection to this internal incident isn't. For a designer publishing a case study, that difference matters. Mosaic helps remove the confidential connection while keeping the useful story. This is a fictional bundle of three real images: a support incident, a project registry, and a customer directory. Separately, each tells only part of the story. Read them together. Follow incident 42 through client C-seventeen and project Cedar to North Star Health. These are source backed links. Select one and inspect the exact pixels. Now try hiding the client reference. The code disappears but one route remains. The operations channel still connects the incident to the customer. The alternate route has its own visible evidence. A convincing looking mask hasn't removed the association. Undo that trial. Mosaic finds a one mask repair. Cover the shared customer name and both known routes disappear. But that erases the credit this case study needs. Mark that region, keep visible and find a new repair. Two identifiers in the incident are masked. The public credit stays intact. Mosaic finds the fewest candidate masks allowed by that preservation choice. The publishing decision drives the edit. Now export. Mosaic creates new PNG files, decodes those actual files again and checks the masks, unchanged pixels, and kept credit. This is an output check beyond the on screen preview. Open the outputs. Two opaque masks in the support image, public credit intact in the directory. A separate, consented fresh reading sends only exported images and the starting incident to a new model context. The protected answer and original evidence graph are withheld. In this separate, deliberately incomplete test, one channel link was left out of the original review. After export, the fresh reader proposes the surviving association. Inspect its returned region on the actual output, then reopen the exported bundle for review. This checks known evidence and adds a model observation, It does not certify privacy. Keep the useful story. Inspect what you actually publish.",
+            "confidence": 0.99902344,
+            "words": [
+              {
+                "word": "the",
+                "start": 0.56,
+                "end": 0.96,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "customer",
+                "start": 0.96,
+                "end": 1.4399999,
+                "confidence": 0.9970703,
+                "punctuated_word": "customer"
+              },
+              {
+                "word": "credit",
+                "start": 1.4399999,
+                "end": 1.92,
+                "confidence": 1.0,
+                "punctuated_word": "credit"
+              },
+              {
+                "word": "is",
+                "start": 1.92,
+                "end": 2.24,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "public",
+                "start": 2.24,
+                "end": 3.04,
+                "confidence": 0.8937988,
+                "punctuated_word": "public."
+              },
+              {
+                "word": "its",
+                "start": 3.12,
+                "end": 3.4399998,
+                "confidence": 0.97802734,
+                "punctuated_word": "Its"
+              },
+              {
+                "word": "connection",
+                "start": 3.4399998,
+                "end": 3.84,
+                "confidence": 1.0,
+                "punctuated_word": "connection"
+              },
+              {
+                "word": "to",
+                "start": 3.84,
+                "end": 4.16,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "this",
+                "start": 4.16,
+                "end": 4.4,
+                "confidence": 1.0,
+                "punctuated_word": "this"
+              },
+              {
+                "word": "internal",
+                "start": 4.4,
+                "end": 4.96,
+                "confidence": 1.0,
+                "punctuated_word": "internal"
+              },
+              {
+                "word": "incident",
+                "start": 4.96,
+                "end": 5.68,
+                "confidence": 1.0,
+                "punctuated_word": "incident"
+              },
+              {
+                "word": "isn't",
+                "start": 5.68,
+                "end": 6.48,
+                "confidence": 0.9967448,
+                "punctuated_word": "isn't."
+              },
+              {
+                "word": "for",
+                "start": 6.72,
+                "end": 7.04,
+                "confidence": 1.0,
+                "punctuated_word": "For"
+              },
+              {
+                "word": "a",
+                "start": 7.04,
+                "end": 7.2,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "designer",
+                "start": 7.2,
+                "end": 7.6,
+                "confidence": 1.0,
+                "punctuated_word": "designer"
+              },
+              {
+                "word": "publishing",
+                "start": 7.6,
+                "end": 8.08,
+                "confidence": 0.99902344,
+                "punctuated_word": "publishing"
+              },
+              {
+                "word": "a",
+                "start": 8.08,
+                "end": 8.32,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "case",
+                "start": 8.32,
+                "end": 8.559999,
+                "confidence": 1.0,
+                "punctuated_word": "case"
+              },
+              {
+                "word": "study",
+                "start": 8.559999,
+                "end": 9.2,
+                "confidence": 0.89746094,
+                "punctuated_word": "study,"
+              },
+              {
+                "word": "that",
+                "start": 9.28,
+                "end": 9.44,
+                "confidence": 1.0,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "difference",
+                "start": 9.44,
+                "end": 9.92,
+                "confidence": 1.0,
+                "punctuated_word": "difference"
+              },
+              {
+                "word": "matters",
+                "start": 9.92,
+                "end": 10.639999,
+                "confidence": 0.9995117,
+                "punctuated_word": "matters."
+              },
+              {
+                "word": "mosaic",
+                "start": 11.12,
+                "end": 11.759999,
+                "confidence": 1.0,
+                "punctuated_word": "Mosaic"
+              },
+              {
+                "word": "helps",
+                "start": 11.759999,
+                "end": 12.16,
+                "confidence": 0.99902344,
+                "punctuated_word": "helps"
+              },
+              {
+                "word": "remove",
+                "start": 12.16,
+                "end": 12.639999,
+                "confidence": 0.99902344,
+                "punctuated_word": "remove"
+              },
+              {
+                "word": "the",
+                "start": 12.639999,
+                "end": 12.88,
+                "confidence": 0.99902344,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "confidential",
+                "start": 12.88,
+                "end": 13.5199995,
+                "confidence": 1.0,
+                "punctuated_word": "confidential"
+              },
+              {
+                "word": "connection",
+                "start": 13.5199995,
+                "end": 14.799999,
+                "confidence": 1.0,
+                "punctuated_word": "connection"
+              },
+              {
+                "word": "while",
+                "start": 14.325,
+                "end": 14.724999,
+                "confidence": 0.984375,
+                "punctuated_word": "while"
+              },
+              {
+                "word": "keeping",
+                "start": 14.724999,
+                "end": 15.045,
+                "confidence": 1.0,
+                "punctuated_word": "keeping"
+              },
+              {
+                "word": "the",
+                "start": 15.045,
+                "end": 15.285,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "useful",
+                "start": 15.285,
+                "end": 15.684999,
+                "confidence": 1.0,
+                "punctuated_word": "useful"
+              },
+              {
+                "word": "story",
+                "start": 15.684999,
+                "end": 16.324999,
+                "confidence": 0.9995117,
+                "punctuated_word": "story."
+              },
+              {
+                "word": "this",
+                "start": 17.125,
+                "end": 17.445,
+                "confidence": 1.0,
+                "punctuated_word": "This"
+              },
+              {
+                "word": "is",
+                "start": 17.445,
+                "end": 17.685,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "a",
+                "start": 17.685,
+                "end": 17.845,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "fictional",
+                "start": 17.845,
+                "end": 18.325,
+                "confidence": 1.0,
+                "punctuated_word": "fictional"
+              },
+              {
+                "word": "bundle",
+                "start": 18.325,
+                "end": 18.725,
+                "confidence": 1.0,
+                "punctuated_word": "bundle"
+              },
+              {
+                "word": "of",
+                "start": 18.725,
+                "end": 18.965,
+                "confidence": 1.0,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "three",
+                "start": 18.965,
+                "end": 19.365,
+                "confidence": 1.0,
+                "punctuated_word": "three"
+              },
+              {
+                "word": "real",
+                "start": 19.365,
+                "end": 19.765,
+                "confidence": 0.99902344,
+                "punctuated_word": "real"
+              },
+              {
+                "word": "images",
+                "start": 19.765,
+                "end": 20.564999,
+                "confidence": 0.77197266,
+                "punctuated_word": "images:"
+              },
+              {
+                "word": "a",
+                "start": 20.645,
+                "end": 20.805,
+                "confidence": 0.9921875,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "support",
+                "start": 20.805,
+                "end": 21.205,
+                "confidence": 0.9941406,
+                "punctuated_word": "support"
+              },
+              {
+                "word": "incident",
+                "start": 21.205,
+                "end": 21.925,
+                "confidence": 0.9980469,
+                "punctuated_word": "incident,"
+              },
+              {
+                "word": "a",
+                "start": 22.005,
+                "end": 22.164999,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "project",
+                "start": 22.164999,
+                "end": 22.564999,
+                "confidence": 0.99902344,
+                "punctuated_word": "project"
+              },
+              {
+                "word": "registry",
+                "start": 22.564999,
+                "end": 23.365,
+                "confidence": 0.97802734,
+                "punctuated_word": "registry,"
+              },
+              {
+                "word": "and",
+                "start": 23.365,
+                "end": 23.445,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "a",
+                "start": 23.445,
+                "end": 23.685,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "customer",
+                "start": 23.685,
+                "end": 24.005,
+                "confidence": 1.0,
+                "punctuated_word": "customer"
+              },
+              {
+                "word": "directory",
+                "start": 24.005,
+                "end": 24.805,
+                "confidence": 0.9995117,
+                "punctuated_word": "directory."
+              },
+              {
+                "word": "separately",
+                "start": 25.365,
+                "end": 26.085,
+                "confidence": 0.96069336,
+                "punctuated_word": "Separately,"
+              },
+              {
+                "word": "each",
+                "start": 26.244999,
+                "end": 26.485,
+                "confidence": 1.0,
+                "punctuated_word": "each"
+              },
+              {
+                "word": "tells",
+                "start": 26.485,
+                "end": 26.805,
+                "confidence": 0.99902344,
+                "punctuated_word": "tells"
+              },
+              {
+                "word": "only",
+                "start": 26.805,
+                "end": 27.205,
+                "confidence": 1.0,
+                "punctuated_word": "only"
+              },
+              {
+                "word": "part",
+                "start": 27.205,
+                "end": 27.525,
+                "confidence": 0.9951172,
+                "punctuated_word": "part"
+              },
+              {
+                "word": "of",
+                "start": 27.525,
+                "end": 27.685,
+                "confidence": 1.0,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "the",
+                "start": 27.685,
+                "end": 27.845,
+                "confidence": 0.99902344,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "story",
+                "start": 27.845,
+                "end": 28.085,
+                "confidence": 0.9995117,
+                "punctuated_word": "story."
+              },
+              {
+                "word": "read",
+                "start": 30.73,
+                "end": 31.13,
+                "confidence": 0.9980469,
+                "punctuated_word": "Read"
+              },
+              {
+                "word": "them",
+                "start": 31.13,
+                "end": 31.449999,
+                "confidence": 0.99902344,
+                "punctuated_word": "them"
+              },
+              {
+                "word": "together",
+                "start": 31.449999,
+                "end": 32.25,
+                "confidence": 0.92700195,
+                "punctuated_word": "together."
+              },
+              {
+                "word": "follow",
+                "start": 32.57,
+                "end": 33.05,
+                "confidence": 1.0,
+                "punctuated_word": "Follow"
+              },
+              {
+                "word": "incident",
+                "start": 33.05,
+                "end": 33.77,
+                "confidence": 0.74072266,
+                "punctuated_word": "incident"
+              },
+              {
+                "word": "42",
+                "start": 33.77,
+                "end": 35.05,
+                "confidence": 0.8618164,
+                "punctuated_word": "42"
+              },
+              {
+                "word": "through",
+                "start": 35.05,
+                "end": 35.45,
+                "confidence": 0.96533203,
+                "punctuated_word": "through"
+              },
+              {
+                "word": "client",
+                "start": 35.45,
+                "end": 35.85,
+                "confidence": 0.6430664,
+                "punctuated_word": "client"
+              },
+              {
+                "word": "c-seventeen",
+                "start": 35.85,
+                "end": 36.89,
+                "confidence": 0.85113525,
+                "punctuated_word": "C-seventeen"
+              },
+              {
+                "word": "and",
+                "start": 36.89,
+                "end": 37.21,
+                "confidence": 0.9970703,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "project",
+                "start": 37.21,
+                "end": 37.61,
+                "confidence": 0.7026367,
+                "punctuated_word": "project"
+              },
+              {
+                "word": "cedar",
+                "start": 37.61,
+                "end": 38.17,
+                "confidence": 0.67529297,
+                "punctuated_word": "Cedar"
+              },
+              {
+                "word": "to",
+                "start": 38.17,
+                "end": 38.57,
+                "confidence": 0.9941406,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "north",
+                "start": 38.57,
+                "end": 38.89,
+                "confidence": 0.98535156,
+                "punctuated_word": "North"
+              },
+              {
+                "word": "star",
+                "start": 38.89,
+                "end": 39.21,
+                "confidence": 0.4453125,
+                "punctuated_word": "Star"
+              },
+              {
+                "word": "health",
+                "start": 39.21,
+                "end": 39.769997,
+                "confidence": 0.99316406,
+                "punctuated_word": "Health."
+              },
+              {
+                "word": "these",
+                "start": 40.25,
+                "end": 40.57,
+                "confidence": 1.0,
+                "punctuated_word": "These"
+              },
+              {
+                "word": "are",
+                "start": 40.57,
+                "end": 40.73,
+                "confidence": 1.0,
+                "punctuated_word": "are"
+              },
+              {
+                "word": "source",
+                "start": 40.73,
+                "end": 41.21,
+                "confidence": 0.9921875,
+                "punctuated_word": "source"
+              },
+              {
+                "word": "backed",
+                "start": 41.21,
+                "end": 41.53,
+                "confidence": 0.99609375,
+                "punctuated_word": "backed"
+              },
+              {
+                "word": "links",
+                "start": 41.53,
+                "end": 42.01,
+                "confidence": 0.8395996,
+                "punctuated_word": "links."
+              },
+              {
+                "word": "select",
+                "start": 42.315,
+                "end": 42.795,
+                "confidence": 1.0,
+                "punctuated_word": "Select"
+              },
+              {
+                "word": "one",
+                "start": 42.795,
+                "end": 43.274998,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "and",
+                "start": 43.274998,
+                "end": 43.594997,
+                "confidence": 0.9863281,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "inspect",
+                "start": 43.594997,
+                "end": 44.074997,
+                "confidence": 1.0,
+                "punctuated_word": "inspect"
+              },
+              {
+                "word": "the",
+                "start": 44.074997,
+                "end": 44.315,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "exact",
+                "start": 44.315,
+                "end": 44.875,
+                "confidence": 1.0,
+                "punctuated_word": "exact"
+              },
+              {
+                "word": "pixels",
+                "start": 44.875,
+                "end": 45.754997,
+                "confidence": 0.9992676,
+                "punctuated_word": "pixels."
+              },
+              {
+                "word": "now",
+                "start": 46.394997,
+                "end": 46.715,
+                "confidence": 0.99902344,
+                "punctuated_word": "Now"
+              },
+              {
+                "word": "try",
+                "start": 46.715,
+                "end": 47.035,
+                "confidence": 0.8925781,
+                "punctuated_word": "try"
+              },
+              {
+                "word": "hiding",
+                "start": 47.035,
+                "end": 47.515,
+                "confidence": 0.9980469,
+                "punctuated_word": "hiding"
+              },
+              {
+                "word": "the",
+                "start": 47.515,
+                "end": 47.754997,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "client",
+                "start": 47.754997,
+                "end": 48.074997,
+                "confidence": 0.99316406,
+                "punctuated_word": "client"
+              },
+              {
+                "word": "reference",
+                "start": 48.074997,
+                "end": 48.795,
+                "confidence": 0.98657227,
+                "punctuated_word": "reference."
+              },
+              {
+                "word": "the",
+                "start": 49.035,
+                "end": 49.274998,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "code",
+                "start": 49.274998,
+                "end": 49.594997,
+                "confidence": 1.0,
+                "punctuated_word": "code"
+              },
+              {
+                "word": "disappears",
+                "start": 49.594997,
+                "end": 50.555,
+                "confidence": 1.0,
+                "punctuated_word": "disappears"
+              },
+              {
+                "word": "but",
+                "start": 50.555,
+                "end": 51.035,
+                "confidence": 0.5551758,
+                "punctuated_word": "but"
+              },
+              {
+                "word": "one",
+                "start": 51.035,
+                "end": 51.355,
+                "confidence": 0.99902344,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "route",
+                "start": 51.355,
+                "end": 51.675,
+                "confidence": 1.0,
+                "punctuated_word": "route"
+              },
+              {
+                "word": "remains",
+                "start": 51.675,
+                "end": 52.475,
+                "confidence": 0.875,
+                "punctuated_word": "remains."
+              },
+              {
+                "word": "the",
+                "start": 52.795,
+                "end": 52.954998,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "operations",
+                "start": 52.954998,
+                "end": 53.515,
+                "confidence": 0.9526367,
+                "punctuated_word": "operations"
+              },
+              {
+                "word": "channel",
+                "start": 53.515,
+                "end": 54.074997,
+                "confidence": 1.0,
+                "punctuated_word": "channel"
+              },
+              {
+                "word": "still",
+                "start": 54.074997,
+                "end": 54.475,
+                "confidence": 1.0,
+                "punctuated_word": "still"
+              },
+              {
+                "word": "connects",
+                "start": 54.475,
+                "end": 54.875,
+                "confidence": 0.99902344,
+                "punctuated_word": "connects"
+              },
+              {
+                "word": "the",
+                "start": 54.875,
+                "end": 55.114998,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "incident",
+                "start": 55.114998,
+                "end": 55.515,
+                "confidence": 0.9970703,
+                "punctuated_word": "incident"
+              },
+              {
+                "word": "to",
+                "start": 55.515,
+                "end": 55.754997,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "the",
+                "start": 55.754997,
+                "end": 55.914997,
+                "confidence": 0.99902344,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "customer",
+                "start": 55.914997,
+                "end": 56.315,
+                "confidence": 0.99902344,
+                "punctuated_word": "customer."
+              },
+              {
+                "word": "the",
+                "start": 57.06,
+                "end": 57.38,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "alternate",
+                "start": 57.38,
+                "end": 57.86,
+                "confidence": 0.9980469,
+                "punctuated_word": "alternate"
+              },
+              {
+                "word": "route",
+                "start": 57.86,
+                "end": 58.18,
+                "confidence": 1.0,
+                "punctuated_word": "route"
+              },
+              {
+                "word": "has",
+                "start": 58.18,
+                "end": 58.420002,
+                "confidence": 1.0,
+                "punctuated_word": "has"
+              },
+              {
+                "word": "its",
+                "start": 58.420002,
+                "end": 58.660004,
+                "confidence": 0.9980469,
+                "punctuated_word": "its"
+              },
+              {
+                "word": "own",
+                "start": 58.660004,
+                "end": 58.980003,
+                "confidence": 1.0,
+                "punctuated_word": "own"
+              },
+              {
+                "word": "visible",
+                "start": 58.980003,
+                "end": 59.460003,
+                "confidence": 0.9980469,
+                "punctuated_word": "visible"
+              },
+              {
+                "word": "evidence",
+                "start": 59.460003,
+                "end": 60.18,
+                "confidence": 0.81933594,
+                "punctuated_word": "evidence."
+              },
+              {
+                "word": "a",
+                "start": 60.420002,
+                "end": 60.660004,
+                "confidence": 1.0,
+                "punctuated_word": "A"
+              },
+              {
+                "word": "convincing",
+                "start": 60.660004,
+                "end": 61.140003,
+                "confidence": 1.0,
+                "punctuated_word": "convincing"
+              },
+              {
+                "word": "looking",
+                "start": 61.140003,
+                "end": 61.54,
+                "confidence": 0.9980469,
+                "punctuated_word": "looking"
+              },
+              {
+                "word": "mask",
+                "start": 61.54,
+                "end": 62.100002,
+                "confidence": 1.0,
+                "punctuated_word": "mask"
+              },
+              {
+                "word": "hasn't",
+                "start": 62.100002,
+                "end": 62.58,
+                "confidence": 0.9995117,
+                "punctuated_word": "hasn't"
+              },
+              {
+                "word": "removed",
+                "start": 62.58,
+                "end": 62.980003,
+                "confidence": 1.0,
+                "punctuated_word": "removed"
+              },
+              {
+                "word": "the",
+                "start": 62.980003,
+                "end": 63.22,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "association",
+                "start": 63.22,
+                "end": 64.100006,
+                "confidence": 0.9951172,
+                "punctuated_word": "association."
+              },
+              {
+                "word": "undo",
+                "start": 65.62,
+                "end": 66.18,
+                "confidence": 0.99902344,
+                "punctuated_word": "Undo"
+              },
+              {
+                "word": "that",
+                "start": 66.18,
+                "end": 66.42,
+                "confidence": 0.9980469,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "trial",
+                "start": 66.42,
+                "end": 67.060005,
+                "confidence": 0.95288086,
+                "punctuated_word": "trial."
+              },
+              {
+                "word": "mosaic",
+                "start": 67.380005,
+                "end": 68.020004,
+                "confidence": 1.0,
+                "punctuated_word": "Mosaic"
+              },
+              {
+                "word": "finds",
+                "start": 68.020004,
+                "end": 68.5,
+                "confidence": 0.99902344,
+                "punctuated_word": "finds"
+              },
+              {
+                "word": "a",
+                "start": 68.5,
+                "end": 68.740005,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "one",
+                "start": 68.740005,
+                "end": 68.98,
+                "confidence": 0.9707031,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "mask",
+                "start": 68.98,
+                "end": 69.3,
+                "confidence": 0.9970703,
+                "punctuated_word": "mask"
+              },
+              {
+                "word": "repair",
+                "start": 69.3,
+                "end": 69.78,
+                "confidence": 0.76293945,
+                "punctuated_word": "repair."
+              },
+              {
+                "word": "cover",
+                "start": 70.355,
+                "end": 70.675,
+                "confidence": 0.94970703,
+                "punctuated_word": "Cover"
+              },
+              {
+                "word": "the",
+                "start": 70.675,
+                "end": 70.915,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "shared",
+                "start": 70.915,
+                "end": 71.235,
+                "confidence": 0.9980469,
+                "punctuated_word": "shared"
+              },
+              {
+                "word": "customer",
+                "start": 71.235,
+                "end": 71.635,
+                "confidence": 1.0,
+                "punctuated_word": "customer"
+              },
+              {
+                "word": "name",
+                "start": 71.635,
+                "end": 72.035,
+                "confidence": 1.0,
+                "punctuated_word": "name"
+              },
+              {
+                "word": "and",
+                "start": 72.035,
+                "end": 72.435005,
+                "confidence": 0.85253906,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "both",
+                "start": 72.435005,
+                "end": 72.755005,
+                "confidence": 1.0,
+                "punctuated_word": "both"
+              },
+              {
+                "word": "known",
+                "start": 72.755005,
+                "end": 73.15501,
+                "confidence": 0.9980469,
+                "punctuated_word": "known"
+              },
+              {
+                "word": "routes",
+                "start": 73.15501,
+                "end": 73.555,
+                "confidence": 1.0,
+                "punctuated_word": "routes"
+              },
+              {
+                "word": "disappear",
+                "start": 73.555,
+                "end": 74.435005,
+                "confidence": 0.77783203,
+                "punctuated_word": "disappear."
+              },
+              {
+                "word": "but",
+                "start": 74.915,
+                "end": 75.15501,
+                "confidence": 0.99902344,
+                "punctuated_word": "But"
+              },
+              {
+                "word": "that",
+                "start": 75.15501,
+                "end": 75.555,
+                "confidence": 0.99609375,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "erases",
+                "start": 75.555,
+                "end": 76.115005,
+                "confidence": 1.0,
+                "punctuated_word": "erases"
+              },
+              {
+                "word": "the",
+                "start": 76.115005,
+                "end": 76.355,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "credit",
+                "start": 76.355,
+                "end": 76.675,
+                "confidence": 1.0,
+                "punctuated_word": "credit"
+              },
+              {
+                "word": "this",
+                "start": 76.675,
+                "end": 76.995,
+                "confidence": 0.9970703,
+                "punctuated_word": "this"
+              },
+              {
+                "word": "case",
+                "start": 76.995,
+                "end": 77.235,
+                "confidence": 1.0,
+                "punctuated_word": "case"
+              },
+              {
+                "word": "study",
+                "start": 77.235,
+                "end": 77.555,
+                "confidence": 1.0,
+                "punctuated_word": "study"
+              },
+              {
+                "word": "needs",
+                "start": 77.555,
+                "end": 78.195,
+                "confidence": 0.9128418,
+                "punctuated_word": "needs."
+              },
+              {
+                "word": "mark",
+                "start": 78.675,
+                "end": 78.995,
+                "confidence": 0.9970703,
+                "punctuated_word": "Mark"
+              },
+              {
+                "word": "that",
+                "start": 78.995,
+                "end": 79.235,
+                "confidence": 0.99902344,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "region",
+                "start": 79.235,
+                "end": 79.955,
+                "confidence": 0.7685547,
+                "punctuated_word": "region,"
+              },
+              {
+                "word": "keep",
+                "start": 79.955,
+                "end": 80.19501,
+                "confidence": 0.9140625,
+                "punctuated_word": "keep"
+              },
+              {
+                "word": "visible",
+                "start": 80.19501,
+                "end": 80.755005,
+                "confidence": 0.99902344,
+                "punctuated_word": "visible"
+              },
+              {
+                "word": "and",
+                "start": 80.755005,
+                "end": 81.15501,
+                "confidence": 0.67529297,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "find",
+                "start": 81.15501,
+                "end": 81.395004,
+                "confidence": 1.0,
+                "punctuated_word": "find"
+              },
+              {
+                "word": "a",
+                "start": 81.395004,
+                "end": 81.555,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "new",
+                "start": 81.555,
+                "end": 81.795006,
+                "confidence": 1.0,
+                "punctuated_word": "new"
+              },
+              {
+                "word": "repair",
+                "start": 81.795006,
+                "end": 82.19501,
+                "confidence": 0.99560547,
+                "punctuated_word": "repair."
+              },
+              {
+                "word": "two",
+                "start": 83.079994,
+                "end": 83.399994,
+                "confidence": 0.9951172,
+                "punctuated_word": "Two"
+              },
+              {
+                "word": "identifiers",
+                "start": 83.399994,
+                "end": 84.119995,
+                "confidence": 0.9970703,
+                "punctuated_word": "identifiers"
+              },
+              {
+                "word": "in",
+                "start": 84.119995,
+                "end": 84.28,
+                "confidence": 0.99902344,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "the",
+                "start": 84.28,
+                "end": 84.439995,
+                "confidence": 0.99902344,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "incident",
+                "start": 84.439995,
+                "end": 84.759995,
+                "confidence": 0.97509766,
+                "punctuated_word": "incident"
+              },
+              {
+                "word": "are",
+                "start": 84.759995,
+                "end": 85.079994,
+                "confidence": 1.0,
+                "punctuated_word": "are"
+              },
+              {
+                "word": "masked",
+                "start": 85.079994,
+                "end": 85.71999,
+                "confidence": 0.6904297,
+                "punctuated_word": "masked."
+              },
+              {
+                "word": "the",
+                "start": 85.88,
+                "end": 86.03999,
+                "confidence": 0.99902344,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "public",
+                "start": 86.03999,
+                "end": 86.36,
+                "confidence": 0.9838867,
+                "punctuated_word": "public"
+              },
+              {
+                "word": "credit",
+                "start": 86.36,
+                "end": 86.68,
+                "confidence": 0.9980469,
+                "punctuated_word": "credit"
+              },
+              {
+                "word": "stays",
+                "start": 86.68,
+                "end": 87.079994,
+                "confidence": 1.0,
+                "punctuated_word": "stays"
+              },
+              {
+                "word": "intact",
+                "start": 87.079994,
+                "end": 87.799995,
+                "confidence": 0.98291016,
+                "punctuated_word": "intact."
+              },
+              {
+                "word": "mosaic",
+                "start": 88.28,
+                "end": 88.759995,
+                "confidence": 1.0,
+                "punctuated_word": "Mosaic"
+              },
+              {
+                "word": "finds",
+                "start": 88.92,
+                "end": 89.32,
+                "confidence": 0.99902344,
+                "punctuated_word": "finds"
+              },
+              {
+                "word": "the",
+                "start": 89.32,
+                "end": 89.479996,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "fewest",
+                "start": 89.479996,
+                "end": 89.96,
+                "confidence": 0.99853516,
+                "punctuated_word": "fewest"
+              },
+              {
+                "word": "candidate",
+                "start": 89.96,
+                "end": 90.439995,
+                "confidence": 1.0,
+                "punctuated_word": "candidate"
+              },
+              {
+                "word": "masks",
+                "start": 90.439995,
+                "end": 90.84,
+                "confidence": 0.99902344,
+                "punctuated_word": "masks"
+              },
+              {
+                "word": "allowed",
+                "start": 90.84,
+                "end": 91.399994,
+                "confidence": 1.0,
+                "punctuated_word": "allowed"
+              },
+              {
+                "word": "by",
+                "start": 91.399994,
+                "end": 91.64,
+                "confidence": 1.0,
+                "punctuated_word": "by"
+              },
+              {
+                "word": "that",
+                "start": 91.64,
+                "end": 91.799995,
+                "confidence": 0.9980469,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "preservation",
+                "start": 91.799995,
+                "end": 92.439995,
+                "confidence": 1.0,
+                "punctuated_word": "preservation"
+              },
+              {
+                "word": "choice",
+                "start": 92.439995,
+                "end": 93.079994,
+                "confidence": 0.982666,
+                "punctuated_word": "choice."
+              },
+              {
+                "word": "the",
+                "start": 93.32,
+                "end": 93.56,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "publishing",
+                "start": 93.56,
+                "end": 94.03999,
+                "confidence": 0.98828125,
+                "punctuated_word": "publishing"
+              },
+              {
+                "word": "decision",
+                "start": 94.03999,
+                "end": 94.6,
+                "confidence": 0.99902344,
+                "punctuated_word": "decision"
+              },
+              {
+                "word": "drives",
+                "start": 94.6,
+                "end": 95.079994,
+                "confidence": 1.0,
+                "punctuated_word": "drives"
+              },
+              {
+                "word": "the",
+                "start": 95.079994,
+                "end": 95.24,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "edit",
+                "start": 95.24,
+                "end": 95.56,
+                "confidence": 0.9951172,
+                "punctuated_word": "edit."
+              },
+              {
+                "word": "now",
+                "start": 96.825,
+                "end": 97.385,
+                "confidence": 0.9980469,
+                "punctuated_word": "Now"
+              },
+              {
+                "word": "export",
+                "start": 97.385,
+                "end": 98.265,
+                "confidence": 0.798584,
+                "punctuated_word": "export."
+              },
+              {
+                "word": "mosaic",
+                "start": 98.585,
+                "end": 99.305,
+                "confidence": 1.0,
+                "punctuated_word": "Mosaic"
+              },
+              {
+                "word": "creates",
+                "start": 99.305,
+                "end": 99.785,
+                "confidence": 1.0,
+                "punctuated_word": "creates"
+              },
+              {
+                "word": "new",
+                "start": 99.785,
+                "end": 100.185,
+                "confidence": 0.99902344,
+                "punctuated_word": "new"
+              },
+              {
+                "word": "png",
+                "start": 100.185,
+                "end": 100.745,
+                "confidence": 0.9873047,
+                "punctuated_word": "PNG"
+              },
+              {
+                "word": "files",
+                "start": 100.745,
+                "end": 101.545,
+                "confidence": 0.96972656,
+                "punctuated_word": "files,"
+              },
+              {
+                "word": "decodes",
+                "start": 101.785,
+                "end": 102.425,
+                "confidence": 0.99902344,
+                "punctuated_word": "decodes"
+              },
+              {
+                "word": "those",
+                "start": 102.425,
+                "end": 102.745,
+                "confidence": 0.99902344,
+                "punctuated_word": "those"
+              },
+              {
+                "word": "actual",
+                "start": 102.745,
+                "end": 103.225,
+                "confidence": 0.99902344,
+                "punctuated_word": "actual"
+              },
+              {
+                "word": "files",
+                "start": 103.225,
+                "end": 103.545,
+                "confidence": 1.0,
+                "punctuated_word": "files"
+              },
+              {
+                "word": "again",
+                "start": 103.545,
+                "end": 104.185,
+                "confidence": 0.99902344,
+                "punctuated_word": "again"
+              },
+              {
+                "word": "and",
+                "start": 104.185,
+                "end": 104.425,
+                "confidence": 0.6870117,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "checks",
+                "start": 104.425,
+                "end": 104.825,
+                "confidence": 0.99902344,
+                "punctuated_word": "checks"
+              },
+              {
+                "word": "the",
+                "start": 104.825,
+                "end": 104.985,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "masks",
+                "start": 104.985,
+                "end": 105.784996,
+                "confidence": 0.98339844,
+                "punctuated_word": "masks,"
+              },
+              {
+                "word": "unchanged",
+                "start": 105.865,
+                "end": 106.345,
+                "confidence": 0.9970703,
+                "punctuated_word": "unchanged"
+              },
+              {
+                "word": "pixels",
+                "start": 106.345,
+                "end": 107.145,
+                "confidence": 0.88635254,
+                "punctuated_word": "pixels,"
+              },
+              {
+                "word": "and",
+                "start": 107.145,
+                "end": 107.305,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "kept",
+                "start": 107.305,
+                "end": 107.625,
+                "confidence": 0.99902344,
+                "punctuated_word": "kept"
+              },
+              {
+                "word": "credit",
+                "start": 107.625,
+                "end": 108.025,
+                "confidence": 0.9904785,
+                "punctuated_word": "credit."
+              },
+              {
+                "word": "this",
+                "start": 108.58,
+                "end": 108.9,
+                "confidence": 1.0,
+                "punctuated_word": "This"
+              },
+              {
+                "word": "is",
+                "start": 108.9,
+                "end": 109.14,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "an",
+                "start": 109.14,
+                "end": 109.3,
+                "confidence": 1.0,
+                "punctuated_word": "an"
+              },
+              {
+                "word": "output",
+                "start": 109.3,
+                "end": 109.7,
+                "confidence": 0.99902344,
+                "punctuated_word": "output"
+              },
+              {
+                "word": "check",
+                "start": 109.7,
+                "end": 110.18,
+                "confidence": 1.0,
+                "punctuated_word": "check"
+              },
+              {
+                "word": "beyond",
+                "start": 110.18,
+                "end": 110.74,
+                "confidence": 0.8984375,
+                "punctuated_word": "beyond"
+              },
+              {
+                "word": "the",
+                "start": 110.74,
+                "end": 110.98,
+                "confidence": 0.99902344,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "on",
+                "start": 110.98,
+                "end": 111.22,
+                "confidence": 0.99902344,
+                "punctuated_word": "on"
+              },
+              {
+                "word": "screen",
+                "start": 111.22,
+                "end": 111.54,
+                "confidence": 0.63671875,
+                "punctuated_word": "screen"
+              },
+              {
+                "word": "preview",
+                "start": 111.54,
+                "end": 112.26,
+                "confidence": 0.98706055,
+                "punctuated_word": "preview."
+              },
+              {
+                "word": "open",
+                "start": 112.82,
+                "end": 113.22,
+                "confidence": 0.99902344,
+                "punctuated_word": "Open"
+              },
+              {
+                "word": "the",
+                "start": 113.22,
+                "end": 113.38,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "outputs",
+                "start": 113.38,
+                "end": 114.18,
+                "confidence": 0.7010498,
+                "punctuated_word": "outputs."
+              },
+              {
+                "word": "two",
+                "start": 114.5,
+                "end": 114.82,
+                "confidence": 0.9863281,
+                "punctuated_word": "Two"
+              },
+              {
+                "word": "opaque",
+                "start": 114.82,
+                "end": 115.46,
+                "confidence": 0.9980469,
+                "punctuated_word": "opaque"
+              },
+              {
+                "word": "masks",
+                "start": 115.46,
+                "end": 115.86,
+                "confidence": 1.0,
+                "punctuated_word": "masks"
+              },
+              {
+                "word": "in",
+                "start": 115.86,
+                "end": 116.1,
+                "confidence": 1.0,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "the",
+                "start": 116.1,
+                "end": 116.26,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "support",
+                "start": 116.26,
+                "end": 116.5,
+                "confidence": 0.9980469,
+                "punctuated_word": "support"
+              },
+              {
+                "word": "image",
+                "start": 116.5,
+                "end": 117.14,
+                "confidence": 0.7873535,
+                "punctuated_word": "image,"
+              },
+              {
+                "word": "public",
+                "start": 117.46,
+                "end": 117.86,
+                "confidence": 0.9970703,
+                "punctuated_word": "public"
+              },
+              {
+                "word": "credit",
+                "start": 117.86,
+                "end": 118.18,
+                "confidence": 0.9970703,
+                "punctuated_word": "credit"
+              },
+              {
+                "word": "intact",
+                "start": 118.18,
+                "end": 118.74,
+                "confidence": 0.9921875,
+                "punctuated_word": "intact"
+              },
+              {
+                "word": "in",
+                "start": 118.74,
+                "end": 118.98,
+                "confidence": 0.99902344,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "the",
+                "start": 118.98,
+                "end": 119.14,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "directory",
+                "start": 119.14,
+                "end": 119.54,
+                "confidence": 0.9885254,
+                "punctuated_word": "directory."
+              },
+              {
+                "word": "a",
+                "start": 120.355,
+                "end": 120.675,
+                "confidence": 1.0,
+                "punctuated_word": "A"
+              },
+              {
+                "word": "separate",
+                "start": 120.675,
+                "end": 121.315,
+                "confidence": 0.80908203,
+                "punctuated_word": "separate,"
+              },
+              {
+                "word": "consented",
+                "start": 121.315,
+                "end": 121.955,
+                "confidence": 0.9995117,
+                "punctuated_word": "consented"
+              },
+              {
+                "word": "fresh",
+                "start": 121.955,
+                "end": 122.354996,
+                "confidence": 0.875,
+                "punctuated_word": "fresh"
+              },
+              {
+                "word": "reading",
+                "start": 122.354996,
+                "end": 122.915,
+                "confidence": 0.99902344,
+                "punctuated_word": "reading"
+              },
+              {
+                "word": "sends",
+                "start": 122.915,
+                "end": 123.475,
+                "confidence": 0.99902344,
+                "punctuated_word": "sends"
+              },
+              {
+                "word": "only",
+                "start": 123.475,
+                "end": 123.875,
+                "confidence": 1.0,
+                "punctuated_word": "only"
+              },
+              {
+                "word": "exported",
+                "start": 123.875,
+                "end": 124.354996,
+                "confidence": 1.0,
+                "punctuated_word": "exported"
+              },
+              {
+                "word": "images",
+                "start": 124.354996,
+                "end": 124.995,
+                "confidence": 1.0,
+                "punctuated_word": "images"
+              },
+              {
+                "word": "and",
+                "start": 124.995,
+                "end": 125.315,
+                "confidence": 0.9980469,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "the",
+                "start": 125.315,
+                "end": 125.555,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "starting",
+                "start": 125.555,
+                "end": 125.955,
+                "confidence": 0.9970703,
+                "punctuated_word": "starting"
+              },
+              {
+                "word": "incident",
+                "start": 125.955,
+                "end": 126.435,
+                "confidence": 1.0,
+                "punctuated_word": "incident"
+              },
+              {
+                "word": "to",
+                "start": 126.435,
+                "end": 126.675,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "a",
+                "start": 126.675,
+                "end": 126.915,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "new",
+                "start": 126.915,
+                "end": 127.075,
+                "confidence": 1.0,
+                "punctuated_word": "new"
+              },
+              {
+                "word": "model",
+                "start": 127.075,
+                "end": 127.475,
+                "confidence": 0.99902344,
+                "punctuated_word": "model"
+              },
+              {
+                "word": "context",
+                "start": 127.475,
+                "end": 128.27501,
+                "confidence": 0.88305664,
+                "punctuated_word": "context."
+              },
+              {
+                "word": "the",
+                "start": 128.675,
+                "end": 128.83499,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "protected",
+                "start": 128.83499,
+                "end": 129.315,
+                "confidence": 0.9941406,
+                "punctuated_word": "protected"
+              },
+              {
+                "word": "answer",
+                "start": 129.315,
+                "end": 129.715,
+                "confidence": 1.0,
+                "punctuated_word": "answer"
+              },
+              {
+                "word": "and",
+                "start": 129.715,
+                "end": 130.035,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "original",
+                "start": 130.035,
+                "end": 130.435,
+                "confidence": 0.99902344,
+                "punctuated_word": "original"
+              },
+              {
+                "word": "evidence",
+                "start": 130.435,
+                "end": 130.915,
+                "confidence": 0.9980469,
+                "punctuated_word": "evidence"
+              },
+              {
+                "word": "graph",
+                "start": 130.915,
+                "end": 131.235,
+                "confidence": 0.9980469,
+                "punctuated_word": "graph"
+              },
+              {
+                "word": "are",
+                "start": 131.235,
+                "end": 131.555,
+                "confidence": 1.0,
+                "punctuated_word": "are"
+              },
+              {
+                "word": "withheld",
+                "start": 131.555,
+                "end": 132.035,
+                "confidence": 0.99902344,
+                "punctuated_word": "withheld."
+              },
+              {
+                "word": "in",
+                "start": 133.25,
+                "end": 133.56999,
+                "confidence": 1.0,
+                "punctuated_word": "In"
+              },
+              {
+                "word": "this",
+                "start": 133.56999,
+                "end": 133.89,
+                "confidence": 0.99902344,
+                "punctuated_word": "this"
+              },
+              {
+                "word": "separate",
+                "start": 133.89,
+                "end": 134.69,
+                "confidence": 0.9421387,
+                "punctuated_word": "separate,"
+              },
+              {
+                "word": "deliberately",
+                "start": 134.77,
+                "end": 135.56999,
+                "confidence": 1.0,
+                "punctuated_word": "deliberately"
+              },
+              {
+                "word": "incomplete",
+                "start": 135.56999,
+                "end": 136.37,
+                "confidence": 1.0,
+                "punctuated_word": "incomplete"
+              },
+              {
+                "word": "test",
+                "start": 136.37,
+                "end": 137.09,
+                "confidence": 0.9243164,
+                "punctuated_word": "test,"
+              },
+              {
+                "word": "one",
+                "start": 137.41,
+                "end": 137.65,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "channel",
+                "start": 137.65,
+                "end": 138.05,
+                "confidence": 0.9980469,
+                "punctuated_word": "channel"
+              },
+              {
+                "word": "link",
+                "start": 138.05,
+                "end": 138.37,
+                "confidence": 0.99902344,
+                "punctuated_word": "link"
+              },
+              {
+                "word": "was",
+                "start": 138.37,
+                "end": 138.61,
+                "confidence": 1.0,
+                "punctuated_word": "was"
+              },
+              {
+                "word": "left",
+                "start": 138.61,
+                "end": 138.93,
+                "confidence": 1.0,
+                "punctuated_word": "left"
+              },
+              {
+                "word": "out",
+                "start": 138.93,
+                "end": 139.09,
+                "confidence": 0.99902344,
+                "punctuated_word": "out"
+              },
+              {
+                "word": "of",
+                "start": 139.09,
+                "end": 139.25,
+                "confidence": 0.99902344,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "the",
+                "start": 139.25,
+                "end": 139.48999,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "original",
+                "start": 139.48999,
+                "end": 139.89,
+                "confidence": 1.0,
+                "punctuated_word": "original"
+              },
+              {
+                "word": "review",
+                "start": 139.89,
+                "end": 140.53,
+                "confidence": 0.97021484,
+                "punctuated_word": "review."
+              },
+              {
+                "word": "after",
+                "start": 140.93,
+                "end": 141.25,
+                "confidence": 1.0,
+                "punctuated_word": "After"
+              },
+              {
+                "word": "export",
+                "start": 141.25,
+                "end": 142.12999,
+                "confidence": 0.99609375,
+                "punctuated_word": "export,"
+              },
+              {
+                "word": "the",
+                "start": 142.12999,
+                "end": 142.29,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "fresh",
+                "start": 142.29,
+                "end": 142.61,
+                "confidence": 0.96972656,
+                "punctuated_word": "fresh"
+              },
+              {
+                "word": "reader",
+                "start": 142.61,
+                "end": 143.01,
+                "confidence": 0.9970703,
+                "punctuated_word": "reader"
+              },
+              {
+                "word": "proposes",
+                "start": 143.01,
+                "end": 143.65,
+                "confidence": 1.0,
+                "punctuated_word": "proposes"
+              },
+              {
+                "word": "the",
+                "start": 143.65,
+                "end": 143.89,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "surviving",
+                "start": 143.89,
+                "end": 144.53,
+                "confidence": 0.9819336,
+                "punctuated_word": "surviving"
+              },
+              {
+                "word": "association",
+                "start": 144.53,
+                "end": 145.17,
+                "confidence": 0.81103516,
+                "punctuated_word": "association."
+              },
+              {
+                "word": "inspect",
+                "start": 146.125,
+                "end": 146.60501,
+                "confidence": 0.9951172,
+                "punctuated_word": "Inspect"
+              },
+              {
+                "word": "its",
+                "start": 146.60501,
+                "end": 146.845,
+                "confidence": 0.99609375,
+                "punctuated_word": "its"
+              },
+              {
+                "word": "returned",
+                "start": 146.845,
+                "end": 147.32501,
+                "confidence": 0.99609375,
+                "punctuated_word": "returned"
+              },
+              {
+                "word": "region",
+                "start": 147.32501,
+                "end": 147.80501,
+                "confidence": 1.0,
+                "punctuated_word": "region"
+              },
+              {
+                "word": "on",
+                "start": 147.80501,
+                "end": 148.04501,
+                "confidence": 1.0,
+                "punctuated_word": "on"
+              },
+              {
+                "word": "the",
+                "start": 148.04501,
+                "end": 148.205,
+                "confidence": 0.99902344,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "actual",
+                "start": 148.205,
+                "end": 148.60501,
+                "confidence": 1.0,
+                "punctuated_word": "actual"
+              },
+              {
+                "word": "output",
+                "start": 148.60501,
+                "end": 149.32501,
+                "confidence": 0.9199219,
+                "punctuated_word": "output,"
+              },
+              {
+                "word": "then",
+                "start": 149.565,
+                "end": 149.88501,
+                "confidence": 0.99902344,
+                "punctuated_word": "then"
+              },
+              {
+                "word": "reopen",
+                "start": 149.88501,
+                "end": 150.445,
+                "confidence": 0.80908203,
+                "punctuated_word": "reopen"
+              },
+              {
+                "word": "the",
+                "start": 150.445,
+                "end": 150.68501,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "exported",
+                "start": 150.68501,
+                "end": 151.16501,
+                "confidence": 1.0,
+                "punctuated_word": "exported"
+              },
+              {
+                "word": "bundle",
+                "start": 151.16501,
+                "end": 151.565,
+                "confidence": 1.0,
+                "punctuated_word": "bundle"
+              },
+              {
+                "word": "for",
+                "start": 151.565,
+                "end": 151.80501,
+                "confidence": 1.0,
+                "punctuated_word": "for"
+              },
+              {
+                "word": "review",
+                "start": 151.80501,
+                "end": 152.445,
+                "confidence": 0.99658203,
+                "punctuated_word": "review."
+              },
+              {
+                "word": "this",
+                "start": 152.765,
+                "end": 153.085,
+                "confidence": 1.0,
+                "punctuated_word": "This"
+              },
+              {
+                "word": "checks",
+                "start": 153.085,
+                "end": 153.485,
+                "confidence": 1.0,
+                "punctuated_word": "checks"
+              },
+              {
+                "word": "known",
+                "start": 153.485,
+                "end": 153.96501,
+                "confidence": 0.99902344,
+                "punctuated_word": "known"
+              },
+              {
+                "word": "evidence",
+                "start": 153.96501,
+                "end": 154.52501,
+                "confidence": 1.0,
+                "punctuated_word": "evidence"
+              },
+              {
+                "word": "and",
+                "start": 154.52501,
+                "end": 154.845,
+                "confidence": 0.99609375,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "adds",
+                "start": 154.845,
+                "end": 155.24501,
+                "confidence": 0.99902344,
+                "punctuated_word": "adds"
+              },
+              {
+                "word": "a",
+                "start": 155.24501,
+                "end": 155.405,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "model",
+                "start": 155.405,
+                "end": 155.725,
+                "confidence": 0.99609375,
+                "punctuated_word": "model"
+              },
+              {
+                "word": "observation",
+                "start": 155.725,
+                "end": 156.365,
+                "confidence": 0.74279785,
+                "punctuated_word": "observation,"
+              },
+              {
+                "word": "it",
+                "start": 156.78688,
+                "end": 157.10687,
+                "confidence": 0.99902344,
+                "punctuated_word": "It"
+              },
+              {
+                "word": "does",
+                "start": 157.10687,
+                "end": 157.34688,
+                "confidence": 0.9980469,
+                "punctuated_word": "does"
+              },
+              {
+                "word": "not",
+                "start": 157.34688,
+                "end": 157.58688,
+                "confidence": 0.9980469,
+                "punctuated_word": "not"
+              },
+              {
+                "word": "certify",
+                "start": 157.58688,
+                "end": 158.06688,
+                "confidence": 0.99853516,
+                "punctuated_word": "certify"
+              },
+              {
+                "word": "privacy",
+                "start": 158.06688,
+                "end": 158.86688,
+                "confidence": 0.9807129,
+                "punctuated_word": "privacy."
+              },
+              {
+                "word": "keep",
+                "start": 159.26688,
+                "end": 159.58688,
+                "confidence": 1.0,
+                "punctuated_word": "Keep"
+              },
+              {
+                "word": "the",
+                "start": 159.58688,
+                "end": 159.74687,
+                "confidence": 0.99902344,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "useful",
+                "start": 159.74687,
+                "end": 160.14688,
+                "confidence": 1.0,
+                "punctuated_word": "useful"
+              },
+              {
+                "word": "story",
+                "start": 160.14688,
+                "end": 160.86688,
+                "confidence": 0.9416504,
+                "punctuated_word": "story."
+              },
+              {
+                "word": "inspect",
+                "start": 161.10687,
+                "end": 161.58688,
+                "confidence": 0.9970703,
+                "punctuated_word": "Inspect"
+              },
+              {
+                "word": "what",
+                "start": 161.58688,
+                "end": 161.90688,
+                "confidence": 1.0,
+                "punctuated_word": "what"
+              },
+              {
+                "word": "you",
+                "start": 161.90688,
+                "end": 162.06688,
+                "confidence": 1.0,
+                "punctuated_word": "you"
+              },
+              {
+                "word": "actually",
+                "start": 162.06688,
+                "end": 162.54688,
+                "confidence": 1.0,
+                "punctuated_word": "actually"
+              },
+              {
+                "word": "publish",
+                "start": 162.54688,
+                "end": 162.94688,
+                "confidence": 0.9875488,
+                "punctuated_word": "publish."
+              }
+            ],
+            "paragraphs": {
+              "transcript": "\nThe customer credit is public. Its connection to this internal incident isn't. For a designer publishing a case study, that difference matters. Mosaic helps remove the confidential connection while keeping the useful story. This is a fictional bundle of three real images: a support incident, a project registry, and a customer directory.\n\nSeparately, each tells only part of the story. Read them together. Follow incident 42 through client C-seventeen and project Cedar to North Star Health. These are source backed links. Select one and inspect the exact pixels.\n\nNow try hiding the client reference. The code disappears but one route remains. The operations channel still connects the incident to the customer. The alternate route has its own visible evidence. A convincing looking mask hasn't removed the association.\n\nUndo that trial. Mosaic finds a one mask repair. Cover the shared customer name and both known routes disappear. But that erases the credit this case study needs. Mark that region, keep visible and find a new repair.\n\nTwo identifiers in the incident are masked. The public credit stays intact. Mosaic finds the fewest candidate masks allowed by that preservation choice. The publishing decision drives the edit. Now export.\n\nMosaic creates new PNG files, decodes those actual files again and checks the masks, unchanged pixels, and kept credit. This is an output check beyond the on screen preview. Open the outputs. Two opaque masks in the support image, public credit intact in the directory. A separate, consented fresh reading sends only exported images and the starting incident to a new model context.\n\nThe protected answer and original evidence graph are withheld. In this separate, deliberately incomplete test, one channel link was left out of the original review. After export, the fresh reader proposes the surviving association. Inspect its returned region on the actual output, then reopen the exported bundle for review. This checks known evidence and adds a model observation, It does not certify privacy.\n\nKeep the useful story. Inspect what you actually publish.",
+              "paragraphs": [
+                {
+                  "sentences": [
+                    {
+                      "text": "The customer credit is public.",
+                      "start": 0.56,
+                      "end": 3.04
+                    },
+                    {
+                      "text": "Its connection to this internal incident isn't.",
+                      "start": 3.12,
+                      "end": 6.48
+                    },
+                    {
+                      "text": "For a designer publishing a case study, that difference matters.",
+                      "start": 6.72,
+                      "end": 10.639999
+                    },
+                    {
+                      "text": "Mosaic helps remove the confidential connection while keeping the useful story.",
+                      "start": 11.12,
+                      "end": 16.324999
+                    },
+                    {
+                      "text": "This is a fictional bundle of three real images: a support incident, a project registry, and a customer directory.",
+                      "start": 17.125,
+                      "end": 24.805
+                    }
+                  ],
+                  "num_words": 52,
+                  "start": 0.56,
+                  "end": 24.805
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Separately, each tells only part of the story.",
+                      "start": 25.365,
+                      "end": 28.085
+                    },
+                    {
+                      "text": "Read them together.",
+                      "start": 30.73,
+                      "end": 32.25
+                    },
+                    {
+                      "text": "Follow incident 42 through client C-seventeen and project Cedar to North Star Health.",
+                      "start": 32.57,
+                      "end": 39.769997
+                    },
+                    {
+                      "text": "These are source backed links.",
+                      "start": 40.25,
+                      "end": 42.01
+                    },
+                    {
+                      "text": "Select one and inspect the exact pixels.",
+                      "start": 42.315,
+                      "end": 45.754997
+                    }
+                  ],
+                  "num_words": 36,
+                  "start": 25.365,
+                  "end": 45.754997
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Now try hiding the client reference.",
+                      "start": 46.394997,
+                      "end": 48.795
+                    },
+                    {
+                      "text": "The code disappears but one route remains.",
+                      "start": 49.035,
+                      "end": 52.475
+                    },
+                    {
+                      "text": "The operations channel still connects the incident to the customer.",
+                      "start": 52.795,
+                      "end": 56.315
+                    },
+                    {
+                      "text": "The alternate route has its own visible evidence.",
+                      "start": 57.06,
+                      "end": 60.18
+                    },
+                    {
+                      "text": "A convincing looking mask hasn't removed the association.",
+                      "start": 60.420002,
+                      "end": 64.100006
+                    }
+                  ],
+                  "num_words": 39,
+                  "start": 46.394997,
+                  "end": 64.100006
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Undo that trial.",
+                      "start": 65.62,
+                      "end": 67.060005
+                    },
+                    {
+                      "text": "Mosaic finds a one mask repair.",
+                      "start": 67.380005,
+                      "end": 69.78
+                    },
+                    {
+                      "text": "Cover the shared customer name and both known routes disappear.",
+                      "start": 70.355,
+                      "end": 74.435005
+                    },
+                    {
+                      "text": "But that erases the credit this case study needs.",
+                      "start": 74.915,
+                      "end": 78.195
+                    },
+                    {
+                      "text": "Mark that region, keep visible and find a new repair.",
+                      "start": 78.675,
+                      "end": 82.19501
+                    }
+                  ],
+                  "num_words": 38,
+                  "start": 65.62,
+                  "end": 82.19501
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Two identifiers in the incident are masked.",
+                      "start": 83.079994,
+                      "end": 85.71999
+                    },
+                    {
+                      "text": "The public credit stays intact.",
+                      "start": 85.88,
+                      "end": 87.799995
+                    },
+                    {
+                      "text": "Mosaic finds the fewest candidate masks allowed by that preservation choice.",
+                      "start": 88.28,
+                      "end": 93.079994
+                    },
+                    {
+                      "text": "The publishing decision drives the edit.",
+                      "start": 93.32,
+                      "end": 95.56
+                    },
+                    {
+                      "text": "Now export.",
+                      "start": 96.825,
+                      "end": 98.265
+                    }
+                  ],
+                  "num_words": 31,
+                  "start": 83.079994,
+                  "end": 98.265
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Mosaic creates new PNG files, decodes those actual files again and checks the masks, unchanged pixels, and kept credit.",
+                      "start": 98.585,
+                      "end": 108.025
+                    },
+                    {
+                      "text": "This is an output check beyond the on screen preview.",
+                      "start": 108.58,
+                      "end": 112.26
+                    },
+                    {
+                      "text": "Open the outputs.",
+                      "start": 112.82,
+                      "end": 114.18
+                    },
+                    {
+                      "text": "Two opaque masks in the support image, public credit intact in the directory.",
+                      "start": 114.5,
+                      "end": 119.54
+                    },
+                    {
+                      "text": "A separate, consented fresh reading sends only exported images and the starting incident to a new model context.",
+                      "start": 120.355,
+                      "end": 128.27501
+                    }
+                  ],
+                  "num_words": 63,
+                  "start": 98.585,
+                  "end": 128.27501
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "The protected answer and original evidence graph are withheld.",
+                      "start": 128.675,
+                      "end": 132.035
+                    },
+                    {
+                      "text": "In this separate, deliberately incomplete test, one channel link was left out of the original review.",
+                      "start": 133.25,
+                      "end": 140.53
+                    },
+                    {
+                      "text": "After export, the fresh reader proposes the surviving association.",
+                      "start": 140.93,
+                      "end": 145.17
+                    },
+                    {
+                      "text": "Inspect its returned region on the actual output, then reopen the exported bundle for review.",
+                      "start": 146.125,
+                      "end": 152.445
+                    },
+                    {
+                      "text": "This checks known evidence and adds a model observation, It does not certify privacy.",
+                      "start": 152.765,
+                      "end": 158.86688
+                    }
+                  ],
+                  "num_words": 63,
+                  "start": 128.675,
+                  "end": 158.86688
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Keep the useful story.",
+                      "start": 159.26688,
+                      "end": 160.86688
+                    },
+                    {
+                      "text": "Inspect what you actually publish.",
+                      "start": 161.10687,
+                      "end": 162.94688
+                    }
+                  ],
+                  "num_words": 9,
+                  "start": 159.26688,
+                  "end": 162.94688
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "utterances": [
+      {
+        "start": 0.56,
+        "end": 3.04,
+        "confidence": 0.97817385,
+        "channel": 0,
+        "transcript": "The customer credit is public.",
+        "words": [
+          {
+            "word": "the",
+            "start": 0.56,
+            "end": 0.96,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "customer",
+            "start": 0.96,
+            "end": 1.4399999,
+            "confidence": 0.9970703,
+            "punctuated_word": "customer"
+          },
+          {
+            "word": "credit",
+            "start": 1.4399999,
+            "end": 1.92,
+            "confidence": 1.0,
+            "punctuated_word": "credit"
+          },
+          {
+            "word": "is",
+            "start": 1.92,
+            "end": 2.24,
+            "confidence": 1.0,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "public",
+            "start": 2.24,
+            "end": 3.04,
+            "confidence": 0.8937988,
+            "punctuated_word": "public."
+          }
+        ],
+        "id": "15833b1e-18b3-457c-b26c-4bf79c9a2b57"
+      },
+      {
+        "start": 3.12,
+        "end": 6.48,
+        "confidence": 0.996396,
+        "channel": 0,
+        "transcript": "Its connection to this internal incident isn't.",
+        "words": [
+          {
+            "word": "its",
+            "start": 3.12,
+            "end": 3.4399998,
+            "confidence": 0.97802734,
+            "punctuated_word": "Its"
+          },
+          {
+            "word": "connection",
+            "start": 3.4399998,
+            "end": 3.84,
+            "confidence": 1.0,
+            "punctuated_word": "connection"
+          },
+          {
+            "word": "to",
+            "start": 3.84,
+            "end": 4.16,
+            "confidence": 1.0,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "this",
+            "start": 4.16,
+            "end": 4.4,
+            "confidence": 1.0,
+            "punctuated_word": "this"
+          },
+          {
+            "word": "internal",
+            "start": 4.4,
+            "end": 4.96,
+            "confidence": 1.0,
+            "punctuated_word": "internal"
+          },
+          {
+            "word": "incident",
+            "start": 4.96,
+            "end": 5.68,
+            "confidence": 1.0,
+            "punctuated_word": "incident"
+          },
+          {
+            "word": "isn't",
+            "start": 5.68,
+            "end": 6.48,
+            "confidence": 0.9967448,
+            "punctuated_word": "isn't."
+          }
+        ],
+        "id": "9f858672-172c-4791-aaf5-e93282413331"
+      },
+      {
+        "start": 6.72,
+        "end": 10.639999,
+        "confidence": 0.9895996,
+        "channel": 0,
+        "transcript": "For a designer publishing a case study, that difference matters.",
+        "words": [
+          {
+            "word": "for",
+            "start": 6.72,
+            "end": 7.04,
+            "confidence": 1.0,
+            "punctuated_word": "For"
+          },
+          {
+            "word": "a",
+            "start": 7.04,
+            "end": 7.2,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "designer",
+            "start": 7.2,
+            "end": 7.6,
+            "confidence": 1.0,
+            "punctuated_word": "designer"
+          },
+          {
+            "word": "publishing",
+            "start": 7.6,
+            "end": 8.08,
+            "confidence": 0.99902344,
+            "punctuated_word": "publishing"
+          },
+          {
+            "word": "a",
+            "start": 8.08,
+            "end": 8.32,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "case",
+            "start": 8.32,
+            "end": 8.559999,
+            "confidence": 1.0,
+            "punctuated_word": "case"
+          },
+          {
+            "word": "study",
+            "start": 8.559999,
+            "end": 9.2,
+            "confidence": 0.89746094,
+            "punctuated_word": "study,"
+          },
+          {
+            "word": "that",
+            "start": 9.28,
+            "end": 9.44,
+            "confidence": 1.0,
+            "punctuated_word": "that"
+          },
+          {
+            "word": "difference",
+            "start": 9.44,
+            "end": 9.92,
+            "confidence": 1.0,
+            "punctuated_word": "difference"
+          },
+          {
+            "word": "matters",
+            "start": 9.92,
+            "end": 10.639999,
+            "confidence": 0.9995117,
+            "punctuated_word": "matters."
+          }
+        ],
+        "id": "9879abae-f168-431d-96cd-eee502ee0bbc"
+      },
+      {
+        "start": 11.12,
+        "end": 14.799999,
+        "confidence": 0.9995117,
+        "channel": 0,
+        "transcript": "Mosaic helps remove the confidential connection",
+        "words": [
+          {
+            "word": "mosaic",
+            "start": 11.12,
+            "end": 11.759999,
+            "confidence": 1.0,
+            "punctuated_word": "Mosaic"
+          },
+          {
+            "word": "helps",
+            "start": 11.759999,
+            "end": 12.16,
+            "confidence": 0.99902344,
+            "punctuated_word": "helps"
+          },
+          {
+            "word": "remove",
+            "start": 12.16,
+            "end": 12.639999,
+            "confidence": 0.99902344,
+            "punctuated_word": "remove"
+          },
+          {
+            "word": "the",
+            "start": 12.639999,
+            "end": 12.88,
+            "confidence": 0.99902344,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "confidential",
+            "start": 12.88,
+            "end": 13.5199995,
+            "confidence": 1.0,
+            "punctuated_word": "confidential"
+          },
+          {
+            "word": "connection",
+            "start": 13.5199995,
+            "end": 14.799999,
+            "confidence": 1.0,
+            "punctuated_word": "connection"
+          }
+        ],
+        "id": "25e7e252-038d-42ad-825f-bae032c2c5c3"
+      },
+      {
+        "start": 14.325,
+        "end": 16.324999,
+        "confidence": 0.99677736,
+        "channel": 0,
+        "transcript": "while keeping the useful story.",
+        "words": [
+          {
+            "word": "while",
+            "start": 14.325,
+            "end": 14.724999,
+            "confidence": 0.984375,
+            "punctuated_word": "while"
+          },
+          {
+            "word": "keeping",
+            "start": 14.724999,
+            "end": 15.045,
+            "confidence": 1.0,
+            "punctuated_word": "keeping"
+          },
+          {
+            "word": "the",
+            "start": 15.045,
+            "end": 15.285,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "useful",
+            "start": 15.285,
+            "end": 15.684999,
+            "confidence": 1.0,
+            "punctuated_word": "useful"
+          },
+          {
+            "word": "story",
+            "start": 15.684999,
+            "end": 16.324999,
+            "confidence": 0.9995117,
+            "punctuated_word": "story."
+          }
+        ],
+        "id": "de5e33e8-005e-49d6-8491-4afd7ae1fabe"
+      },
+      {
+        "start": 17.125,
+        "end": 20.564999,
+        "confidence": 0.9744466,
+        "channel": 0,
+        "transcript": "This is a fictional bundle of three real images:",
+        "words": [
+          {
+            "word": "this",
+            "start": 17.125,
+            "end": 17.445,
+            "confidence": 1.0,
+            "punctuated_word": "This"
+          },
+          {
+            "word": "is",
+            "start": 17.445,
+            "end": 17.685,
+            "confidence": 1.0,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "a",
+            "start": 17.685,
+            "end": 17.845,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "fictional",
+            "start": 17.845,
+            "end": 18.325,
+            "confidence": 1.0,
+            "punctuated_word": "fictional"
+          },
+          {
+            "word": "bundle",
+            "start": 18.325,
+            "end": 18.725,
+            "confidence": 1.0,
+            "punctuated_word": "bundle"
+          },
+          {
+            "word": "of",
+            "start": 18.725,
+            "end": 18.965,
+            "confidence": 1.0,
+            "punctuated_word": "of"
+          },
+          {
+            "word": "three",
+            "start": 18.965,
+            "end": 19.365,
+            "confidence": 1.0,
+            "punctuated_word": "three"
+          },
+          {
+            "word": "real",
+            "start": 19.365,
+            "end": 19.765,
+            "confidence": 0.99902344,
+            "punctuated_word": "real"
+          },
+          {
+            "word": "images",
+            "start": 19.765,
+            "end": 20.564999,
+            "confidence": 0.77197266,
+            "punctuated_word": "images:"
+          }
+        ],
+        "id": "8accffc2-e433-4aa6-a063-d98a481c1832"
+      },
+      {
+        "start": 20.645,
+        "end": 23.365,
+        "confidence": 0.9934082,
+        "channel": 0,
+        "transcript": "a support incident, a project registry,",
+        "words": [
+          {
+            "word": "a",
+            "start": 20.645,
+            "end": 20.805,
+            "confidence": 0.9921875,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "support",
+            "start": 20.805,
+            "end": 21.205,
+            "confidence": 0.9941406,
+            "punctuated_word": "support"
+          },
+          {
+            "word": "incident",
+            "start": 21.205,
+            "end": 21.925,
+            "confidence": 0.9980469,
+            "punctuated_word": "incident,"
+          },
+          {
+            "word": "a",
+            "start": 22.005,
+            "end": 22.164999,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "project",
+            "start": 22.164999,
+            "end": 22.564999,
+            "confidence": 0.99902344,
+            "punctuated_word": "project"
+          },
+          {
+            "word": "registry",
+            "start": 22.564999,
+            "end": 23.365,
+            "confidence": 0.97802734,
+            "punctuated_word": "registry,"
+          }
+        ],
+        "id": "c5036841-8643-4c72-aa48-143a950f6aa3"
+      },
+      {
+        "start": 23.365,
+        "end": 24.805,
+        "confidence": 0.9996338,
+        "channel": 0,
+        "transcript": "and a customer directory.",
+        "words": [
+          {
+            "word": "and",
+            "start": 23.365,
+            "end": 23.445,
+            "confidence": 1.0,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "a",
+            "start": 23.445,
+            "end": 23.685,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "customer",
+            "start": 23.685,
+            "end": 24.005,
+            "confidence": 1.0,
+            "punctuated_word": "customer"
+          },
+          {
+            "word": "directory",
+            "start": 24.005,
+            "end": 24.805,
+            "confidence": 0.9995117,
+            "punctuated_word": "directory."
+          }
+        ],
+        "id": "f527b0fe-cca4-4fe1-be41-4549089a60cd"
+      },
+      {
+        "start": 25.365,
+        "end": 26.085,
+        "confidence": 0.96069336,
+        "channel": 0,
+        "transcript": "Separately,",
+        "words": [
+          {
+            "word": "separately",
+            "start": 25.365,
+            "end": 26.085,
+            "confidence": 0.96069336,
+            "punctuated_word": "Separately,"
+          }
+        ],
+        "id": "40fae445-fd59-47f0-af24-59c822622688"
+      },
+      {
+        "start": 26.244999,
+        "end": 28.085,
+        "confidence": 0.9989537,
+        "channel": 0,
+        "transcript": "each tells only part of the story.",
+        "words": [
+          {
+            "word": "each",
+            "start": 26.244999,
+            "end": 26.485,
+            "confidence": 1.0,
+            "punctuated_word": "each"
+          },
+          {
+            "word": "tells",
+            "start": 26.485,
+            "end": 26.805,
+            "confidence": 0.99902344,
+            "punctuated_word": "tells"
+          },
+          {
+            "word": "only",
+            "start": 26.805,
+            "end": 27.205,
+            "confidence": 1.0,
+            "punctuated_word": "only"
+          },
+          {
+            "word": "part",
+            "start": 27.205,
+            "end": 27.525,
+            "confidence": 0.9951172,
+            "punctuated_word": "part"
+          },
+          {
+            "word": "of",
+            "start": 27.525,
+            "end": 27.685,
+            "confidence": 1.0,
+            "punctuated_word": "of"
+          },
+          {
+            "word": "the",
+            "start": 27.685,
+            "end": 27.845,
+            "confidence": 0.99902344,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "story",
+            "start": 27.845,
+            "end": 28.085,
+            "confidence": 0.9995117,
+            "punctuated_word": "story."
+          }
+        ],
+        "id": "902b3345-0ba0-4f22-8809-81905c6d879a"
+      },
+      {
+        "start": 30.73,
+        "end": 32.25,
+        "confidence": 0.97469074,
+        "channel": 0,
+        "transcript": "Read them together.",
+        "words": [
+          {
+            "word": "read",
+            "start": 30.73,
+            "end": 31.13,
+            "confidence": 0.9980469,
+            "punctuated_word": "Read"
+          },
+          {
+            "word": "them",
+            "start": 31.13,
+            "end": 31.449999,
+            "confidence": 0.99902344,
+            "punctuated_word": "them"
+          },
+          {
+            "word": "together",
+            "start": 31.449999,
+            "end": 32.25,
+            "confidence": 0.92700195,
+            "punctuated_word": "together."
+          }
+        ],
+        "id": "c2f42a59-1f61-47e7-8792-a07bce38e770"
+      },
+      {
+        "start": 32.57,
+        "end": 35.05,
+        "confidence": 0.867513,
+        "channel": 0,
+        "transcript": "Follow incident 42",
+        "words": [
+          {
+            "word": "follow",
+            "start": 32.57,
+            "end": 33.05,
+            "confidence": 1.0,
+            "punctuated_word": "Follow"
+          },
+          {
+            "word": "incident",
+            "start": 33.05,
+            "end": 33.77,
+            "confidence": 0.74072266,
+            "punctuated_word": "incident"
+          },
+          {
+            "word": "42",
+            "start": 33.77,
+            "end": 35.05,
+            "confidence": 0.8618164,
+            "punctuated_word": "42"
+          }
+        ],
+        "id": "e8e2191a-a228-408c-8ef4-32d428a11a92"
+      },
+      {
+        "start": 35.05,
+        "end": 36.89,
+        "confidence": 0.81984454,
+        "channel": 0,
+        "transcript": "through client C-seventeen",
+        "words": [
+          {
+            "word": "through",
+            "start": 35.05,
+            "end": 35.45,
+            "confidence": 0.96533203,
+            "punctuated_word": "through"
+          },
+          {
+            "word": "client",
+            "start": 35.45,
+            "end": 35.85,
+            "confidence": 0.6430664,
+            "punctuated_word": "client"
+          },
+          {
+            "word": "c-seventeen",
+            "start": 35.85,
+            "end": 36.89,
+            "confidence": 0.85113525,
+            "punctuated_word": "C-seventeen"
+          }
+        ],
+        "id": "b3c48265-040b-44eb-bb07-d8f86878b4f2"
+      },
+      {
+        "start": 36.89,
+        "end": 39.769997,
+        "confidence": 0.827567,
+        "channel": 0,
+        "transcript": "and project Cedar to North Star Health.",
+        "words": [
+          {
+            "word": "and",
+            "start": 36.89,
+            "end": 37.21,
+            "confidence": 0.9970703,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "project",
+            "start": 37.21,
+            "end": 37.61,
+            "confidence": 0.7026367,
+            "punctuated_word": "project"
+          },
+          {
+            "word": "cedar",
+            "start": 37.61,
+            "end": 38.17,
+            "confidence": 0.67529297,
+            "punctuated_word": "Cedar"
+          },
+          {
+            "word": "to",
+            "start": 38.17,
+            "end": 38.57,
+            "confidence": 0.9941406,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "north",
+            "start": 38.57,
+            "end": 38.89,
+            "confidence": 0.98535156,
+            "punctuated_word": "North"
+          },
+          {
+            "word": "star",
+            "start": 38.89,
+            "end": 39.21,
+            "confidence": 0.4453125,
+            "punctuated_word": "Star"
+          },
+          {
+            "word": "health",
+            "start": 39.21,
+            "end": 39.769997,
+            "confidence": 0.99316406,
+            "punctuated_word": "Health."
+          }
+        ],
+        "id": "e25d5a52-b87b-4dd5-8c2a-27297cbb3721"
+      },
+      {
+        "start": 40.25,
+        "end": 45.754997,
+        "confidence": 0.98445636,
+        "channel": 0,
+        "transcript": "These are source backed links. Select one and inspect the exact pixels.",
+        "words": [
+          {
+            "word": "these",
+            "start": 40.25,
+            "end": 40.57,
+            "confidence": 1.0,
+            "punctuated_word": "These"
+          },
+          {
+            "word": "are",
+            "start": 40.57,
+            "end": 40.73,
+            "confidence": 1.0,
+            "punctuated_word": "are"
+          },
+          {
+            "word": "source",
+            "start": 40.73,
+            "end": 41.21,
+            "confidence": 0.9921875,
+            "punctuated_word": "source"
+          },
+          {
+            "word": "backed",
+            "start": 41.21,
+            "end": 41.53,
+            "confidence": 0.99609375,
+            "punctuated_word": "backed"
+          },
+          {
+            "word": "links",
+            "start": 41.53,
+            "end": 42.01,
+            "confidence": 0.8395996,
+            "punctuated_word": "links."
+          },
+          {
+            "word": "select",
+            "start": 42.315,
+            "end": 42.795,
+            "confidence": 1.0,
+            "punctuated_word": "Select"
+          },
+          {
+            "word": "one",
+            "start": 42.795,
+            "end": 43.274998,
+            "confidence": 1.0,
+            "punctuated_word": "one"
+          },
+          {
+            "word": "and",
+            "start": 43.274998,
+            "end": 43.594997,
+            "confidence": 0.9863281,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "inspect",
+            "start": 43.594997,
+            "end": 44.074997,
+            "confidence": 1.0,
+            "punctuated_word": "inspect"
+          },
+          {
+            "word": "the",
+            "start": 44.074997,
+            "end": 44.315,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "exact",
+            "start": 44.315,
+            "end": 44.875,
+            "confidence": 1.0,
+            "punctuated_word": "exact"
+          },
+          {
+            "word": "pixels",
+            "start": 44.875,
+            "end": 45.754997,
+            "confidence": 0.9992676,
+            "punctuated_word": "pixels."
+          }
+        ],
+        "id": "a8047a03-640f-4628-8ded-9b996dfad4de"
+      },
+      {
+        "start": 46.394997,
+        "end": 48.795,
+        "confidence": 0.9782308,
+        "channel": 0,
+        "transcript": "Now try hiding the client reference.",
+        "words": [
+          {
+            "word": "now",
+            "start": 46.394997,
+            "end": 46.715,
+            "confidence": 0.99902344,
+            "punctuated_word": "Now"
+          },
+          {
+            "word": "try",
+            "start": 46.715,
+            "end": 47.035,
+            "confidence": 0.8925781,
+            "punctuated_word": "try"
+          },
+          {
+            "word": "hiding",
+            "start": 47.035,
+            "end": 47.515,
+            "confidence": 0.9980469,
+            "punctuated_word": "hiding"
+          },
+          {
+            "word": "the",
+            "start": 47.515,
+            "end": 47.754997,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "client",
+            "start": 47.754997,
+            "end": 48.074997,
+            "confidence": 0.99316406,
+            "punctuated_word": "client"
+          },
+          {
+            "word": "reference",
+            "start": 48.074997,
+            "end": 48.795,
+            "confidence": 0.98657227,
+            "punctuated_word": "reference."
+          }
+        ],
+        "id": "fce9c09c-a1fc-4c09-930b-7d1d65d0db8a"
+      },
+      {
+        "start": 49.035,
+        "end": 50.555,
+        "confidence": 1.0,
+        "channel": 0,
+        "transcript": "The code disappears",
+        "words": [
+          {
+            "word": "the",
+            "start": 49.035,
+            "end": 49.274998,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "code",
+            "start": 49.274998,
+            "end": 49.594997,
+            "confidence": 1.0,
+            "punctuated_word": "code"
+          },
+          {
+            "word": "disappears",
+            "start": 49.594997,
+            "end": 50.555,
+            "confidence": 1.0,
+            "punctuated_word": "disappears"
+          }
+        ],
+        "id": "121a5bdf-8bff-46d2-a637-48859234f9e1"
+      },
+      {
+        "start": 50.555,
+        "end": 52.475,
+        "confidence": 0.8572998,
+        "channel": 0,
+        "transcript": "but one route remains.",
+        "words": [
+          {
+            "word": "but",
+            "start": 50.555,
+            "end": 51.035,
+            "confidence": 0.5551758,
+            "punctuated_word": "but"
+          },
+          {
+            "word": "one",
+            "start": 51.035,
+            "end": 51.355,
+            "confidence": 0.99902344,
+            "punctuated_word": "one"
+          },
+          {
+            "word": "route",
+            "start": 51.355,
+            "end": 51.675,
+            "confidence": 1.0,
+            "punctuated_word": "route"
+          },
+          {
+            "word": "remains",
+            "start": 51.675,
+            "end": 52.475,
+            "confidence": 0.875,
+            "punctuated_word": "remains."
+          }
+        ],
+        "id": "36979089-a932-4276-bbdd-f563a34e04da"
+      },
+      {
+        "start": 52.795,
+        "end": 56.315,
+        "confidence": 0.9946777,
+        "channel": 0,
+        "transcript": "The operations channel still connects the incident to the customer.",
+        "words": [
+          {
+            "word": "the",
+            "start": 52.795,
+            "end": 52.954998,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "operations",
+            "start": 52.954998,
+            "end": 53.515,
+            "confidence": 0.9526367,
+            "punctuated_word": "operations"
+          },
+          {
+            "word": "channel",
+            "start": 53.515,
+            "end": 54.074997,
+            "confidence": 1.0,
+            "punctuated_word": "channel"
+          },
+          {
+            "word": "still",
+            "start": 54.074997,
+            "end": 54.475,
+            "confidence": 1.0,
+            "punctuated_word": "still"
+          },
+          {
+            "word": "connects",
+            "start": 54.475,
+            "end": 54.875,
+            "confidence": 0.99902344,
+            "punctuated_word": "connects"
+          },
+          {
+            "word": "the",
+            "start": 54.875,
+            "end": 55.114998,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "incident",
+            "start": 55.114998,
+            "end": 55.515,
+            "confidence": 0.9970703,
+            "punctuated_word": "incident"
+          },
+          {
+            "word": "to",
+            "start": 55.515,
+            "end": 55.754997,
+            "confidence": 1.0,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "the",
+            "start": 55.754997,
+            "end": 55.914997,
+            "confidence": 0.99902344,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "customer",
+            "start": 55.914997,
+            "end": 56.315,
+            "confidence": 0.99902344,
+            "punctuated_word": "customer."
+          }
+        ],
+        "id": "70e48338-dd3f-48a4-be12-71d55b8f2a8b"
+      },
+      {
+        "start": 57.06,
+        "end": 60.18,
+        "confidence": 0.9766846,
+        "channel": 0,
+        "transcript": "The alternate route has its own visible evidence.",
+        "words": [
+          {
+            "word": "the",
+            "start": 57.06,
+            "end": 57.38,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "alternate",
+            "start": 57.38,
+            "end": 57.86,
+            "confidence": 0.9980469,
+            "punctuated_word": "alternate"
+          },
+          {
+            "word": "route",
+            "start": 57.86,
+            "end": 58.18,
+            "confidence": 1.0,
+            "punctuated_word": "route"
+          },
+          {
+            "word": "has",
+            "start": 58.18,
+            "end": 58.420002,
+            "confidence": 1.0,
+            "punctuated_word": "has"
+          },
+          {
+            "word": "its",
+            "start": 58.420002,
+            "end": 58.660004,
+            "confidence": 0.9980469,
+            "punctuated_word": "its"
+          },
+          {
+            "word": "own",
+            "start": 58.660004,
+            "end": 58.980003,
+            "confidence": 1.0,
+            "punctuated_word": "own"
+          },
+          {
+            "word": "visible",
+            "start": 58.980003,
+            "end": 59.460003,
+            "confidence": 0.9980469,
+            "punctuated_word": "visible"
+          },
+          {
+            "word": "evidence",
+            "start": 59.460003,
+            "end": 60.18,
+            "confidence": 0.81933594,
+            "punctuated_word": "evidence."
+          }
+        ],
+        "id": "8a7ded0e-1abf-43f0-854e-c5c9ee1e8b19"
+      },
+      {
+        "start": 60.420002,
+        "end": 64.100006,
+        "confidence": 0.9990845,
+        "channel": 0,
+        "transcript": "A convincing looking mask hasn't removed the association.",
+        "words": [
+          {
+            "word": "a",
+            "start": 60.420002,
+            "end": 60.660004,
+            "confidence": 1.0,
+            "punctuated_word": "A"
+          },
+          {
+            "word": "convincing",
+            "start": 60.660004,
+            "end": 61.140003,
+            "confidence": 1.0,
+            "punctuated_word": "convincing"
+          },
+          {
+            "word": "looking",
+            "start": 61.140003,
+            "end": 61.54,
+            "confidence": 0.9980469,
+            "punctuated_word": "looking"
+          },
+          {
+            "word": "mask",
+            "start": 61.54,
+            "end": 62.100002,
+            "confidence": 1.0,
+            "punctuated_word": "mask"
+          },
+          {
+            "word": "hasn't",
+            "start": 62.100002,
+            "end": 62.58,
+            "confidence": 0.9995117,
+            "punctuated_word": "hasn't"
+          },
+          {
+            "word": "removed",
+            "start": 62.58,
+            "end": 62.980003,
+            "confidence": 1.0,
+            "punctuated_word": "removed"
+          },
+          {
+            "word": "the",
+            "start": 62.980003,
+            "end": 63.22,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "association",
+            "start": 63.22,
+            "end": 64.100006,
+            "confidence": 0.9951172,
+            "punctuated_word": "association."
+          }
+        ],
+        "id": "ffd6e095-594f-4af9-a7e7-c06e378daae7"
+      },
+      {
+        "start": 65.62,
+        "end": 67.060005,
+        "confidence": 0.9833171,
+        "channel": 0,
+        "transcript": "Undo that trial.",
+        "words": [
+          {
+            "word": "undo",
+            "start": 65.62,
+            "end": 66.18,
+            "confidence": 0.99902344,
+            "punctuated_word": "Undo"
+          },
+          {
+            "word": "that",
+            "start": 66.18,
+            "end": 66.42,
+            "confidence": 0.9980469,
+            "punctuated_word": "that"
+          },
+          {
+            "word": "trial",
+            "start": 66.42,
+            "end": 67.060005,
+            "confidence": 0.95288086,
+            "punctuated_word": "trial."
+          }
+        ],
+        "id": "6b496df1-376a-4f60-83dd-39dff02a824d"
+      },
+      {
+        "start": 67.380005,
+        "end": 69.78,
+        "confidence": 0.9547933,
+        "channel": 0,
+        "transcript": "Mosaic finds a one mask repair.",
+        "words": [
+          {
+            "word": "mosaic",
+            "start": 67.380005,
+            "end": 68.020004,
+            "confidence": 1.0,
+            "punctuated_word": "Mosaic"
+          },
+          {
+            "word": "finds",
+            "start": 68.020004,
+            "end": 68.5,
+            "confidence": 0.99902344,
+            "punctuated_word": "finds"
+          },
+          {
+            "word": "a",
+            "start": 68.5,
+            "end": 68.740005,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "one",
+            "start": 68.740005,
+            "end": 68.98,
+            "confidence": 0.9707031,
+            "punctuated_word": "one"
+          },
+          {
+            "word": "mask",
+            "start": 68.98,
+            "end": 69.3,
+            "confidence": 0.9970703,
+            "punctuated_word": "mask"
+          },
+          {
+            "word": "repair",
+            "start": 69.3,
+            "end": 69.78,
+            "confidence": 0.76293945,
+            "punctuated_word": "repair."
+          }
+        ],
+        "id": "1dc9eec0-0439-42d3-8f54-5305a5a1dc9f"
+      },
+      {
+        "start": 70.355,
+        "end": 74.435005,
+        "confidence": 0.95761716,
+        "channel": 0,
+        "transcript": "Cover the shared customer name and both known routes disappear.",
+        "words": [
+          {
+            "word": "cover",
+            "start": 70.355,
+            "end": 70.675,
+            "confidence": 0.94970703,
+            "punctuated_word": "Cover"
+          },
+          {
+            "word": "the",
+            "start": 70.675,
+            "end": 70.915,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "shared",
+            "start": 70.915,
+            "end": 71.235,
+            "confidence": 0.9980469,
+            "punctuated_word": "shared"
+          },
+          {
+            "word": "customer",
+            "start": 71.235,
+            "end": 71.635,
+            "confidence": 1.0,
+            "punctuated_word": "customer"
+          },
+          {
+            "word": "name",
+            "start": 71.635,
+            "end": 72.035,
+            "confidence": 1.0,
+            "punctuated_word": "name"
+          },
+          {
+            "word": "and",
+            "start": 72.035,
+            "end": 72.435005,
+            "confidence": 0.85253906,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "both",
+            "start": 72.435005,
+            "end": 72.755005,
+            "confidence": 1.0,
+            "punctuated_word": "both"
+          },
+          {
+            "word": "known",
+            "start": 72.755005,
+            "end": 73.15501,
+            "confidence": 0.9980469,
+            "punctuated_word": "known"
+          },
+          {
+            "word": "routes",
+            "start": 73.15501,
+            "end": 73.555,
+            "confidence": 1.0,
+            "punctuated_word": "routes"
+          },
+          {
+            "word": "disappear",
+            "start": 73.555,
+            "end": 74.435005,
+            "confidence": 0.77783203,
+            "punctuated_word": "disappear."
+          }
+        ],
+        "id": "d6575bd1-e39a-40fd-acf3-da749e9aaa9f"
+      },
+      {
+        "start": 74.915,
+        "end": 78.195,
+        "confidence": 0.9894477,
+        "channel": 0,
+        "transcript": "But that erases the credit this case study needs.",
+        "words": [
+          {
+            "word": "but",
+            "start": 74.915,
+            "end": 75.15501,
+            "confidence": 0.99902344,
+            "punctuated_word": "But"
+          },
+          {
+            "word": "that",
+            "start": 75.15501,
+            "end": 75.555,
+            "confidence": 0.99609375,
+            "punctuated_word": "that"
+          },
+          {
+            "word": "erases",
+            "start": 75.555,
+            "end": 76.115005,
+            "confidence": 1.0,
+            "punctuated_word": "erases"
+          },
+          {
+            "word": "the",
+            "start": 76.115005,
+            "end": 76.355,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "credit",
+            "start": 76.355,
+            "end": 76.675,
+            "confidence": 1.0,
+            "punctuated_word": "credit"
+          },
+          {
+            "word": "this",
+            "start": 76.675,
+            "end": 76.995,
+            "confidence": 0.9970703,
+            "punctuated_word": "this"
+          },
+          {
+            "word": "case",
+            "start": 76.995,
+            "end": 77.235,
+            "confidence": 1.0,
+            "punctuated_word": "case"
+          },
+          {
+            "word": "study",
+            "start": 77.235,
+            "end": 77.555,
+            "confidence": 1.0,
+            "punctuated_word": "study"
+          },
+          {
+            "word": "needs",
+            "start": 77.555,
+            "end": 78.195,
+            "confidence": 0.9128418,
+            "punctuated_word": "needs."
+          }
+        ],
+        "id": "ff7a39e3-3da0-4e81-bc81-3095312eccd2"
+      },
+      {
+        "start": 78.675,
+        "end": 82.19501,
+        "confidence": 0.93486327,
+        "channel": 0,
+        "transcript": "Mark that region, keep visible and find a new repair.",
+        "words": [
+          {
+            "word": "mark",
+            "start": 78.675,
+            "end": 78.995,
+            "confidence": 0.9970703,
+            "punctuated_word": "Mark"
+          },
+          {
+            "word": "that",
+            "start": 78.995,
+            "end": 79.235,
+            "confidence": 0.99902344,
+            "punctuated_word": "that"
+          },
+          {
+            "word": "region",
+            "start": 79.235,
+            "end": 79.955,
+            "confidence": 0.7685547,
+            "punctuated_word": "region,"
+          },
+          {
+            "word": "keep",
+            "start": 79.955,
+            "end": 80.19501,
+            "confidence": 0.9140625,
+            "punctuated_word": "keep"
+          },
+          {
+            "word": "visible",
+            "start": 80.19501,
+            "end": 80.755005,
+            "confidence": 0.99902344,
+            "punctuated_word": "visible"
+          },
+          {
+            "word": "and",
+            "start": 80.755005,
+            "end": 81.15501,
+            "confidence": 0.67529297,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "find",
+            "start": 81.15501,
+            "end": 81.395004,
+            "confidence": 1.0,
+            "punctuated_word": "find"
+          },
+          {
+            "word": "a",
+            "start": 81.395004,
+            "end": 81.555,
+            "confidence": 1.0,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "new",
+            "start": 81.555,
+            "end": 81.795006,
+            "confidence": 1.0,
+            "punctuated_word": "new"
+          },
+          {
+            "word": "repair",
+            "start": 81.795006,
+            "end": 82.19501,
+            "confidence": 0.99560547,
+            "punctuated_word": "repair."
+          }
+        ],
+        "id": "1a259947-8fc2-4cc7-8ce6-42fdee440169"
+      },
+      {
+        "start": 83.079994,
+        "end": 85.71999,
+        "confidence": 0.9508231,
+        "channel": 0,
+        "transcript": "Two identifiers in the incident are masked.",
+        "words": [
+          {
+            "word": "two",
+            "start": 83.079994,
+            "end": 83.399994,
+            "confidence": 0.9951172,
+            "punctuated_word": "Two"
+          },
+          {
+            "word": "identifiers",
+            "start": 83.399994,
+            "end": 84.119995,
+            "confidence": 0.9970703,
+            "punctuated_word": "identifiers"
+          },
+          {
+            "word": "in",
+            "start": 84.119995,
+            "end": 84.28,
+            "confidence": 0.99902344,
+            "punctuated_word": "in"
+          },
+          {
+            "word": "the",
+            "start": 84.28,
+            "end": 84.439995,
+            "confidence": 0.99902344,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "incident",
+            "start": 84.439995,
+            "end": 84.759995,
+            "confidence": 0.97509766,
+            "punctuated_word": "incident"
+          },
+          {
+            "word": "are",
+            "start": 84.759995,
+            "end": 85.079994,
+            "confidence": 1.0,
+            "punctuated_word": "are"
+          },
+          {
+            "word": "masked",
+            "start": 85.079994,
+            "end": 85.71999,
+            "confidence": 0.6904297,
+            "punctuated_word": "masked."
+          }
+        ],
+        "id": "6724eb30-126a-4ae9-988b-dfbbfbfd0079"
+      },
+      {
+        "start": 85.88,
+        "end": 87.799995,
+        "confidence": 0.9927734,
+        "channel": 0,
+        "transcript": "The public credit stays intact.",
+        "words": [
+          {
+            "word": "the",
+            "start": 85.88,
+            "end": 86.03999,
+            "confidence": 0.99902344,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "public",
+            "start": 86.03999,
+            "end": 86.36,
+            "confidence": 0.9838867,
+            "punctuated_word": "public"
+          },
+          {
+            "word": "credit",
+            "start": 86.36,
+            "end": 86.68,
+            "confidence": 0.9980469,
+            "punctuated_word": "credit"
+          },
+          {
+            "word": "stays",
+            "start": 86.68,
+            "end": 87.079994,
+            "confidence": 1.0,
+            "punctuated_word": "stays"
+          },
+          {
+            "word": "intact",
+            "start": 87.079994,
+            "end": 87.799995,
+            "confidence": 0.98291016,
+            "punctuated_word": "intact."
+          }
+        ],
+        "id": "e53bff72-935d-49f9-a66a-8e31d2687060"
+      },
+      {
+        "start": 88.28,
+        "end": 93.079994,
+        "confidence": 0.9979359,
+        "channel": 0,
+        "transcript": "Mosaic finds the fewest candidate masks allowed by that preservation choice.",
+        "words": [
+          {
+            "word": "mosaic",
+            "start": 88.28,
+            "end": 88.759995,
+            "confidence": 1.0,
+            "punctuated_word": "Mosaic"
+          },
+          {
+            "word": "finds",
+            "start": 88.92,
+            "end": 89.32,
+            "confidence": 0.99902344,
+            "punctuated_word": "finds"
+          },
+          {
+            "word": "the",
+            "start": 89.32,
+            "end": 89.479996,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "fewest",
+            "start": 89.479996,
+            "end": 89.96,
+            "confidence": 0.99853516,
+            "punctuated_word": "fewest"
+          },
+          {
+            "word": "candidate",
+            "start": 89.96,
+            "end": 90.439995,
+            "confidence": 1.0,
+            "punctuated_word": "candidate"
+          },
+          {
+            "word": "masks",
+            "start": 90.439995,
+            "end": 90.84,
+            "confidence": 0.99902344,
+            "punctuated_word": "masks"
+          },
+          {
+            "word": "allowed",
+            "start": 90.84,
+            "end": 91.399994,
+            "confidence": 1.0,
+            "punctuated_word": "allowed"
+          },
+          {
+            "word": "by",
+            "start": 91.399994,
+            "end": 91.64,
+            "confidence": 1.0,
+            "punctuated_word": "by"
+          },
+          {
+            "word": "that",
+            "start": 91.64,
+            "end": 91.799995,
+            "confidence": 0.9980469,
+            "punctuated_word": "that"
+          },
+          {
+            "word": "preservation",
+            "start": 91.799995,
+            "end": 92.439995,
+            "confidence": 1.0,
+            "punctuated_word": "preservation"
+          },
+          {
+            "word": "choice",
+            "start": 92.439995,
+            "end": 93.079994,
+            "confidence": 0.982666,
+            "punctuated_word": "choice."
+          }
+        ],
+        "id": "7b8e8e02-1278-4a87-a1bf-8c43225a36f8"
+      },
+      {
+        "start": 93.32,
+        "end": 95.56,
+        "confidence": 0.9970703,
+        "channel": 0,
+        "transcript": "The publishing decision drives the edit.",
+        "words": [
+          {
+            "word": "the",
+            "start": 93.32,
+            "end": 93.56,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "publishing",
+            "start": 93.56,
+            "end": 94.03999,
+            "confidence": 0.98828125,
+            "punctuated_word": "publishing"
+          },
+          {
+            "word": "decision",
+            "start": 94.03999,
+            "end": 94.6,
+            "confidence": 0.99902344,
+            "punctuated_word": "decision"
+          },
+          {
+            "word": "drives",
+            "start": 94.6,
+            "end": 95.079994,
+            "confidence": 1.0,
+            "punctuated_word": "drives"
+          },
+          {
+            "word": "the",
+            "start": 95.079994,
+            "end": 95.24,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "edit",
+            "start": 95.24,
+            "end": 95.56,
+            "confidence": 0.9951172,
+            "punctuated_word": "edit."
+          }
+        ],
+        "id": "f0214672-77eb-4bb4-a7cb-51b049279fe0"
+      },
+      {
+        "start": 96.825,
+        "end": 98.265,
+        "confidence": 0.8983154,
+        "channel": 0,
+        "transcript": "Now export.",
+        "words": [
+          {
+            "word": "now",
+            "start": 96.825,
+            "end": 97.385,
+            "confidence": 0.9980469,
+            "punctuated_word": "Now"
+          },
+          {
+            "word": "export",
+            "start": 97.385,
+            "end": 98.265,
+            "confidence": 0.798584,
+            "punctuated_word": "export."
+          }
+        ],
+        "id": "840c2246-f9ef-4e11-88cb-beb781d26d13"
+      },
+      {
+        "start": 98.585,
+        "end": 101.545,
+        "confidence": 0.99121094,
+        "channel": 0,
+        "transcript": "Mosaic creates new PNG files,",
+        "words": [
+          {
+            "word": "mosaic",
+            "start": 98.585,
+            "end": 99.305,
+            "confidence": 1.0,
+            "punctuated_word": "Mosaic"
+          },
+          {
+            "word": "creates",
+            "start": 99.305,
+            "end": 99.785,
+            "confidence": 1.0,
+            "punctuated_word": "creates"
+          },
+          {
+            "word": "new",
+            "start": 99.785,
+            "end": 100.185,
+            "confidence": 0.99902344,
+            "punctuated_word": "new"
+          },
+          {
+            "word": "png",
+            "start": 100.185,
+            "end": 100.745,
+            "confidence": 0.9873047,
+            "punctuated_word": "PNG"
+          },
+          {
+            "word": "files",
+            "start": 100.745,
+            "end": 101.545,
+            "confidence": 0.96972656,
+            "punctuated_word": "files,"
+          }
+        ],
+        "id": "632ade54-554c-43f8-bc84-cf66d6690097"
+      },
+      {
+        "start": 101.785,
+        "end": 105.784996,
+        "confidence": 0.9628364,
+        "channel": 0,
+        "transcript": "decodes those actual files again and checks the masks,",
+        "words": [
+          {
+            "word": "decodes",
+            "start": 101.785,
+            "end": 102.425,
+            "confidence": 0.99902344,
+            "punctuated_word": "decodes"
+          },
+          {
+            "word": "those",
+            "start": 102.425,
+            "end": 102.745,
+            "confidence": 0.99902344,
+            "punctuated_word": "those"
+          },
+          {
+            "word": "actual",
+            "start": 102.745,
+            "end": 103.225,
+            "confidence": 0.99902344,
+            "punctuated_word": "actual"
+          },
+          {
+            "word": "files",
+            "start": 103.225,
+            "end": 103.545,
+            "confidence": 1.0,
+            "punctuated_word": "files"
+          },
+          {
+            "word": "again",
+            "start": 103.545,
+            "end": 104.185,
+            "confidence": 0.99902344,
+            "punctuated_word": "again"
+          },
+          {
+            "word": "and",
+            "start": 104.185,
+            "end": 104.425,
+            "confidence": 0.6870117,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "checks",
+            "start": 104.425,
+            "end": 104.825,
+            "confidence": 0.99902344,
+            "punctuated_word": "checks"
+          },
+          {
+            "word": "the",
+            "start": 104.825,
+            "end": 104.985,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "masks",
+            "start": 104.985,
+            "end": 105.784996,
+            "confidence": 0.98339844,
+            "punctuated_word": "masks,"
+          }
+        ],
+        "id": "4cdae272-2a94-4b2e-9594-abdef842c5b5"
+      },
+      {
+        "start": 105.865,
+        "end": 108.025,
+        "confidence": 0.97458494,
+        "channel": 0,
+        "transcript": "unchanged pixels, and kept credit.",
+        "words": [
+          {
+            "word": "unchanged",
+            "start": 105.865,
+            "end": 106.345,
+            "confidence": 0.9970703,
+            "punctuated_word": "unchanged"
+          },
+          {
+            "word": "pixels",
+            "start": 106.345,
+            "end": 107.145,
+            "confidence": 0.88635254,
+            "punctuated_word": "pixels,"
+          },
+          {
+            "word": "and",
+            "start": 107.145,
+            "end": 107.305,
+            "confidence": 1.0,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "kept",
+            "start": 107.305,
+            "end": 107.625,
+            "confidence": 0.99902344,
+            "punctuated_word": "kept"
+          },
+          {
+            "word": "credit",
+            "start": 107.625,
+            "end": 108.025,
+            "confidence": 0.9904785,
+            "punctuated_word": "credit."
+          }
+        ],
+        "id": "c7e03521-87e7-4dde-9be3-0e379b843601"
+      },
+      {
+        "start": 108.58,
+        "end": 112.26,
+        "confidence": 0.95192873,
+        "channel": 0,
+        "transcript": "This is an output check beyond the on screen preview.",
+        "words": [
+          {
+            "word": "this",
+            "start": 108.58,
+            "end": 108.9,
+            "confidence": 1.0,
+            "punctuated_word": "This"
+          },
+          {
+            "word": "is",
+            "start": 108.9,
+            "end": 109.14,
+            "confidence": 1.0,
+            "punctuated_word": "is"
+          },
+          {
+            "word": "an",
+            "start": 109.14,
+            "end": 109.3,
+            "confidence": 1.0,
+            "punctuated_word": "an"
+          },
+          {
+            "word": "output",
+            "start": 109.3,
+            "end": 109.7,
+            "confidence": 0.99902344,
+            "punctuated_word": "output"
+          },
+          {
+            "word": "check",
+            "start": 109.7,
+            "end": 110.18,
+            "confidence": 1.0,
+            "punctuated_word": "check"
+          },
+          {
+            "word": "beyond",
+            "start": 110.18,
+            "end": 110.74,
+            "confidence": 0.8984375,
+            "punctuated_word": "beyond"
+          },
+          {
+            "word": "the",
+            "start": 110.74,
+            "end": 110.98,
+            "confidence": 0.99902344,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "on",
+            "start": 110.98,
+            "end": 111.22,
+            "confidence": 0.99902344,
+            "punctuated_word": "on"
+          },
+          {
+            "word": "screen",
+            "start": 111.22,
+            "end": 111.54,
+            "confidence": 0.63671875,
+            "punctuated_word": "screen"
+          },
+          {
+            "word": "preview",
+            "start": 111.54,
+            "end": 112.26,
+            "confidence": 0.98706055,
+            "punctuated_word": "preview."
+          }
+        ],
+        "id": "4e8901b6-9222-4b99-82a1-29e0b1964c15"
+      },
+      {
+        "start": 112.82,
+        "end": 114.18,
+        "confidence": 0.9000244,
+        "channel": 0,
+        "transcript": "Open the outputs.",
+        "words": [
+          {
+            "word": "open",
+            "start": 112.82,
+            "end": 113.22,
+            "confidence": 0.99902344,
+            "punctuated_word": "Open"
+          },
+          {
+            "word": "the",
+            "start": 113.22,
+            "end": 113.38,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "outputs",
+            "start": 113.38,
+            "end": 114.18,
+            "confidence": 0.7010498,
+            "punctuated_word": "outputs."
+          }
+        ],
+        "id": "32822dbf-0d05-41e6-a59d-b44e982a2d1b"
+      },
+      {
+        "start": 114.5,
+        "end": 117.14,
+        "confidence": 0.96711075,
+        "channel": 0,
+        "transcript": "Two opaque masks in the support image,",
+        "words": [
+          {
+            "word": "two",
+            "start": 114.5,
+            "end": 114.82,
+            "confidence": 0.9863281,
+            "punctuated_word": "Two"
+          },
+          {
+            "word": "opaque",
+            "start": 114.82,
+            "end": 115.46,
+            "confidence": 0.9980469,
+            "punctuated_word": "opaque"
+          },
+          {
+            "word": "masks",
+            "start": 115.46,
+            "end": 115.86,
+            "confidence": 1.0,
+            "punctuated_word": "masks"
+          },
+          {
+            "word": "in",
+            "start": 115.86,
+            "end": 116.1,
+            "confidence": 1.0,
+            "punctuated_word": "in"
+          },
+          {
+            "word": "the",
+            "start": 116.1,
+            "end": 116.26,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "support",
+            "start": 116.26,
+            "end": 116.5,
+            "confidence": 0.9980469,
+            "punctuated_word": "support"
+          },
+          {
+            "word": "image",
+            "start": 116.5,
+            "end": 117.14,
+            "confidence": 0.7873535,
+            "punctuated_word": "image,"
+          }
+        ],
+        "id": "d0259bfb-8eee-4f5c-86ec-b0bafb21c4b7"
+      },
+      {
+        "start": 117.46,
+        "end": 119.54,
+        "confidence": 0.9956462,
+        "channel": 0,
+        "transcript": "public credit intact in the directory.",
+        "words": [
+          {
+            "word": "public",
+            "start": 117.46,
+            "end": 117.86,
+            "confidence": 0.9970703,
+            "punctuated_word": "public"
+          },
+          {
+            "word": "credit",
+            "start": 117.86,
+            "end": 118.18,
+            "confidence": 0.9970703,
+            "punctuated_word": "credit"
+          },
+          {
+            "word": "intact",
+            "start": 118.18,
+            "end": 118.74,
+            "confidence": 0.9921875,
+            "punctuated_word": "intact"
+          },
+          {
+            "word": "in",
+            "start": 118.74,
+            "end": 118.98,
+            "confidence": 0.99902344,
+            "punctuated_word": "in"
+          },
+          {
+            "word": "the",
+            "start": 118.98,
+            "end": 119.14,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "directory",
+            "start": 119.14,
+            "end": 119.54,
+            "confidence": 0.9885254,
+            "punctuated_word": "directory."
+          }
+        ],
+        "id": "1605e72c-ff02-441d-93a6-10fd1de6e905"
+      },
+      {
+        "start": 120.355,
+        "end": 128.27501,
+        "confidence": 0.97543675,
+        "channel": 0,
+        "transcript": "A separate, consented fresh reading sends only exported images and the starting incident to a new model context.",
+        "words": [
+          {
+            "word": "a",
+            "start": 120.355,
+            "end": 120.675,
+            "confidence": 1.0,
+            "punctuated_word": "A"
+          },
+          {
+            "word": "separate",
+            "start": 120.675,
+            "end": 121.315,
+            "confidence": 0.80908203,
+            "punctuated_word": "separate,"
+          },
+          {
+            "word": "consented",
+            "start": 121.315,
+            "end": 121.955,
+            "confidence": 0.9995117,
+            "punctuated_word": "consented"
+          },
+          {
+            "word": "fresh",
+            "start": 121.955,
+            "end": 122.354996,
+            "confidence": 0.875,
+            "punctuated_word": "fresh"
+          },
+          {
+            "word": "reading",
+            "start": 122.354996,
+            "end": 122.915,
+            "confidence": 0.99902344,
+            "punctuated_word": "reading"
+          },
+          {
+            "word": "sends",
+            "start": 122.915,
+            "end": 123.475,
+            "confidence": 0.99902344,
+            "punctuated_word": "sends"
+          },
+          {
+            "word": "only",
+            "start": 123.475,
+            "end": 123.875,
+            "confidence": 1.0,
+            "punctuated_word": "only"
+          },
+          {
+            "word": "exported",
+            "start": 123.875,
+            "end": 124.354996,
+            "confidence": 1.0,
+            "punctuated_word": "exported"
+          },
+          {
+            "word": "images",
+            "start": 124.354996,
+            "end": 124.995,
+            "confidence": 1.0,
+            "punctuated_word": "images"
+          },
+          {
+            "word": "and",
+            "start": 124.995,
+            "end": 125.315,
+            "confidence": 0.9980469,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "the",
+            "start": 125.315,
+            "end": 125.555,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "starting",
+            "start": 125.555,
+            "end": 125.955,
+            "confidence": 0.9970703,
+            "punctuated_word": "starting"
+          },
+          {
+            "word": "incident",
+            "start": 125.955,
+            "end": 126.435,
+            "confidence": 1.0,
+            "punctuated_word": "incident"
+          },
+          {
+            "word": "to",
+            "start": 126.435,
+            "end": 126.675,
+            "confidence": 1.0,
+            "punctuated_word": "to"
+          },
+          {
+            "word": "a",
+            "start": 126.675,
+            "end": 126.915,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "new",
+            "start": 126.915,
+            "end": 127.075,
+            "confidence": 1.0,
+            "punctuated_word": "new"
+          },
+          {
+            "word": "model",
+            "start": 127.075,
+            "end": 127.475,
+            "confidence": 0.99902344,
+            "punctuated_word": "model"
+          },
+          {
+            "word": "context",
+            "start": 127.475,
+            "end": 128.27501,
+            "confidence": 0.88305664,
+            "punctuated_word": "context."
+          }
+        ],
+        "id": "6a6753cd-725b-477e-af48-291e0715f1f7"
+      },
+      {
+        "start": 128.675,
+        "end": 132.035,
+        "confidence": 0.99869794,
+        "channel": 0,
+        "transcript": "The protected answer and original evidence graph are withheld.",
+        "words": [
+          {
+            "word": "the",
+            "start": 128.675,
+            "end": 128.83499,
+            "confidence": 1.0,
+            "punctuated_word": "The"
+          },
+          {
+            "word": "protected",
+            "start": 128.83499,
+            "end": 129.315,
+            "confidence": 0.9941406,
+            "punctuated_word": "protected"
+          },
+          {
+            "word": "answer",
+            "start": 129.315,
+            "end": 129.715,
+            "confidence": 1.0,
+            "punctuated_word": "answer"
+          },
+          {
+            "word": "and",
+            "start": 129.715,
+            "end": 130.035,
+            "confidence": 1.0,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "original",
+            "start": 130.035,
+            "end": 130.435,
+            "confidence": 0.99902344,
+            "punctuated_word": "original"
+          },
+          {
+            "word": "evidence",
+            "start": 130.435,
+            "end": 130.915,
+            "confidence": 0.9980469,
+            "punctuated_word": "evidence"
+          },
+          {
+            "word": "graph",
+            "start": 130.915,
+            "end": 131.235,
+            "confidence": 0.9980469,
+            "punctuated_word": "graph"
+          },
+          {
+            "word": "are",
+            "start": 131.235,
+            "end": 131.555,
+            "confidence": 1.0,
+            "punctuated_word": "are"
+          },
+          {
+            "word": "withheld",
+            "start": 131.555,
+            "end": 132.035,
+            "confidence": 0.99902344,
+            "punctuated_word": "withheld."
+          }
+        ],
+        "id": "d9ae82ea-a56d-439b-a353-c9fe4399e2ac"
+      },
+      {
+        "start": 133.25,
+        "end": 134.69,
+        "confidence": 0.9803874,
+        "channel": 0,
+        "transcript": "In this separate,",
+        "words": [
+          {
+            "word": "in",
+            "start": 133.25,
+            "end": 133.56999,
+            "confidence": 1.0,
+            "punctuated_word": "In"
+          },
+          {
+            "word": "this",
+            "start": 133.56999,
+            "end": 133.89,
+            "confidence": 0.99902344,
+            "punctuated_word": "this"
+          },
+          {
+            "word": "separate",
+            "start": 133.89,
+            "end": 134.69,
+            "confidence": 0.9421387,
+            "punctuated_word": "separate,"
+          }
+        ],
+        "id": "d41eca5c-fe46-4fd1-83eb-e489fed5e4d5"
+      },
+      {
+        "start": 134.77,
+        "end": 136.37,
+        "confidence": 1.0,
+        "channel": 0,
+        "transcript": "deliberately incomplete",
+        "words": [
+          {
+            "word": "deliberately",
+            "start": 134.77,
+            "end": 135.56999,
+            "confidence": 1.0,
+            "punctuated_word": "deliberately"
+          },
+          {
+            "word": "incomplete",
+            "start": 135.56999,
+            "end": 136.37,
+            "confidence": 1.0,
+            "punctuated_word": "incomplete"
+          }
+        ],
+        "id": "0c7c1153-d435-463e-b7a0-691aadec9d65"
+      },
+      {
+        "start": 136.37,
+        "end": 137.09,
+        "confidence": 0.9243164,
+        "channel": 0,
+        "transcript": "test,",
+        "words": [
+          {
+            "word": "test",
+            "start": 136.37,
+            "end": 137.09,
+            "confidence": 0.9243164,
+            "punctuated_word": "test,"
+          }
+        ],
+        "id": "8a7ea6ad-03e9-426a-b0cd-4500bc9871ba"
+      },
+      {
+        "start": 137.41,
+        "end": 140.53,
+        "confidence": 0.9965332,
+        "channel": 0,
+        "transcript": "one channel link was left out of the original review.",
+        "words": [
+          {
+            "word": "one",
+            "start": 137.41,
+            "end": 137.65,
+            "confidence": 1.0,
+            "punctuated_word": "one"
+          },
+          {
+            "word": "channel",
+            "start": 137.65,
+            "end": 138.05,
+            "confidence": 0.9980469,
+            "punctuated_word": "channel"
+          },
+          {
+            "word": "link",
+            "start": 138.05,
+            "end": 138.37,
+            "confidence": 0.99902344,
+            "punctuated_word": "link"
+          },
+          {
+            "word": "was",
+            "start": 138.37,
+            "end": 138.61,
+            "confidence": 1.0,
+            "punctuated_word": "was"
+          },
+          {
+            "word": "left",
+            "start": 138.61,
+            "end": 138.93,
+            "confidence": 1.0,
+            "punctuated_word": "left"
+          },
+          {
+            "word": "out",
+            "start": 138.93,
+            "end": 139.09,
+            "confidence": 0.99902344,
+            "punctuated_word": "out"
+          },
+          {
+            "word": "of",
+            "start": 139.09,
+            "end": 139.25,
+            "confidence": 0.99902344,
+            "punctuated_word": "of"
+          },
+          {
+            "word": "the",
+            "start": 139.25,
+            "end": 139.48999,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "original",
+            "start": 139.48999,
+            "end": 139.89,
+            "confidence": 1.0,
+            "punctuated_word": "original"
+          },
+          {
+            "word": "review",
+            "start": 139.89,
+            "end": 140.53,
+            "confidence": 0.97021484,
+            "punctuated_word": "review."
+          }
+        ],
+        "id": "203fc3d9-acaa-4734-8943-864cd8de782f"
+      },
+      {
+        "start": 140.93,
+        "end": 142.12999,
+        "confidence": 0.9980469,
+        "channel": 0,
+        "transcript": "After export,",
+        "words": [
+          {
+            "word": "after",
+            "start": 140.93,
+            "end": 141.25,
+            "confidence": 1.0,
+            "punctuated_word": "After"
+          },
+          {
+            "word": "export",
+            "start": 141.25,
+            "end": 142.12999,
+            "confidence": 0.99609375,
+            "punctuated_word": "export,"
+          }
+        ],
+        "id": "8b6d5cc9-105e-4c58-a3f7-d91317fb90c4"
+      },
+      {
+        "start": 142.12999,
+        "end": 145.17,
+        "confidence": 0.9656808,
+        "channel": 0,
+        "transcript": "the fresh reader proposes the surviving association.",
+        "words": [
+          {
+            "word": "the",
+            "start": 142.12999,
+            "end": 142.29,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "fresh",
+            "start": 142.29,
+            "end": 142.61,
+            "confidence": 0.96972656,
+            "punctuated_word": "fresh"
+          },
+          {
+            "word": "reader",
+            "start": 142.61,
+            "end": 143.01,
+            "confidence": 0.9970703,
+            "punctuated_word": "reader"
+          },
+          {
+            "word": "proposes",
+            "start": 143.01,
+            "end": 143.65,
+            "confidence": 1.0,
+            "punctuated_word": "proposes"
+          },
+          {
+            "word": "the",
+            "start": 143.65,
+            "end": 143.89,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "surviving",
+            "start": 143.89,
+            "end": 144.53,
+            "confidence": 0.9819336,
+            "punctuated_word": "surviving"
+          },
+          {
+            "word": "association",
+            "start": 144.53,
+            "end": 145.17,
+            "confidence": 0.81103516,
+            "punctuated_word": "association."
+          }
+        ],
+        "id": "1ce92661-b2ad-4303-8069-694baaabb202"
+      },
+      {
+        "start": 146.125,
+        "end": 149.32501,
+        "confidence": 0.98828125,
+        "channel": 0,
+        "transcript": "Inspect its returned region on the actual output,",
+        "words": [
+          {
+            "word": "inspect",
+            "start": 146.125,
+            "end": 146.60501,
+            "confidence": 0.9951172,
+            "punctuated_word": "Inspect"
+          },
+          {
+            "word": "its",
+            "start": 146.60501,
+            "end": 146.845,
+            "confidence": 0.99609375,
+            "punctuated_word": "its"
+          },
+          {
+            "word": "returned",
+            "start": 146.845,
+            "end": 147.32501,
+            "confidence": 0.99609375,
+            "punctuated_word": "returned"
+          },
+          {
+            "word": "region",
+            "start": 147.32501,
+            "end": 147.80501,
+            "confidence": 1.0,
+            "punctuated_word": "region"
+          },
+          {
+            "word": "on",
+            "start": 147.80501,
+            "end": 148.04501,
+            "confidence": 1.0,
+            "punctuated_word": "on"
+          },
+          {
+            "word": "the",
+            "start": 148.04501,
+            "end": 148.205,
+            "confidence": 0.99902344,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "actual",
+            "start": 148.205,
+            "end": 148.60501,
+            "confidence": 1.0,
+            "punctuated_word": "actual"
+          },
+          {
+            "word": "output",
+            "start": 148.60501,
+            "end": 149.32501,
+            "confidence": 0.9199219,
+            "punctuated_word": "output,"
+          }
+        ],
+        "id": "ccda8f05-b8c8-42c4-b627-477272e3d3c3"
+      },
+      {
+        "start": 149.565,
+        "end": 152.445,
+        "confidence": 0.97209823,
+        "channel": 0,
+        "transcript": "then reopen the exported bundle for review.",
+        "words": [
+          {
+            "word": "then",
+            "start": 149.565,
+            "end": 149.88501,
+            "confidence": 0.99902344,
+            "punctuated_word": "then"
+          },
+          {
+            "word": "reopen",
+            "start": 149.88501,
+            "end": 150.445,
+            "confidence": 0.80908203,
+            "punctuated_word": "reopen"
+          },
+          {
+            "word": "the",
+            "start": 150.445,
+            "end": 150.68501,
+            "confidence": 1.0,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "exported",
+            "start": 150.68501,
+            "end": 151.16501,
+            "confidence": 1.0,
+            "punctuated_word": "exported"
+          },
+          {
+            "word": "bundle",
+            "start": 151.16501,
+            "end": 151.565,
+            "confidence": 1.0,
+            "punctuated_word": "bundle"
+          },
+          {
+            "word": "for",
+            "start": 151.565,
+            "end": 151.80501,
+            "confidence": 1.0,
+            "punctuated_word": "for"
+          },
+          {
+            "word": "review",
+            "start": 151.80501,
+            "end": 152.445,
+            "confidence": 0.99658203,
+            "punctuated_word": "review."
+          }
+        ],
+        "id": "4ad906ac-bc29-4095-bfa5-15a20eee1de8"
+      },
+      {
+        "start": 152.765,
+        "end": 156.365,
+        "confidence": 0.97022843,
+        "channel": 0,
+        "transcript": "This checks known evidence and adds a model observation,",
+        "words": [
+          {
+            "word": "this",
+            "start": 152.765,
+            "end": 153.085,
+            "confidence": 1.0,
+            "punctuated_word": "This"
+          },
+          {
+            "word": "checks",
+            "start": 153.085,
+            "end": 153.485,
+            "confidence": 1.0,
+            "punctuated_word": "checks"
+          },
+          {
+            "word": "known",
+            "start": 153.485,
+            "end": 153.96501,
+            "confidence": 0.99902344,
+            "punctuated_word": "known"
+          },
+          {
+            "word": "evidence",
+            "start": 153.96501,
+            "end": 154.52501,
+            "confidence": 1.0,
+            "punctuated_word": "evidence"
+          },
+          {
+            "word": "and",
+            "start": 154.52501,
+            "end": 154.845,
+            "confidence": 0.99609375,
+            "punctuated_word": "and"
+          },
+          {
+            "word": "adds",
+            "start": 154.845,
+            "end": 155.24501,
+            "confidence": 0.99902344,
+            "punctuated_word": "adds"
+          },
+          {
+            "word": "a",
+            "start": 155.24501,
+            "end": 155.405,
+            "confidence": 0.99902344,
+            "punctuated_word": "a"
+          },
+          {
+            "word": "model",
+            "start": 155.405,
+            "end": 155.725,
+            "confidence": 0.99609375,
+            "punctuated_word": "model"
+          },
+          {
+            "word": "observation",
+            "start": 155.725,
+            "end": 156.365,
+            "confidence": 0.74279785,
+            "punctuated_word": "observation,"
+          }
+        ],
+        "id": "2fa32715-43b3-4d4f-bbc1-deb38e50b726"
+      },
+      {
+        "start": 156.78688,
+        "end": 158.86688,
+        "confidence": 0.99487305,
+        "channel": 0,
+        "transcript": "It does not certify privacy.",
+        "words": [
+          {
+            "word": "it",
+            "start": 156.78688,
+            "end": 157.10687,
+            "confidence": 0.99902344,
+            "punctuated_word": "It"
+          },
+          {
+            "word": "does",
+            "start": 157.10687,
+            "end": 157.34688,
+            "confidence": 0.9980469,
+            "punctuated_word": "does"
+          },
+          {
+            "word": "not",
+            "start": 157.34688,
+            "end": 157.58688,
+            "confidence": 0.9980469,
+            "punctuated_word": "not"
+          },
+          {
+            "word": "certify",
+            "start": 157.58688,
+            "end": 158.06688,
+            "confidence": 0.99853516,
+            "punctuated_word": "certify"
+          },
+          {
+            "word": "privacy",
+            "start": 158.06688,
+            "end": 158.86688,
+            "confidence": 0.9807129,
+            "punctuated_word": "privacy."
+          }
+        ],
+        "id": "2cea8609-686b-4005-803f-6f25a0d8613c"
+      },
+      {
+        "start": 159.26688,
+        "end": 160.86688,
+        "confidence": 0.98516846,
+        "channel": 0,
+        "transcript": "Keep the useful story.",
+        "words": [
+          {
+            "word": "keep",
+            "start": 159.26688,
+            "end": 159.58688,
+            "confidence": 1.0,
+            "punctuated_word": "Keep"
+          },
+          {
+            "word": "the",
+            "start": 159.58688,
+            "end": 159.74687,
+            "confidence": 0.99902344,
+            "punctuated_word": "the"
+          },
+          {
+            "word": "useful",
+            "start": 159.74687,
+            "end": 160.14688,
+            "confidence": 1.0,
+            "punctuated_word": "useful"
+          },
+          {
+            "word": "story",
+            "start": 160.14688,
+            "end": 160.86688,
+            "confidence": 0.9416504,
+            "punctuated_word": "story."
+          }
+        ],
+        "id": "1d9986f0-3cbf-4af3-80a5-592b130bc753"
+      },
+      {
+        "start": 161.10687,
+        "end": 162.94688,
+        "confidence": 0.9969238,
+        "channel": 0,
+        "transcript": "Inspect what you actually publish.",
+        "words": [
+          {
+            "word": "inspect",
+            "start": 161.10687,
+            "end": 161.58688,
+            "confidence": 0.9970703,
+            "punctuated_word": "Inspect"
+          },
+          {
+            "word": "what",
+            "start": 161.58688,
+            "end": 161.90688,
+            "confidence": 1.0,
+            "punctuated_word": "what"
+          },
+          {
+            "word": "you",
+            "start": 161.90688,
+            "end": 162.06688,
+            "confidence": 1.0,
+            "punctuated_word": "you"
+          },
+          {
+            "word": "actually",
+            "start": 162.06688,
+            "end": 162.54688,
+            "confidence": 1.0,
+            "punctuated_word": "actually"
+          },
+          {
+            "word": "publish",
+            "start": 162.54688,
+            "end": 162.94688,
+            "confidence": 0.9875488,
+            "punctuated_word": "publish."
+          }
+        ],
+        "id": "9482f0fe-0d4d-49ad-a23f-290591619552"
+      }
+    ]
+  }
+}

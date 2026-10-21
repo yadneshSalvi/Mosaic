@@ -18,3 +18,10 @@ test-results/
 *.tsbuildinfo
 
 /agent/
+
+# Local video renders and capture intermediates
+/videos/**/renders/
+/videos/**/capture/raw/
+/videos/**/.hyperframes/
+/videos/**/.media/
+/videos/**/node_modules/

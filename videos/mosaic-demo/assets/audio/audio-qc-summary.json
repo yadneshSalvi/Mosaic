@@ -1,0 +1,110 @@
+{
+  "scope": "Final frozen local audio assets; automated measurements and model observations, no human listening claim",
+  "duration_s": 165.61,
+  "script_coverage_similarity": 1.0,
+  "script_mismatches": [],
+  "word_timestamp_errors": [],
+  "caption_count": 43,
+  "caption_max_line_characters": 40,
+  "caption_invalid_intervals": [],
+  "caption_overlaps": [],
+  "narration_clipped_samples": 0,
+  "narration_seams": [
+    {
+      "act": "act-01",
+      "boundary": "speech_start_s",
+      "time_s": 0.65,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-01",
+      "boundary": "speech_end_s",
+      "time_s": 28.26,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-02",
+      "boundary": "speech_start_s",
+      "time_s": 30.65,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-02",
+      "boundary": "speech_end_s",
+      "time_s": 63.97,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-03",
+      "boundary": "speech_start_s",
+      "time_s": 65.52,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-03",
+      "boundary": "speech_end_s",
+      "time_s": 95.66,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-04",
+      "boundary": "speech_start_s",
+      "time_s": 96.66,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-04",
+      "boundary": "speech_end_s",
+      "time_s": 132.24,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-05",
+      "boundary": "speech_start_s",
+      "time_s": 133.24,
+      "adjacent_sample_delta": 0.0
+    },
+    {
+      "act": "act-05",
+      "boundary": "speech_end_s",
+      "time_s": 163.21,
+      "adjacent_sample_delta": 0.0
+    }
+  ],
+  "loudness": {
+    "narration": {
+      "integrated_lufs": -22.09,
+      "true_peak_dbtp": -3.18,
+      "loudness_range_lu": 4.5,
+      "duration_s": 165.610042,
+      "bytes": 3557737
+    },
+    "music": {
+      "integrated_lufs": -42.06,
+      "true_peak_dbtp": -32.53,
+      "loudness_range_lu": 1.7,
+      "duration_s": 165.61,
+      "bytes": 4197209
+    },
+    "effects": {
+      "integrated_lufs": -48.48,
+      "true_peak_dbtp": -36.85,
+      "loudness_range_lu": 2.6,
+      "duration_s": 165.61,
+      "bytes": 165733
+    },
+    "master-audition": {
+      "integrated_lufs": -16.31,
+      "true_peak_dbtp": -1.5,
+      "loudness_range_lu": 4.2,
+      "duration_s": 165.61,
+      "bytes": 7822439
+    }
+  },
+  "stem_sha256": {
+    "narration": "258c5463c32f5a5029d1856bc1e7c5f3772c8eb4fd9ffe3477de95ce9c5542c2",
+    "music": "86ce6bd49e6a676d6298a8c4c83aba80b6b9f4dbe5f37c44bfbe4839ec12dd8c",
+    "effects": "4d69587bb32b922d4d5160cdd7df065b45d58ca38a4ac5174d460adf149ec4d1"
+  },
+  "model_review_scope": "Original complete master before the one-act pronunciation repair; final repaired phrase independently confirmed by Nova-3 and a separate Nova-2 excerpt"
+}

@@ -1,0 +1,6 @@
+# Keep upstream vendor and license bytes intact.
+assets/vendor/** -whitespace
+assets/licenses/** -whitespace
+# Retain exact frozen narrative inputs used for audio provenance.
+SCRIPT.md whitespace=-blank-at-eof
+script.json whitespace=-blank-at-eof

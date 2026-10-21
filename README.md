@@ -4,6 +4,8 @@
 
 Mosaic is a working evidence desk for designers and developers preparing client case studies. It shows how individually incomplete screenshots can disclose an association when read together, then helps remove the specific evidence that connects them.
 
+The [submission film source](videos/mosaic-demo/README.md) includes the story, actual demo captures, word-timed narration, original music and reproducible 1080p60 rendering instructions.
+
 ![The working evidence desk showing two identifier masks with the public customer credit kept visible](docs/screenshots/evidence-desk.webp)
 
 The loop is **protected association → source-backed paths → preserve useful content → minimal repair → actual exported-pixel check → optional fresh reading**.

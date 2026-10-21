@@ -1,0 +1,40 @@
+{
+  "method": "Independent multimodal model observation of actual final synthetic audition master; not human listening",
+  "model": "gemini-3.1-pro-preview",
+  "model_catalog_name": "models/gemini-3.1-pro-preview",
+  "audio_sha256": "9bea506638d2b1e926bdcd067eb73049b644d35d3647e728289499c7e3656dc9",
+  "finish_reason": "STOP",
+  "usage": {
+    "promptTokenCount": 4351,
+    "candidatesTokenCount": 207,
+    "totalTokenCount": 6420,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 210
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 4141
+      }
+    ],
+    "thoughtsTokenCount": 1862,
+    "serviceTier": "standard"
+  },
+  "observation": [
+    {
+      "summary": "Clear synthetic voiceover with non-intrusive ambient background music.",
+      "narrator_voice_description": "Mid-pitch male synthetic voice, steady professional tone.",
+      "pace_observation": "Moderate and consistent throughout.",
+      "voice_identity_changes": [],
+      "unwanted_spoken_instructions": [],
+      "truncated_or_missing_ending_observation": "Normal ending with proper decay, no truncation.",
+      "music_audibility_and_speech_masking": "Subtle background music is audible but does not mask speech.",
+      "clicks_hiss_mouth_noises_or_other_artifacts": [],
+      "overall_recommendation": "pass",
+      "limitations": "Evaluation restricted to audible acoustic features only, assuming synthetic origin.",
+      "mosaic_transcription": "The operations channel still connects the intradent to the customer."
+    }
+  ],
+  "scope_note": "Review of the original master before repairing the independently confirmed act-2 incident pronunciation defect. Final voice take and timestamps must be checked against the final script-coverage report."
+}

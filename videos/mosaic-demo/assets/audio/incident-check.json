@@ -1,0 +1,96 @@
+{
+  "method": "Independent second Deepgram model on actual isolated audio excerpt, no keyword prompting",
+  "model": "nova-2",
+  "clip_start_s": 52.5,
+  "clip_end_s": 58,
+  "transcript": {
+    "transcript": "The operations channel still connects the Intradent to the customer. The alt",
+    "confidence": 0.9760742,
+    "words": [
+      {
+        "word": "the",
+        "start": 0.48,
+        "end": 0.71999997,
+        "confidence": 0.9326172,
+        "punctuated_word": "The"
+      },
+      {
+        "word": "operations",
+        "start": 0.71999997,
+        "end": 1.22,
+        "confidence": 0.9760742,
+        "punctuated_word": "operations"
+      },
+      {
+        "word": "channel",
+        "start": 1.52,
+        "end": 2.0,
+        "confidence": 0.9116211,
+        "punctuated_word": "channel"
+      },
+      {
+        "word": "still",
+        "start": 2.0,
+        "end": 2.3999999,
+        "confidence": 0.99902344,
+        "punctuated_word": "still"
+      },
+      {
+        "word": "connects",
+        "start": 2.3999999,
+        "end": 2.8799999,
+        "confidence": 0.99902344,
+        "punctuated_word": "connects"
+      },
+      {
+        "word": "the",
+        "start": 2.8799999,
+        "end": 3.04,
+        "confidence": 1.0,
+        "punctuated_word": "the"
+      },
+      {
+        "word": "intradent",
+        "start": 3.04,
+        "end": 3.52,
+        "confidence": 0.74780273,
+        "punctuated_word": "Intradent"
+      },
+      {
+        "word": "to",
+        "start": 3.52,
+        "end": 3.6799998,
+        "confidence": 1.0,
+        "punctuated_word": "to"
+      },
+      {
+        "word": "the",
+        "start": 3.6799998,
+        "end": 3.84,
+        "confidence": 1.0,
+        "punctuated_word": "the"
+      },
+      {
+        "word": "customer",
+        "start": 3.84,
+        "end": 4.34,
+        "confidence": 0.9758301,
+        "punctuated_word": "customer."
+      },
+      {
+        "word": "the",
+        "start": 4.96,
+        "end": 5.2,
+        "confidence": 0.78759766,
+        "punctuated_word": "The"
+      },
+      {
+        "word": "alt",
+        "start": 5.2,
+        "end": 5.4999375,
+        "confidence": 0.2866211,
+        "punctuated_word": "alt"
+      }
+    ]
+  }
+}

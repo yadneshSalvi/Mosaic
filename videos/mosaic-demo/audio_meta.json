@@ -1,0 +1,3100 @@
+{
+  "provider": "gemini",
+  "tts_model": "gemini-3.1-flash-tts-preview",
+  "voice": "Charon",
+  "language": "en",
+  "script_sha256": "b05cd1105fb5d2507b46068f9a545de6c33e067b51178e873eba8832a6780d08",
+  "total_duration_s": 165.61,
+  "voices": [
+    {
+      "id": "act-01",
+      "title": "The publishing decision",
+      "text": "The customer credit is public. Its connection to this internal incident isn't. For a designer publishing a case study, that difference matters. Mosaic helps remove the confidential connection while keeping the useful story. This is a fictional bundle of three real images: a support incident, a project registry, and a customer directory. Separately, each tells only part of the story.",
+      "path": "assets/audio/acts/act-01.flac",
+      "trim_leading_s": 0.15,
+      "trim_trailing_s": 0.2,
+      "gain_db": -1.7904346403757845,
+      "duration_s": 27.61,
+      "act_start_s": 0.0,
+      "speech_start_s": 0.65,
+      "speech_end_s": 28.26,
+      "act_end_s": 30.0,
+      "allocated_duration_s": 30.0,
+      "words": [
+        {
+          "id": "w0",
+          "text": "The",
+          "word": "the",
+          "start": 0.56,
+          "end": 0.96,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w1",
+          "text": "customer",
+          "word": "customer",
+          "start": 0.96,
+          "end": 1.4399999,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w2",
+          "text": "credit",
+          "word": "credit",
+          "start": 1.4399999,
+          "end": 1.92,
+          "confidence": 1.0
+        },
+        {
+          "id": "w3",
+          "text": "is",
+          "word": "is",
+          "start": 1.92,
+          "end": 2.24,
+          "confidence": 1.0
+        },
+        {
+          "id": "w4",
+          "text": "public.",
+          "word": "public",
+          "start": 2.24,
+          "end": 3.04,
+          "confidence": 0.94628906
+        },
+        {
+          "id": "w5",
+          "text": "Its",
+          "word": "its",
+          "start": 3.12,
+          "end": 3.4399998,
+          "confidence": 0.9790039
+        },
+        {
+          "id": "w6",
+          "text": "connection",
+          "word": "connection",
+          "start": 3.4399998,
+          "end": 3.84,
+          "confidence": 1.0
+        },
+        {
+          "id": "w7",
+          "text": "to",
+          "word": "to",
+          "start": 3.84,
+          "end": 4.16,
+          "confidence": 1.0
+        },
+        {
+          "id": "w8",
+          "text": "this",
+          "word": "this",
+          "start": 4.16,
+          "end": 4.4,
+          "confidence": 1.0
+        },
+        {
+          "id": "w9",
+          "text": "internal",
+          "word": "internal",
+          "start": 4.4,
+          "end": 4.96,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w10",
+          "text": "incident",
+          "word": "incident",
+          "start": 4.96,
+          "end": 5.68,
+          "confidence": 1.0
+        },
+        {
+          "id": "w11",
+          "text": "isn't.",
+          "word": "isn't",
+          "start": 5.68,
+          "end": 6.48,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w12",
+          "text": "For",
+          "word": "for",
+          "start": 6.72,
+          "end": 7.04,
+          "confidence": 1.0
+        },
+        {
+          "id": "w13",
+          "text": "a",
+          "word": "a",
+          "start": 7.04,
+          "end": 7.2,
+          "confidence": 1.0
+        },
+        {
+          "id": "w14",
+          "text": "designer",
+          "word": "designer",
+          "start": 7.2,
+          "end": 7.6,
+          "confidence": 1.0
+        },
+        {
+          "id": "w15",
+          "text": "publishing",
+          "word": "publishing",
+          "start": 7.6,
+          "end": 8.08,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w16",
+          "text": "a",
+          "word": "a",
+          "start": 8.08,
+          "end": 8.32,
+          "confidence": 1.0
+        },
+        {
+          "id": "w17",
+          "text": "case",
+          "word": "case",
+          "start": 8.32,
+          "end": 8.559999,
+          "confidence": 1.0
+        },
+        {
+          "id": "w18",
+          "text": "study,",
+          "word": "study",
+          "start": 8.559999,
+          "end": 9.2,
+          "confidence": 0.96240234
+        },
+        {
+          "id": "w19",
+          "text": "that",
+          "word": "that",
+          "start": 9.28,
+          "end": 9.44,
+          "confidence": 1.0
+        },
+        {
+          "id": "w20",
+          "text": "difference",
+          "word": "difference",
+          "start": 9.44,
+          "end": 9.92,
+          "confidence": 1.0
+        },
+        {
+          "id": "w21",
+          "text": "matters.",
+          "word": "matters",
+          "start": 9.92,
+          "end": 10.719999,
+          "confidence": 1.0
+        },
+        {
+          "id": "w22",
+          "text": "Mosaic",
+          "word": "mosaic",
+          "start": 11.12,
+          "end": 11.759999,
+          "confidence": 1.0
+        },
+        {
+          "id": "w23",
+          "text": "helps",
+          "word": "helps",
+          "start": 11.759999,
+          "end": 12.16,
+          "confidence": 1.0
+        },
+        {
+          "id": "w24",
+          "text": "remove",
+          "word": "remove",
+          "start": 12.16,
+          "end": 12.639999,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w25",
+          "text": "the",
+          "word": "the",
+          "start": 12.639999,
+          "end": 12.88,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w26",
+          "text": "confidential",
+          "word": "confidential",
+          "start": 12.88,
+          "end": 13.5199995,
+          "confidence": 1.0
+        },
+        {
+          "id": "w27",
+          "text": "connection",
+          "word": "connection",
+          "start": 13.5199995,
+          "end": 14.799999,
+          "confidence": 1.0
+        },
+        {
+          "id": "w28",
+          "text": "while",
+          "word": "while",
+          "start": 14.325,
+          "end": 14.724999,
+          "confidence": 0.9863281
+        },
+        {
+          "id": "w29",
+          "text": "keeping",
+          "word": "keeping",
+          "start": 14.724999,
+          "end": 15.045,
+          "confidence": 1.0
+        },
+        {
+          "id": "w30",
+          "text": "the",
+          "word": "the",
+          "start": 15.045,
+          "end": 15.285,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w31",
+          "text": "useful",
+          "word": "useful",
+          "start": 15.285,
+          "end": 15.684999,
+          "confidence": 1.0
+        },
+        {
+          "id": "w32",
+          "text": "story.",
+          "word": "story",
+          "start": 15.684999,
+          "end": 16.324999,
+          "confidence": 0.9995117
+        },
+        {
+          "id": "w33",
+          "text": "This",
+          "word": "this",
+          "start": 17.125,
+          "end": 17.445,
+          "confidence": 1.0
+        },
+        {
+          "id": "w34",
+          "text": "is",
+          "word": "is",
+          "start": 17.445,
+          "end": 17.685,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w35",
+          "text": "a",
+          "word": "a",
+          "start": 17.685,
+          "end": 17.845,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w36",
+          "text": "fictional",
+          "word": "fictional",
+          "start": 17.845,
+          "end": 18.325,
+          "confidence": 1.0
+        },
+        {
+          "id": "w37",
+          "text": "bundle",
+          "word": "bundle",
+          "start": 18.325,
+          "end": 18.645,
+          "confidence": 1.0
+        },
+        {
+          "id": "w38",
+          "text": "of",
+          "word": "of",
+          "start": 18.645,
+          "end": 18.965,
+          "confidence": 1.0
+        },
+        {
+          "id": "w39",
+          "text": "three",
+          "word": "three",
+          "start": 18.965,
+          "end": 19.365,
+          "confidence": 1.0
+        },
+        {
+          "id": "w40",
+          "text": "real",
+          "word": "real",
+          "start": 19.365,
+          "end": 19.765,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w41",
+          "text": "images",
+          "word": "images",
+          "start": 19.765,
+          "end": 20.404999,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w42",
+          "text": "a",
+          "word": "a",
+          "start": 20.404999,
+          "end": 20.805,
+          "confidence": 0.33154297
+        },
+        {
+          "id": "w43",
+          "text": "support",
+          "word": "support",
+          "start": 20.805,
+          "end": 21.205,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w44",
+          "text": "incident,",
+          "word": "incident",
+          "start": 21.205,
+          "end": 21.925,
+          "confidence": 0.9975586
+        },
+        {
+          "id": "w45",
+          "text": "a",
+          "word": "a",
+          "start": 22.005,
+          "end": 22.164999,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w46",
+          "text": "project",
+          "word": "project",
+          "start": 22.164999,
+          "end": 22.564999,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w47",
+          "text": "registry,",
+          "word": "registry",
+          "start": 22.564999,
+          "end": 23.365,
+          "confidence": 0.9370117
+        },
+        {
+          "id": "w48",
+          "text": "and",
+          "word": "and",
+          "start": 23.365,
+          "end": 23.445,
+          "confidence": 1.0
+        },
+        {
+          "id": "w49",
+          "text": "a",
+          "word": "a",
+          "start": 23.445,
+          "end": 23.685,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w50",
+          "text": "customer",
+          "word": "customer",
+          "start": 23.685,
+          "end": 24.005,
+          "confidence": 1.0
+        },
+        {
+          "id": "w51",
+          "text": "directory.",
+          "word": "directory",
+          "start": 24.005,
+          "end": 24.805,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w52",
+          "text": "Separately,",
+          "word": "separately",
+          "start": 25.365,
+          "end": 26.085,
+          "confidence": 0.9753418
+        },
+        {
+          "id": "w53",
+          "text": "each",
+          "word": "each",
+          "start": 26.244999,
+          "end": 26.485,
+          "confidence": 1.0
+        },
+        {
+          "id": "w54",
+          "text": "tells",
+          "word": "tells",
+          "start": 26.485,
+          "end": 26.805,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w55",
+          "text": "only",
+          "word": "only",
+          "start": 26.805,
+          "end": 27.205,
+          "confidence": 1.0
+        },
+        {
+          "id": "w56",
+          "text": "part",
+          "word": "part",
+          "start": 27.205,
+          "end": 27.525,
+          "confidence": 0.99316406
+        },
+        {
+          "id": "w57",
+          "text": "of",
+          "word": "of",
+          "start": 27.525,
+          "end": 27.685,
+          "confidence": 1.0
+        },
+        {
+          "id": "w58",
+          "text": "the",
+          "word": "the",
+          "start": 27.685,
+          "end": 27.845,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w59",
+          "text": "story.",
+          "word": "story",
+          "start": 27.845,
+          "end": 28.165,
+          "confidence": 0.99902344
+        }
+      ],
+      "word_count_recognized": 60
+    },
+    {
+      "id": "act-02",
+      "title": "The obvious mask leaves a route",
+      "text": "Read them together. Follow Incident zero forty-two, through client C seventeen and Project Cedar, to Northstar Health. These are source-backed links: select one and inspect the exact pixels. Now try hiding the client reference. The code disappears, but one route remains. The operations channel still connects the incident to the customer. The alternate route has its own visible evidence. A convincing-looking mask hasn't removed the association.",
+      "path": "assets/audio/acts/act-02.flac",
+      "trim_leading_s": 0.21,
+      "trim_trailing_s": 0.31,
+      "gain_db": -2.1594344913459507,
+      "duration_s": 33.32,
+      "act_start_s": 30.0,
+      "speech_start_s": 30.65,
+      "speech_end_s": 63.97,
+      "act_end_s": 64.87,
+      "allocated_duration_s": 34.870000000000005,
+      "words": [
+        {
+          "id": "w60",
+          "text": "Read",
+          "word": "read",
+          "start": 30.84,
+          "end": 31.16,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w61",
+          "text": "them",
+          "word": "them",
+          "start": 31.16,
+          "end": 31.400002,
+          "confidence": 1.0
+        },
+        {
+          "id": "w62",
+          "text": "together.",
+          "word": "together",
+          "start": 31.400002,
+          "end": 32.2,
+          "confidence": 0.98535156
+        },
+        {
+          "id": "w63",
+          "text": "Follow",
+          "word": "follow",
+          "start": 32.6,
+          "end": 33.08,
+          "confidence": 1.0
+        },
+        {
+          "id": "w64",
+          "text": "incident",
+          "word": "incident",
+          "start": 33.08,
+          "end": 33.8,
+          "confidence": 0.8276367
+        },
+        {
+          "id": "w65",
+          "text": "042",
+          "word": "042",
+          "start": 33.8,
+          "end": 35.08,
+          "confidence": 0.8092448
+        },
+        {
+          "id": "w66",
+          "text": "through",
+          "word": "through",
+          "start": 35.08,
+          "end": 35.4,
+          "confidence": 0.96240234
+        },
+        {
+          "id": "w67",
+          "text": "client",
+          "word": "client",
+          "start": 35.4,
+          "end": 35.8,
+          "confidence": 0.82470703
+        },
+        {
+          "id": "w68",
+          "text": "c",
+          "word": "c",
+          "start": 35.8,
+          "end": 36.2,
+          "confidence": 0.58203125
+        },
+        {
+          "id": "w69",
+          "text": "17",
+          "word": "17",
+          "start": 36.2,
+          "end": 36.92,
+          "confidence": 0.9560547
+        },
+        {
+          "id": "w70",
+          "text": "and",
+          "word": "and",
+          "start": 36.92,
+          "end": 37.16,
+          "confidence": 0.9951172
+        },
+        {
+          "id": "w71",
+          "text": "project",
+          "word": "project",
+          "start": 37.16,
+          "end": 37.64,
+          "confidence": 0.9326172
+        },
+        {
+          "id": "w72",
+          "text": "Cedar",
+          "word": "cedar",
+          "start": 37.64,
+          "end": 38.2,
+          "confidence": 0.7578125
+        },
+        {
+          "id": "w73",
+          "text": "to",
+          "word": "to",
+          "start": 38.2,
+          "end": 38.52,
+          "confidence": 0.99316406
+        },
+        {
+          "id": "w74",
+          "text": "North",
+          "word": "north",
+          "start": 38.52,
+          "end": 38.92,
+          "confidence": 0.98095703
+        },
+        {
+          "id": "w75",
+          "text": "Star",
+          "word": "star",
+          "start": 38.92,
+          "end": 39.16,
+          "confidence": 0.46557617
+        },
+        {
+          "id": "w76",
+          "text": "Health.",
+          "word": "health",
+          "start": 39.16,
+          "end": 39.8,
+          "confidence": 0.9951172
+        },
+        {
+          "id": "w77",
+          "text": "These",
+          "word": "these",
+          "start": 40.28,
+          "end": 40.52,
+          "confidence": 1.0
+        },
+        {
+          "id": "w78",
+          "text": "are",
+          "word": "are",
+          "start": 40.52,
+          "end": 40.760002,
+          "confidence": 1.0
+        },
+        {
+          "id": "w79",
+          "text": "source",
+          "word": "source",
+          "start": 40.760002,
+          "end": 41.239998,
+          "confidence": 0.9921875
+        },
+        {
+          "id": "w80",
+          "text": "backed",
+          "word": "backed",
+          "start": 41.239998,
+          "end": 41.56,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w81",
+          "text": "links.",
+          "word": "links",
+          "start": 41.56,
+          "end": 42.04,
+          "confidence": 0.9765625
+        },
+        {
+          "id": "w82",
+          "text": "Select",
+          "word": "select",
+          "start": 42.315,
+          "end": 42.875,
+          "confidence": 1.0
+        },
+        {
+          "id": "w83",
+          "text": "one",
+          "word": "one",
+          "start": 42.875,
+          "end": 43.274998,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w84",
+          "text": "and",
+          "word": "and",
+          "start": 43.274998,
+          "end": 43.594997,
+          "confidence": 0.9760742
+        },
+        {
+          "id": "w85",
+          "text": "inspect",
+          "word": "inspect",
+          "start": 43.594997,
+          "end": 44.074997,
+          "confidence": 1.0
+        },
+        {
+          "id": "w86",
+          "text": "the",
+          "word": "the",
+          "start": 44.074997,
+          "end": 44.315,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w87",
+          "text": "exact",
+          "word": "exact",
+          "start": 44.315,
+          "end": 44.875,
+          "confidence": 1.0
+        },
+        {
+          "id": "w88",
+          "text": "pixels.",
+          "word": "pixels",
+          "start": 44.875,
+          "end": 45.754997,
+          "confidence": 0.9992676
+        },
+        {
+          "id": "w89",
+          "text": "Now",
+          "word": "now",
+          "start": 46.394997,
+          "end": 46.715,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w90",
+          "text": "try",
+          "word": "try",
+          "start": 46.715,
+          "end": 47.035,
+          "confidence": 0.82470703
+        },
+        {
+          "id": "w91",
+          "text": "hiding",
+          "word": "hiding",
+          "start": 47.035,
+          "end": 47.594997,
+          "confidence": 1.0
+        },
+        {
+          "id": "w92",
+          "text": "the",
+          "word": "the",
+          "start": 47.594997,
+          "end": 47.754997,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w93",
+          "text": "client",
+          "word": "client",
+          "start": 47.754997,
+          "end": 48.074997,
+          "confidence": 0.9873047
+        },
+        {
+          "id": "w94",
+          "text": "reference.",
+          "word": "reference",
+          "start": 48.074997,
+          "end": 48.795,
+          "confidence": 0.99560547
+        },
+        {
+          "id": "w95",
+          "text": "The",
+          "word": "the",
+          "start": 49.035,
+          "end": 49.274998,
+          "confidence": 1.0
+        },
+        {
+          "id": "w96",
+          "text": "code",
+          "word": "code",
+          "start": 49.274998,
+          "end": 49.594997,
+          "confidence": 1.0
+        },
+        {
+          "id": "w97",
+          "text": "disappears",
+          "word": "disappears",
+          "start": 49.594997,
+          "end": 50.555,
+          "confidence": 1.0
+        },
+        {
+          "id": "w98",
+          "text": "but",
+          "word": "but",
+          "start": 50.555,
+          "end": 51.035,
+          "confidence": 0.59472656
+        },
+        {
+          "id": "w99",
+          "text": "one",
+          "word": "one",
+          "start": 51.035,
+          "end": 51.355,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w100",
+          "text": "route",
+          "word": "route",
+          "start": 51.355,
+          "end": 51.675,
+          "confidence": 1.0
+        },
+        {
+          "id": "w101",
+          "text": "remains.",
+          "word": "remains",
+          "start": 51.675,
+          "end": 52.475,
+          "confidence": 0.9597168
+        },
+        {
+          "id": "w102",
+          "text": "The",
+          "word": "the",
+          "start": 52.795,
+          "end": 52.954998,
+          "confidence": 1.0
+        },
+        {
+          "id": "w103",
+          "text": "operations",
+          "word": "operations",
+          "start": 52.954998,
+          "end": 53.515,
+          "confidence": 0.9580078
+        },
+        {
+          "id": "w104",
+          "text": "channel",
+          "word": "channel",
+          "start": 53.515,
+          "end": 54.074997,
+          "confidence": 1.0
+        },
+        {
+          "id": "w105",
+          "text": "still",
+          "word": "still",
+          "start": 54.074997,
+          "end": 54.475,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w106",
+          "text": "connects",
+          "word": "connects",
+          "start": 54.475,
+          "end": 54.875,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w107",
+          "text": "the",
+          "word": "the",
+          "start": 54.875,
+          "end": 55.114998,
+          "confidence": 1.0
+        },
+        {
+          "id": "w108",
+          "text": "incident",
+          "word": "incident",
+          "start": 55.114998,
+          "end": 55.515,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w109",
+          "text": "to",
+          "word": "to",
+          "start": 55.515,
+          "end": 55.754997,
+          "confidence": 1.0
+        },
+        {
+          "id": "w110",
+          "text": "the",
+          "word": "the",
+          "start": 55.754997,
+          "end": 55.914997,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w111",
+          "text": "customer.",
+          "word": "customer",
+          "start": 55.914997,
+          "end": 56.315,
+          "confidence": 0.9995117
+        },
+        {
+          "id": "w112",
+          "text": "The",
+          "word": "the",
+          "start": 57.12,
+          "end": 57.36,
+          "confidence": 1.0
+        },
+        {
+          "id": "w113",
+          "text": "alternate",
+          "word": "alternate",
+          "start": 57.36,
+          "end": 57.84,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w114",
+          "text": "route",
+          "word": "route",
+          "start": 57.84,
+          "end": 58.16,
+          "confidence": 1.0
+        },
+        {
+          "id": "w115",
+          "text": "has",
+          "word": "has",
+          "start": 58.16,
+          "end": 58.399998,
+          "confidence": 1.0
+        },
+        {
+          "id": "w116",
+          "text": "its",
+          "word": "its",
+          "start": 58.399998,
+          "end": 58.64,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w117",
+          "text": "own",
+          "word": "own",
+          "start": 58.64,
+          "end": 58.96,
+          "confidence": 1.0
+        },
+        {
+          "id": "w118",
+          "text": "visible",
+          "word": "visible",
+          "start": 58.96,
+          "end": 59.44,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w119",
+          "text": "evidence.",
+          "word": "evidence",
+          "start": 59.44,
+          "end": 60.16,
+          "confidence": 0.9785156
+        },
+        {
+          "id": "w120",
+          "text": "A",
+          "word": "a",
+          "start": 60.48,
+          "end": 60.72,
+          "confidence": 1.0
+        },
+        {
+          "id": "w121",
+          "text": "convincing",
+          "word": "convincing",
+          "start": 60.72,
+          "end": 61.12,
+          "confidence": 1.0
+        },
+        {
+          "id": "w122",
+          "text": "looking",
+          "word": "looking",
+          "start": 61.12,
+          "end": 61.52,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w123",
+          "text": "mask",
+          "word": "mask",
+          "start": 61.52,
+          "end": 62.16,
+          "confidence": 1.0
+        },
+        {
+          "id": "w124",
+          "text": "hasn't",
+          "word": "hasn't",
+          "start": 62.16,
+          "end": 62.559998,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w125",
+          "text": "removed",
+          "word": "removed",
+          "start": 62.559998,
+          "end": 62.96,
+          "confidence": 1.0
+        },
+        {
+          "id": "w126",
+          "text": "the",
+          "word": "the",
+          "start": 62.96,
+          "end": 63.2,
+          "confidence": 1.0
+        },
+        {
+          "id": "w127",
+          "text": "association.",
+          "word": "association",
+          "start": 63.2,
+          "end": 64.08,
+          "confidence": 0.99609375
+        }
+      ],
+      "word_count_recognized": 68
+    },
+    {
+      "id": "act-03",
+      "title": "Keep the credit",
+      "text": "Undo that trial. Mosaic finds a one-mask repair: cover the shared customer name and both known routes disappear. But that erases the credit this case study needs. Mark that region Keep visible and find a new repair. Two identifiers in the incident are masked; the public credit stays intact. Mosaic finds the fewest candidate masks allowed by that preservation choice. The publishing decision drives the edit.",
+      "path": "assets/audio/acts/act-03.flac",
+      "trim_leading_s": 0.17,
+      "trim_trailing_s": 0.21,
+      "gain_db": -1.6301778841860834,
+      "duration_s": 30.14,
+      "act_start_s": 64.87,
+      "speech_start_s": 65.52,
+      "speech_end_s": 95.66,
+      "act_end_s": 96.01,
+      "allocated_duration_s": 31.14,
+      "words": [
+        {
+          "id": "w128",
+          "text": "Undo",
+          "word": "undo",
+          "start": 65.6,
+          "end": 66.159996,
+          "confidence": 0.9995117
+        },
+        {
+          "id": "w129",
+          "text": "that",
+          "word": "that",
+          "start": 66.159996,
+          "end": 66.4,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w130",
+          "text": "trial.",
+          "word": "trial",
+          "start": 66.4,
+          "end": 67.12,
+          "confidence": 0.9838867
+        },
+        {
+          "id": "w131",
+          "text": "Mosaic",
+          "word": "mosaic",
+          "start": 67.36,
+          "end": 68.0,
+          "confidence": 1.0
+        },
+        {
+          "id": "w132",
+          "text": "finds",
+          "word": "finds",
+          "start": 68.0,
+          "end": 68.479996,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w133",
+          "text": "a",
+          "word": "a",
+          "start": 68.479996,
+          "end": 68.72,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w134",
+          "text": "one",
+          "word": "one",
+          "start": 68.72,
+          "end": 68.96,
+          "confidence": 0.9770508
+        },
+        {
+          "id": "w135",
+          "text": "mask",
+          "word": "mask",
+          "start": 68.96,
+          "end": 69.36,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w136",
+          "text": "repair.",
+          "word": "repair",
+          "start": 69.36,
+          "end": 69.84,
+          "confidence": 0.8857422
+        },
+        {
+          "id": "w137",
+          "text": "Cover",
+          "word": "cover",
+          "start": 70.295,
+          "end": 70.615,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w138",
+          "text": "the",
+          "word": "the",
+          "start": 70.615,
+          "end": 70.854996,
+          "confidence": 1.0
+        },
+        {
+          "id": "w139",
+          "text": "shared",
+          "word": "shared",
+          "start": 70.854996,
+          "end": 71.255,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w140",
+          "text": "customer",
+          "word": "customer",
+          "start": 71.255,
+          "end": 71.655,
+          "confidence": 1.0
+        },
+        {
+          "id": "w141",
+          "text": "name",
+          "word": "name",
+          "start": 71.655,
+          "end": 72.055,
+          "confidence": 1.0
+        },
+        {
+          "id": "w142",
+          "text": "and",
+          "word": "and",
+          "start": 72.055,
+          "end": 72.455,
+          "confidence": 0.8588867
+        },
+        {
+          "id": "w143",
+          "text": "both",
+          "word": "both",
+          "start": 72.455,
+          "end": 72.775,
+          "confidence": 1.0
+        },
+        {
+          "id": "w144",
+          "text": "known",
+          "word": "known",
+          "start": 72.775,
+          "end": 73.174995,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w145",
+          "text": "routes",
+          "word": "routes",
+          "start": 73.174995,
+          "end": 73.494995,
+          "confidence": 1.0
+        },
+        {
+          "id": "w146",
+          "text": "disappear.",
+          "word": "disappear",
+          "start": 73.494995,
+          "end": 74.454994,
+          "confidence": 0.8630371
+        },
+        {
+          "id": "w147",
+          "text": "But",
+          "word": "but",
+          "start": 74.935,
+          "end": 75.174995,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w148",
+          "text": "that",
+          "word": "that",
+          "start": 75.174995,
+          "end": 75.575,
+          "confidence": 0.99121094
+        },
+        {
+          "id": "w149",
+          "text": "erases",
+          "word": "erases",
+          "start": 75.575,
+          "end": 76.134995,
+          "confidence": 1.0
+        },
+        {
+          "id": "w150",
+          "text": "the",
+          "word": "the",
+          "start": 76.134995,
+          "end": 76.375,
+          "confidence": 1.0
+        },
+        {
+          "id": "w151",
+          "text": "credit",
+          "word": "credit",
+          "start": 76.375,
+          "end": 76.695,
+          "confidence": 1.0
+        },
+        {
+          "id": "w152",
+          "text": "this",
+          "word": "this",
+          "start": 76.695,
+          "end": 77.015,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w153",
+          "text": "case",
+          "word": "case",
+          "start": 77.015,
+          "end": 77.255,
+          "confidence": 1.0
+        },
+        {
+          "id": "w154",
+          "text": "study",
+          "word": "study",
+          "start": 77.255,
+          "end": 77.575,
+          "confidence": 1.0
+        },
+        {
+          "id": "w155",
+          "text": "needs.",
+          "word": "needs",
+          "start": 77.575,
+          "end": 78.215,
+          "confidence": 0.99194336
+        },
+        {
+          "id": "w156",
+          "text": "Mark",
+          "word": "mark",
+          "start": 78.695,
+          "end": 79.015,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w157",
+          "text": "that",
+          "word": "that",
+          "start": 79.015,
+          "end": 79.255,
+          "confidence": 1.0
+        },
+        {
+          "id": "w158",
+          "text": "region,",
+          "word": "region",
+          "start": 79.255,
+          "end": 79.895,
+          "confidence": 0.76171875
+        },
+        {
+          "id": "w159",
+          "text": "keep",
+          "word": "keep",
+          "start": 79.895,
+          "end": 80.215,
+          "confidence": 0.875
+        },
+        {
+          "id": "w160",
+          "text": "visible,",
+          "word": "visible",
+          "start": 80.215,
+          "end": 81.015,
+          "confidence": 0.7541504
+        },
+        {
+          "id": "w161",
+          "text": "and",
+          "word": "and",
+          "start": 81.015,
+          "end": 81.095,
+          "confidence": 1.0
+        },
+        {
+          "id": "w162",
+          "text": "find",
+          "word": "find",
+          "start": 81.095,
+          "end": 81.415,
+          "confidence": 1.0
+        },
+        {
+          "id": "w163",
+          "text": "a",
+          "word": "a",
+          "start": 81.415,
+          "end": 81.575,
+          "confidence": 1.0
+        },
+        {
+          "id": "w164",
+          "text": "new",
+          "word": "new",
+          "start": 81.575,
+          "end": 81.815,
+          "confidence": 1.0
+        },
+        {
+          "id": "w165",
+          "text": "repair.",
+          "word": "repair",
+          "start": 81.815,
+          "end": 82.134995,
+          "confidence": 0.9995117
+        },
+        {
+          "id": "w166",
+          "text": "Two",
+          "word": "two",
+          "start": 83.130005,
+          "end": 83.37,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w167",
+          "text": "identifiers",
+          "word": "identifiers",
+          "start": 83.37,
+          "end": 84.090004,
+          "confidence": 0.99658203
+        },
+        {
+          "id": "w168",
+          "text": "in",
+          "word": "in",
+          "start": 84.090004,
+          "end": 84.33,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w169",
+          "text": "the",
+          "word": "the",
+          "start": 84.33,
+          "end": 84.41,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w170",
+          "text": "incident",
+          "word": "incident",
+          "start": 84.41,
+          "end": 84.810005,
+          "confidence": 0.97509766
+        },
+        {
+          "id": "w171",
+          "text": "are",
+          "word": "are",
+          "start": 84.810005,
+          "end": 85.05,
+          "confidence": 1.0
+        },
+        {
+          "id": "w172",
+          "text": "masked.",
+          "word": "masked",
+          "start": 85.05,
+          "end": 85.770004,
+          "confidence": 0.91381836
+        },
+        {
+          "id": "w173",
+          "text": "The",
+          "word": "the",
+          "start": 85.93,
+          "end": 86.090004,
+          "confidence": 1.0
+        },
+        {
+          "id": "w174",
+          "text": "public",
+          "word": "public",
+          "start": 86.090004,
+          "end": 86.41,
+          "confidence": 0.9921875
+        },
+        {
+          "id": "w175",
+          "text": "credit",
+          "word": "credit",
+          "start": 86.41,
+          "end": 86.73,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w176",
+          "text": "stays",
+          "word": "stays",
+          "start": 86.73,
+          "end": 87.130005,
+          "confidence": 1.0
+        },
+        {
+          "id": "w177",
+          "text": "intact.",
+          "word": "intact",
+          "start": 87.130005,
+          "end": 87.770004,
+          "confidence": 0.98999023
+        },
+        {
+          "id": "w178",
+          "text": "Mosaic",
+          "word": "mosaic",
+          "start": 88.33,
+          "end": 88.89001,
+          "confidence": 1.0
+        },
+        {
+          "id": "w179",
+          "text": "finds",
+          "word": "finds",
+          "start": 88.89001,
+          "end": 89.29,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w180",
+          "text": "the",
+          "word": "the",
+          "start": 89.29,
+          "end": 89.53001,
+          "confidence": 1.0
+        },
+        {
+          "id": "w181",
+          "text": "fewest",
+          "word": "fewest",
+          "start": 89.53001,
+          "end": 90.01,
+          "confidence": 0.9995117
+        },
+        {
+          "id": "w182",
+          "text": "candidate",
+          "word": "candidate",
+          "start": 90.01,
+          "end": 90.41,
+          "confidence": 1.0
+        },
+        {
+          "id": "w183",
+          "text": "masks",
+          "word": "masks",
+          "start": 90.41,
+          "end": 90.89,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w184",
+          "text": "allowed",
+          "word": "allowed",
+          "start": 90.89,
+          "end": 91.450005,
+          "confidence": 1.0
+        },
+        {
+          "id": "w185",
+          "text": "by",
+          "word": "by",
+          "start": 91.450005,
+          "end": 91.61,
+          "confidence": 1.0
+        },
+        {
+          "id": "w186",
+          "text": "that",
+          "word": "that",
+          "start": 91.61,
+          "end": 91.850006,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w187",
+          "text": "preservation",
+          "word": "preservation",
+          "start": 91.850006,
+          "end": 92.41,
+          "confidence": 1.0
+        },
+        {
+          "id": "w188",
+          "text": "choice.",
+          "word": "choice",
+          "start": 92.41,
+          "end": 93.05,
+          "confidence": 0.99853516
+        },
+        {
+          "id": "w189",
+          "text": "The",
+          "word": "the",
+          "start": 93.29,
+          "end": 93.53001,
+          "confidence": 1.0
+        },
+        {
+          "id": "w190",
+          "text": "publishing",
+          "word": "publishing",
+          "start": 93.53001,
+          "end": 94.090004,
+          "confidence": 0.9863281
+        },
+        {
+          "id": "w191",
+          "text": "decision",
+          "word": "decision",
+          "start": 94.090004,
+          "end": 94.57001,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w192",
+          "text": "drives",
+          "word": "drives",
+          "start": 94.57001,
+          "end": 95.05,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w193",
+          "text": "the",
+          "word": "the",
+          "start": 95.05,
+          "end": 95.29,
+          "confidence": 1.0
+        },
+        {
+          "id": "w194",
+          "text": "edit.",
+          "word": "edit",
+          "start": 95.29,
+          "end": 95.53001,
+          "confidence": 0.99853516
+        }
+      ],
+      "word_count_recognized": 67
+    },
+    {
+      "id": "act-04",
+      "title": "The exported files carry the proof",
+      "text": "Now export. Mosaic creates new P N G files, decodes those actual files again, and checks the masks, unchanged pixels, and kept credit. This is an output check, beyond the on-screen preview. Open the outputs: two opaque masks in the support image; public credit intact in the directory. A separate, consented fresh reading sends only exported images and the starting incident to a new model context. The protected answer and original evidence graph are withheld.",
+      "path": "assets/audio/acts/act-04.flac",
+      "trim_leading_s": 0.18,
+      "trim_trailing_s": 0.12,
+      "gain_db": 2.040980060248714,
+      "duration_s": 35.58,
+      "act_start_s": 96.01,
+      "speech_start_s": 96.66,
+      "speech_end_s": 132.24,
+      "act_end_s": 132.59,
+      "allocated_duration_s": 36.58,
+      "words": [
+        {
+          "id": "w195",
+          "text": "Now",
+          "word": "now",
+          "start": 96.795,
+          "end": 97.354996,
+          "confidence": 1.0
+        },
+        {
+          "id": "w196",
+          "text": "export.",
+          "word": "export",
+          "start": 97.354996,
+          "end": 98.314995,
+          "confidence": 0.8552246
+        },
+        {
+          "id": "w197",
+          "text": "Mosaic",
+          "word": "mosaic",
+          "start": 98.555,
+          "end": 99.354996,
+          "confidence": 1.0
+        },
+        {
+          "id": "w198",
+          "text": "creates",
+          "word": "creates",
+          "start": 99.354996,
+          "end": 99.835,
+          "confidence": 1.0
+        },
+        {
+          "id": "w199",
+          "text": "new",
+          "word": "new",
+          "start": 99.835,
+          "end": 100.235,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w200",
+          "text": "PNG",
+          "word": "png",
+          "start": 100.235,
+          "end": 100.795,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w201",
+          "text": "files,",
+          "word": "files",
+          "start": 100.795,
+          "end": 101.595,
+          "confidence": 0.98657227
+        },
+        {
+          "id": "w202",
+          "text": "decodes",
+          "word": "decodes",
+          "start": 101.755,
+          "end": 102.395,
+          "confidence": 0.9995117
+        },
+        {
+          "id": "w203",
+          "text": "those",
+          "word": "those",
+          "start": 102.395,
+          "end": 102.795,
+          "confidence": 1.0
+        },
+        {
+          "id": "w204",
+          "text": "actual",
+          "word": "actual",
+          "start": 102.795,
+          "end": 103.275,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w205",
+          "text": "files",
+          "word": "files",
+          "start": 103.275,
+          "end": 103.595,
+          "confidence": 1.0
+        },
+        {
+          "id": "w206",
+          "text": "again,",
+          "word": "again",
+          "start": 103.595,
+          "end": 104.235,
+          "confidence": 0.814209
+        },
+        {
+          "id": "w207",
+          "text": "and",
+          "word": "and",
+          "start": 104.315,
+          "end": 104.475,
+          "confidence": 1.0
+        },
+        {
+          "id": "w208",
+          "text": "checks",
+          "word": "checks",
+          "start": 104.475,
+          "end": 104.795,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w209",
+          "text": "the",
+          "word": "the",
+          "start": 104.795,
+          "end": 104.955,
+          "confidence": 1.0
+        },
+        {
+          "id": "w210",
+          "text": "masks,",
+          "word": "masks",
+          "start": 104.955,
+          "end": 105.755,
+          "confidence": 0.9921875
+        },
+        {
+          "id": "w211",
+          "text": "unchanged",
+          "word": "unchanged",
+          "start": 105.835,
+          "end": 106.315,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w212",
+          "text": "pixels,",
+          "word": "pixels",
+          "start": 106.315,
+          "end": 107.195,
+          "confidence": 0.96875
+        },
+        {
+          "id": "w213",
+          "text": "and",
+          "word": "and",
+          "start": 107.195,
+          "end": 107.275,
+          "confidence": 1.0
+        },
+        {
+          "id": "w214",
+          "text": "kept",
+          "word": "kept",
+          "start": 107.275,
+          "end": 107.595,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w215",
+          "text": "credit.",
+          "word": "credit",
+          "start": 107.595,
+          "end": 107.994995,
+          "confidence": 0.9995117
+        },
+        {
+          "id": "w216",
+          "text": "This",
+          "word": "this",
+          "start": 108.64,
+          "end": 108.96,
+          "confidence": 1.0
+        },
+        {
+          "id": "w217",
+          "text": "is",
+          "word": "is",
+          "start": 108.96,
+          "end": 109.119995,
+          "confidence": 1.0
+        },
+        {
+          "id": "w218",
+          "text": "an",
+          "word": "an",
+          "start": 109.119995,
+          "end": 109.28,
+          "confidence": 1.0
+        },
+        {
+          "id": "w219",
+          "text": "output",
+          "word": "output",
+          "start": 109.28,
+          "end": 109.759995,
+          "confidence": 1.0
+        },
+        {
+          "id": "w220",
+          "text": "check",
+          "word": "check",
+          "start": 109.759995,
+          "end": 110.24,
+          "confidence": 1.0
+        },
+        {
+          "id": "w221",
+          "text": "beyond",
+          "word": "beyond",
+          "start": 110.24,
+          "end": 110.799995,
+          "confidence": 0.9604492
+        },
+        {
+          "id": "w222",
+          "text": "the",
+          "word": "the",
+          "start": 110.799995,
+          "end": 110.96,
+          "confidence": 1.0
+        },
+        {
+          "id": "w223",
+          "text": "on",
+          "word": "on",
+          "start": 110.96,
+          "end": 111.2,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w224",
+          "text": "screen",
+          "word": "screen",
+          "start": 111.2,
+          "end": 111.52,
+          "confidence": 0.6826172
+        },
+        {
+          "id": "w225",
+          "text": "preview.",
+          "word": "preview",
+          "start": 111.52,
+          "end": 112.32,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w226",
+          "text": "Open",
+          "word": "open",
+          "start": 112.799995,
+          "end": 113.2,
+          "confidence": 1.0
+        },
+        {
+          "id": "w227",
+          "text": "the",
+          "word": "the",
+          "start": 113.2,
+          "end": 113.36,
+          "confidence": 1.0
+        },
+        {
+          "id": "w228",
+          "text": "outputs.",
+          "word": "outputs",
+          "start": 113.36,
+          "end": 114.159996,
+          "confidence": 0.9025879
+        },
+        {
+          "id": "w229",
+          "text": "Two",
+          "word": "two",
+          "start": 114.479996,
+          "end": 114.799995,
+          "confidence": 0.9951172
+        },
+        {
+          "id": "w230",
+          "text": "opaque",
+          "word": "opaque",
+          "start": 114.799995,
+          "end": 115.439995,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w231",
+          "text": "masks",
+          "word": "masks",
+          "start": 115.439995,
+          "end": 115.84,
+          "confidence": 1.0
+        },
+        {
+          "id": "w232",
+          "text": "in",
+          "word": "in",
+          "start": 115.84,
+          "end": 116.079994,
+          "confidence": 1.0
+        },
+        {
+          "id": "w233",
+          "text": "the",
+          "word": "the",
+          "start": 116.079994,
+          "end": 116.24,
+          "confidence": 1.0
+        },
+        {
+          "id": "w234",
+          "text": "support",
+          "word": "support",
+          "start": 116.24,
+          "end": 116.56,
+          "confidence": 1.0
+        },
+        {
+          "id": "w235",
+          "text": "image.",
+          "word": "image",
+          "start": 116.56,
+          "end": 117.2,
+          "confidence": 0.8210449
+        },
+        {
+          "id": "w236",
+          "text": "Public",
+          "word": "public",
+          "start": 117.36,
+          "end": 117.84,
+          "confidence": 0.9951172
+        },
+        {
+          "id": "w237",
+          "text": "credit",
+          "word": "credit",
+          "start": 117.84,
+          "end": 118.24,
+          "confidence": 0.9902344
+        },
+        {
+          "id": "w238",
+          "text": "intact",
+          "word": "intact",
+          "start": 118.24,
+          "end": 118.72,
+          "confidence": 0.98095703
+        },
+        {
+          "id": "w239",
+          "text": "in",
+          "word": "in",
+          "start": 118.72,
+          "end": 119.04,
+          "confidence": 1.0
+        },
+        {
+          "id": "w240",
+          "text": "the",
+          "word": "the",
+          "start": 119.04,
+          "end": 119.119995,
+          "confidence": 1.0
+        },
+        {
+          "id": "w241",
+          "text": "directory.",
+          "word": "directory",
+          "start": 119.119995,
+          "end": 119.52,
+          "confidence": 0.9946289
+        },
+        {
+          "id": "w242",
+          "text": "A",
+          "word": "a",
+          "start": 120.335,
+          "end": 120.655,
+          "confidence": 1.0
+        },
+        {
+          "id": "w243",
+          "text": "separate",
+          "word": "separate",
+          "start": 120.655,
+          "end": 121.295,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w244",
+          "text": "consented",
+          "word": "consented",
+          "start": 121.295,
+          "end": 121.935,
+          "confidence": 0.8310547
+        },
+        {
+          "id": "w245",
+          "text": "fresh",
+          "word": "fresh",
+          "start": 121.935,
+          "end": 122.335,
+          "confidence": 0.99121094
+        },
+        {
+          "id": "w246",
+          "text": "reading",
+          "word": "reading",
+          "start": 122.335,
+          "end": 122.975,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w247",
+          "text": "sends",
+          "word": "sends",
+          "start": 122.975,
+          "end": 123.454994,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w248",
+          "text": "only",
+          "word": "only",
+          "start": 123.454994,
+          "end": 123.854996,
+          "confidence": 1.0
+        },
+        {
+          "id": "w249",
+          "text": "exported",
+          "word": "exported",
+          "start": 123.854996,
+          "end": 124.41499,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w250",
+          "text": "images",
+          "word": "images",
+          "start": 124.41499,
+          "end": 124.975,
+          "confidence": 1.0
+        },
+        {
+          "id": "w251",
+          "text": "and",
+          "word": "and",
+          "start": 124.975,
+          "end": 125.375,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w252",
+          "text": "the",
+          "word": "the",
+          "start": 125.375,
+          "end": 125.534996,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w253",
+          "text": "starting",
+          "word": "starting",
+          "start": 125.534996,
+          "end": 125.935,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w254",
+          "text": "incident",
+          "word": "incident",
+          "start": 125.935,
+          "end": 126.41499,
+          "confidence": 1.0
+        },
+        {
+          "id": "w255",
+          "text": "to",
+          "word": "to",
+          "start": 126.41499,
+          "end": 126.735,
+          "confidence": 1.0
+        },
+        {
+          "id": "w256",
+          "text": "a",
+          "word": "a",
+          "start": 126.735,
+          "end": 126.895,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w257",
+          "text": "new",
+          "word": "new",
+          "start": 126.895,
+          "end": 127.134995,
+          "confidence": 1.0
+        },
+        {
+          "id": "w258",
+          "text": "model",
+          "word": "model",
+          "start": 127.134995,
+          "end": 127.454994,
+          "confidence": 1.0
+        },
+        {
+          "id": "w259",
+          "text": "context.",
+          "word": "context",
+          "start": 127.454994,
+          "end": 128.255,
+          "confidence": 0.9975586
+        },
+        {
+          "id": "w260",
+          "text": "The",
+          "word": "the",
+          "start": 128.575,
+          "end": 128.815,
+          "confidence": 1.0
+        },
+        {
+          "id": "w261",
+          "text": "protected",
+          "word": "protected",
+          "start": 128.815,
+          "end": 129.295,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w262",
+          "text": "answer",
+          "word": "answer",
+          "start": 129.295,
+          "end": 129.69499,
+          "confidence": 1.0
+        },
+        {
+          "id": "w263",
+          "text": "and",
+          "word": "and",
+          "start": 129.69499,
+          "end": 130.015,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w264",
+          "text": "original",
+          "word": "original",
+          "start": 130.015,
+          "end": 130.495,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w265",
+          "text": "evidence",
+          "word": "evidence",
+          "start": 130.495,
+          "end": 130.89499,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w266",
+          "text": "graph",
+          "word": "graph",
+          "start": 130.89499,
+          "end": 131.295,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w267",
+          "text": "are",
+          "word": "are",
+          "start": 131.295,
+          "end": 131.61499,
+          "confidence": 1.0
+        },
+        {
+          "id": "w268",
+          "text": "withheld.",
+          "word": "withheld",
+          "start": 131.61499,
+          "end": 132.095,
+          "confidence": 0.99902344
+        }
+      ],
+      "word_count_recognized": 74
+    },
+    {
+      "id": "act-05",
+      "title": "Another reading, an inspectable finding",
+      "text": "In this separate, deliberately incomplete test, one channel link was left out of the original review. After export, the fresh reader proposes the surviving association. Inspect its returned region on the actual output, then reopen the exported bundle for review. This checks known evidence and adds a model observation. It does not certify privacy. Keep the useful story. Inspect what you actually publish.",
+      "path": "assets/audio/acts/act-05.flac",
+      "trim_leading_s": 0.19,
+      "trim_trailing_s": 0.16,
+      "gain_db": 0.47438628015944095,
+      "duration_s": 29.97,
+      "act_start_s": 132.59,
+      "speech_start_s": 133.24,
+      "speech_end_s": 163.21,
+      "act_end_s": 165.61,
+      "allocated_duration_s": 33.02000000000001,
+      "words": [
+        {
+          "id": "w269",
+          "text": "In",
+          "word": "in",
+          "start": 133.31,
+          "end": 133.63,
+          "confidence": 1.0
+        },
+        {
+          "id": "w270",
+          "text": "this",
+          "word": "this",
+          "start": 133.63,
+          "end": 133.87001,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w271",
+          "text": "separate,",
+          "word": "separate",
+          "start": 133.87001,
+          "end": 134.67001,
+          "confidence": 0.9189453
+        },
+        {
+          "id": "w272",
+          "text": "deliberately",
+          "word": "deliberately",
+          "start": 134.75,
+          "end": 135.55,
+          "confidence": 1.0
+        },
+        {
+          "id": "w273",
+          "text": "incomplete",
+          "word": "incomplete",
+          "start": 135.55,
+          "end": 136.35,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w274",
+          "text": "test,",
+          "word": "test",
+          "start": 136.35,
+          "end": 137.15001,
+          "confidence": 0.9885254
+        },
+        {
+          "id": "w275",
+          "text": "one",
+          "word": "one",
+          "start": 137.31,
+          "end": 137.63,
+          "confidence": 1.0
+        },
+        {
+          "id": "w276",
+          "text": "channel",
+          "word": "channel",
+          "start": 137.63,
+          "end": 138.03,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w277",
+          "text": "link",
+          "word": "link",
+          "start": 138.03,
+          "end": 138.35,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w278",
+          "text": "was",
+          "word": "was",
+          "start": 138.35,
+          "end": 138.59,
+          "confidence": 1.0
+        },
+        {
+          "id": "w279",
+          "text": "left",
+          "word": "left",
+          "start": 138.59,
+          "end": 138.91,
+          "confidence": 1.0
+        },
+        {
+          "id": "w280",
+          "text": "out",
+          "word": "out",
+          "start": 138.91,
+          "end": 139.07,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w281",
+          "text": "of",
+          "word": "of",
+          "start": 139.07,
+          "end": 139.31,
+          "confidence": 1.0
+        },
+        {
+          "id": "w282",
+          "text": "the",
+          "word": "the",
+          "start": 139.31,
+          "end": 139.47,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w283",
+          "text": "original",
+          "word": "original",
+          "start": 139.47,
+          "end": 139.79001,
+          "confidence": 1.0
+        },
+        {
+          "id": "w284",
+          "text": "review.",
+          "word": "review",
+          "start": 139.79001,
+          "end": 140.59001,
+          "confidence": 0.9941406
+        },
+        {
+          "id": "w285",
+          "text": "After",
+          "word": "after",
+          "start": 140.91,
+          "end": 141.23001,
+          "confidence": 1.0
+        },
+        {
+          "id": "w286",
+          "text": "export,",
+          "word": "export",
+          "start": 141.23001,
+          "end": 142.11,
+          "confidence": 0.99853516
+        },
+        {
+          "id": "w287",
+          "text": "the",
+          "word": "the",
+          "start": 142.11,
+          "end": 142.27,
+          "confidence": 1.0
+        },
+        {
+          "id": "w288",
+          "text": "fresh",
+          "word": "fresh",
+          "start": 142.27,
+          "end": 142.67,
+          "confidence": 0.9902344
+        },
+        {
+          "id": "w289",
+          "text": "reader",
+          "word": "reader",
+          "start": 142.67,
+          "end": 143.07,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w290",
+          "text": "proposes",
+          "word": "proposes",
+          "start": 143.07,
+          "end": 143.63,
+          "confidence": 1.0
+        },
+        {
+          "id": "w291",
+          "text": "the",
+          "word": "the",
+          "start": 143.63,
+          "end": 143.87001,
+          "confidence": 1.0
+        },
+        {
+          "id": "w292",
+          "text": "surviving",
+          "word": "surviving",
+          "start": 143.87001,
+          "end": 144.51001,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w293",
+          "text": "association.",
+          "word": "association",
+          "start": 144.51001,
+          "end": 145.15001,
+          "confidence": 0.9782715
+        },
+        {
+          "id": "w294",
+          "text": "Inspect",
+          "word": "inspect",
+          "start": 146.095,
+          "end": 146.49501,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w295",
+          "text": "its",
+          "word": "its",
+          "start": 146.49501,
+          "end": 146.895,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w296",
+          "text": "returned",
+          "word": "returned",
+          "start": 146.895,
+          "end": 147.29501,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w297",
+          "text": "region",
+          "word": "region",
+          "start": 147.29501,
+          "end": 147.77501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w298",
+          "text": "on",
+          "word": "on",
+          "start": 147.77501,
+          "end": 148.01501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w299",
+          "text": "the",
+          "word": "the",
+          "start": 148.01501,
+          "end": 148.175,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w300",
+          "text": "actual",
+          "word": "actual",
+          "start": 148.175,
+          "end": 148.65501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w301",
+          "text": "output,",
+          "word": "output",
+          "start": 148.65501,
+          "end": 149.37502,
+          "confidence": 0.9020996
+        },
+        {
+          "id": "w302",
+          "text": "then",
+          "word": "then",
+          "start": 149.615,
+          "end": 149.85501,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w303",
+          "text": "reopen",
+          "word": "reopen",
+          "start": 149.85501,
+          "end": 150.41501,
+          "confidence": 0.7060547
+        },
+        {
+          "id": "w304",
+          "text": "the",
+          "word": "the",
+          "start": 150.41501,
+          "end": 150.65501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w305",
+          "text": "exported",
+          "word": "exported",
+          "start": 150.65501,
+          "end": 151.13501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w306",
+          "text": "bundle",
+          "word": "bundle",
+          "start": 151.13501,
+          "end": 151.535,
+          "confidence": 1.0
+        },
+        {
+          "id": "w307",
+          "text": "for",
+          "word": "for",
+          "start": 151.535,
+          "end": 151.77501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w308",
+          "text": "review.",
+          "word": "review",
+          "start": 151.77501,
+          "end": 152.41501,
+          "confidence": 0.9975586
+        },
+        {
+          "id": "w309",
+          "text": "This",
+          "word": "this",
+          "start": 152.735,
+          "end": 153.05501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w310",
+          "text": "checks",
+          "word": "checks",
+          "start": 153.05501,
+          "end": 153.455,
+          "confidence": 1.0
+        },
+        {
+          "id": "w311",
+          "text": "known",
+          "word": "known",
+          "start": 153.455,
+          "end": 153.93501,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w312",
+          "text": "evidence",
+          "word": "evidence",
+          "start": 153.93501,
+          "end": 154.49501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w313",
+          "text": "and",
+          "word": "and",
+          "start": 154.49501,
+          "end": 154.815,
+          "confidence": 0.9941406
+        },
+        {
+          "id": "w314",
+          "text": "adds",
+          "word": "adds",
+          "start": 154.815,
+          "end": 155.21501,
+          "confidence": 0.9980469
+        },
+        {
+          "id": "w315",
+          "text": "a",
+          "word": "a",
+          "start": 155.21501,
+          "end": 155.375,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w316",
+          "text": "model",
+          "word": "model",
+          "start": 155.375,
+          "end": 155.77501,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w317",
+          "text": "observation.",
+          "word": "observation",
+          "start": 155.77501,
+          "end": 156.65501,
+          "confidence": 0.7553711
+        },
+        {
+          "id": "w318",
+          "text": "It",
+          "word": "it",
+          "start": 156.895,
+          "end": 157.05501,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w319",
+          "text": "does",
+          "word": "does",
+          "start": 157.05501,
+          "end": 157.29501,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w320",
+          "text": "not",
+          "word": "not",
+          "start": 157.29501,
+          "end": 157.535,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w321",
+          "text": "certify",
+          "word": "certify",
+          "start": 157.535,
+          "end": 158.095,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w322",
+          "text": "privacy.",
+          "word": "privacy",
+          "start": 158.095,
+          "end": 158.89502,
+          "confidence": 0.9970703
+        },
+        {
+          "id": "w323",
+          "text": "Keep",
+          "word": "keep",
+          "start": 159.29501,
+          "end": 159.535,
+          "confidence": 1.0
+        },
+        {
+          "id": "w324",
+          "text": "the",
+          "word": "the",
+          "start": 159.535,
+          "end": 159.77501,
+          "confidence": 1.0
+        },
+        {
+          "id": "w325",
+          "text": "useful",
+          "word": "useful",
+          "start": 159.77501,
+          "end": 160.175,
+          "confidence": 1.0
+        },
+        {
+          "id": "w326",
+          "text": "story.",
+          "word": "story",
+          "start": 160.175,
+          "end": 160.57501,
+          "confidence": 0.9016113
+        },
+        {
+          "id": "w327",
+          "text": "Inspect",
+          "word": "inspect",
+          "start": 161.125,
+          "end": 161.525,
+          "confidence": 0.99609375
+        },
+        {
+          "id": "w328",
+          "text": "what",
+          "word": "what",
+          "start": 161.525,
+          "end": 161.92499,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w329",
+          "text": "you",
+          "word": "you",
+          "start": 161.92499,
+          "end": 162.08499,
+          "confidence": 0.99902344
+        },
+        {
+          "id": "w330",
+          "text": "actually",
+          "word": "actually",
+          "start": 162.08499,
+          "end": 162.485,
+          "confidence": 1.0
+        },
+        {
+          "id": "w331",
+          "text": "publish.",
+          "word": "publish",
+          "start": 162.485,
+          "end": 162.965,
+          "confidence": 0.9890137
+        }
+      ],
+      "word_count_recognized": 63
+    }
+  ],
+  "bgm": {
+    "path": "assets/audio/music.flac",
+    "duration_s": 165.61,
+    "origin": "original deterministic DSP",
+    "bpm": 88
+  },
+  "sfx": [
+    {
+      "id": "chapter-1",
+      "start": 0.18,
+      "duration": 0.69,
+      "type": "original noise sweep + soft sine bell"
+    },
+    {
+      "id": "chapter-2",
+      "start": 30.18,
+      "duration": 0.69,
+      "type": "original noise sweep + soft sine bell"
+    },
+    {
+      "id": "chapter-3",
+      "start": 65.05000000000001,
+      "duration": 0.69,
+      "type": "original noise sweep + soft sine bell"
+    },
+    {
+      "id": "chapter-4",
+      "start": 96.19000000000001,
+      "duration": 0.69,
+      "type": "original noise sweep + soft sine bell"
+    },
+    {
+      "id": "chapter-5",
+      "start": 132.77,
+      "duration": 0.69,
+      "type": "original noise sweep + soft sine bell"
+    }
+  ],
+  "stems": {
+    "narration": "assets/audio/narration.flac",
+    "music": "assets/audio/music.flac",
+    "effects": "assets/audio/effects.flac"
+  },
+  "audition_master": "assets/audio/master-audition.flac",
+  "transcription": {
+    "provider": "Deepgram",
+    "model": "nova-3",
+    "confidence": 0.99902344,
+    "word_count": 332
+  },
+  "quality": {
+    "script_coverage_similarity": 1.0,
+    "substantive_mismatches": [],
+    "loudness": {
+      "narration": {
+        "integrated_lufs": -22.09,
+        "true_peak_dbtp": -3.18,
+        "loudness_range_lu": 4.5,
+        "duration_s": 165.610042,
+        "bytes": 3557737
+      },
+      "music": {
+        "integrated_lufs": -42.06,
+        "true_peak_dbtp": -32.53,
+        "loudness_range_lu": 1.7,
+        "duration_s": 165.61,
+        "bytes": 4197209
+      },
+      "effects": {
+        "integrated_lufs": -48.48,
+        "true_peak_dbtp": -36.85,
+        "loudness_range_lu": 2.6,
+        "duration_s": 165.61,
+        "bytes": 165733
+      },
+      "master-audition": {
+        "integrated_lufs": -16.31,
+        "true_peak_dbtp": -1.5,
+        "loudness_range_lu": 4.2,
+        "duration_s": 165.61,
+        "bytes": 7822439
+      }
+    }
+  },
+  "captions": [
+    {
+      "id": "caption-001",
+      "start": 0.56,
+      "end": 3.08,
+      "text": "The customer credit is public."
+    },
+    {
+      "id": "caption-002",
+      "start": 3.12,
+      "end": 6.62,
+      "text": "Its connection to this\ninternal incident isn't."
+    },
+    {
+      "id": "caption-003",
+      "start": 6.72,
+      "end": 10.859999,
+      "text": "For a designer publishing a case\nstudy, that difference matters."
+    },
+    {
+      "id": "caption-004",
+      "start": 11.12,
+      "end": 15.245000000000001,
+      "text": "Mosaic helps remove the confidential\nconnection while keeping the"
+    },
+    {
+      "id": "caption-005",
+      "start": 15.285,
+      "end": 16.464999,
+      "text": "useful story."
+    },
+    {
+      "id": "caption-006",
+      "start": 17.125,
+      "end": 20.765,
+      "text": "This is a fictional bundle\nof three real images a"
+    },
+    {
+      "id": "caption-007",
+      "start": 20.805,
+      "end": 24.945,
+      "text": "support incident, a project\nregistry, and a customer directory."
+    },
+    {
+      "id": "caption-008",
+      "start": 25.365,
+      "end": 28.305,
+      "text": "Separately, each tells\nonly part of the story."
+    },
+    {
+      "id": "caption-009",
+      "start": 30.84,
+      "end": 35.04,
+      "text": "Read them together. Follow incident 042"
+    },
+    {
+      "id": "caption-010",
+      "start": 35.08,
+      "end": 39.12,
+      "text": "through client c 17 and\nproject Cedar to North Star"
+    },
+    {
+      "id": "caption-011",
+      "start": 39.16,
+      "end": 42.18,
+      "text": "Health. These are source backed links."
+    },
+    {
+      "id": "caption-012",
+      "start": 42.315,
+      "end": 45.894997000000004,
+      "text": "Select one and inspect the exact pixels."
+    },
+    {
+      "id": "caption-013",
+      "start": 46.394997,
+      "end": 48.935,
+      "text": "Now try hiding the client reference."
+    },
+    {
+      "id": "caption-014",
+      "start": 49.035,
+      "end": 52.615,
+      "text": "The code disappears\nbut one route remains."
+    },
+    {
+      "id": "caption-015",
+      "start": 52.795,
+      "end": 56.455,
+      "text": "The operations channel still connects\nthe incident to the customer."
+    },
+    {
+      "id": "caption-016",
+      "start": 57.12,
+      "end": 60.3,
+      "text": "The alternate route has\nits own visible evidence."
+    },
+    {
+      "id": "caption-017",
+      "start": 60.48,
+      "end": 64.22,
+      "text": "A convincing looking mask\nhasn't removed the association."
+    },
+    {
+      "id": "caption-018",
+      "start": 65.6,
+      "end": 69.98,
+      "text": "Undo that trial. Mosaic\nfinds a one mask repair."
+    },
+    {
+      "id": "caption-019",
+      "start": 70.295,
+      "end": 74.594994,
+      "text": "Cover the shared customer name\nand both known routes disappear."
+    },
+    {
+      "id": "caption-020",
+      "start": 74.935,
+      "end": 78.355,
+      "text": "But that erases the credit\nthis case study needs."
+    },
+    {
+      "id": "caption-021",
+      "start": 78.695,
+      "end": 82.274995,
+      "text": "Mark that region, keep visible,\nand find a new repair."
+    },
+    {
+      "id": "caption-022",
+      "start": 83.130005,
+      "end": 85.89,
+      "text": "Two identifiers in the\nincident are masked."
+    },
+    {
+      "id": "caption-023",
+      "start": 85.93,
+      "end": 87.910004,
+      "text": "The public credit stays intact."
+    },
+    {
+      "id": "caption-024",
+      "start": 88.33,
+      "end": 92.36999999999999,
+      "text": "Mosaic finds the fewest candidate\nmasks allowed by that preservation"
+    },
+    {
+      "id": "caption-025",
+      "start": 92.41,
+      "end": 95.67001,
+      "text": "choice. The publishing\ndecision drives the edit."
+    },
+    {
+      "id": "caption-026",
+      "start": 96.795,
+      "end": 100.755,
+      "text": "Now export. Mosaic creates new PNG"
+    },
+    {
+      "id": "caption-027",
+      "start": 100.795,
+      "end": 104.91499999999999,
+      "text": "files, decodes those actual\nfiles again, and checks the"
+    },
+    {
+      "id": "caption-028",
+      "start": 104.955,
+      "end": 108.134995,
+      "text": "masks, unchanged pixels,\nand kept credit."
+    },
+    {
+      "id": "caption-029",
+      "start": 108.64,
+      "end": 112.46,
+      "text": "This is an output check\nbeyond the on screen preview."
+    },
+    {
+      "id": "caption-030",
+      "start": 112.799995,
+      "end": 116.52,
+      "text": "Open the outputs. Two\nopaque masks in the support"
+    },
+    {
+      "id": "caption-031",
+      "start": 116.56,
+      "end": 119.66,
+      "text": "image. Public credit\nintact in the directory."
+    },
+    {
+      "id": "caption-032",
+      "start": 120.335,
+      "end": 124.37499,
+      "text": "A separate consented fresh\nreading sends only exported"
+    },
+    {
+      "id": "caption-033",
+      "start": 124.41499,
+      "end": 128.39499999999998,
+      "text": "images and the starting incident\nto a new model context."
+    },
+    {
+      "id": "caption-034",
+      "start": 128.575,
+      "end": 132.23499999999999,
+      "text": "The protected answer and original\nevidence graph are withheld."
+    },
+    {
+      "id": "caption-035",
+      "start": 133.31,
+      "end": 137.27,
+      "text": "In this separate,\ndeliberately incomplete test,"
+    },
+    {
+      "id": "caption-036",
+      "start": 137.31,
+      "end": 140.73001,
+      "text": "one channel link was left\nout of the original review."
+    },
+    {
+      "id": "caption-037",
+      "start": 140.91,
+      "end": 145.29001,
+      "text": "After export, the fresh reader\nproposes the surviving association."
+    },
+    {
+      "id": "caption-038",
+      "start": 146.095,
+      "end": 149.81501,
+      "text": "Inspect its returned region\non the actual output, then"
+    },
+    {
+      "id": "caption-039",
+      "start": 149.85501,
+      "end": 152.55500999999998,
+      "text": "reopen the exported bundle for review."
+    },
+    {
+      "id": "caption-040",
+      "start": 152.735,
+      "end": 156.79501,
+      "text": "This checks known evidence\nand adds a model observation."
+    },
+    {
+      "id": "caption-041",
+      "start": 156.895,
+      "end": 159.03501999999997,
+      "text": "It does not certify privacy."
+    },
+    {
+      "id": "caption-042",
+      "start": 159.29501,
+      "end": 160.71500999999998,
+      "text": "Keep the useful story."
+    },
+    {
+      "id": "caption-043",
+      "start": 161.125,
+      "end": 163.105,
+      "text": "Inspect what you actually publish."
+    }
+  ]
+}

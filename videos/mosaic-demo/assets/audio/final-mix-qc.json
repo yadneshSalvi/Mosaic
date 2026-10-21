@@ -1,0 +1,117 @@
+{
+  "method": "Fresh Deepgram Nova-3 recognition of the actual finished MP4 mix; dry transcript/SRT/stems unchanged",
+  "source_path": "/Users/yadneshsalvi/code/hackathons/build-with-ai-basics/Mosaic/videos/mosaic-demo/renders/mosaic-submission.mp4",
+  "source_sha256": "9b8b7f6f971dec36ef1ecc8bc869412f6d9610c1600c68e2a32fc3893f39fc30",
+  "source_duration_s": 165.7,
+  "source_audio_streams": [
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "165.700000"
+    }
+  ],
+  "recognition_provider": "Deepgram",
+  "recognition_model": "nova-3",
+  "confidence": 0.99902344,
+  "recognized_word_count": 331,
+  "full_script_comparison": {
+    "normalized_similarity": 1.0,
+    "expected_token_coverage": 1.0,
+    "expected_token_count": 331,
+    "recognized_token_count": 331,
+    "differences": []
+  },
+  "chapters": [
+    {
+      "id": "act-01",
+      "title": "The publishing decision",
+      "window_start_s": -0.1,
+      "window_end_s": 29.9,
+      "recognized_first_word_s": 0.56,
+      "recognized_last_word_s": 28.085,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 60,
+      "recognized_token_count": 60,
+      "differences": []
+    },
+    {
+      "id": "act-02",
+      "title": "The obvious mask leaves a route",
+      "window_start_s": 29.9,
+      "window_end_s": 64.77000000000001,
+      "recognized_first_word_s": 30.73,
+      "recognized_last_word_s": 64.100006,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 67,
+      "recognized_token_count": 67,
+      "differences": []
+    },
+    {
+      "id": "act-03",
+      "title": "Keep the credit",
+      "window_start_s": 64.77000000000001,
+      "window_end_s": 95.91000000000001,
+      "recognized_first_word_s": 65.62,
+      "recognized_last_word_s": 95.56,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 67,
+      "recognized_token_count": 67,
+      "differences": []
+    },
+    {
+      "id": "act-04",
+      "title": "The exported files carry the proof",
+      "window_start_s": 95.91000000000001,
+      "window_end_s": 132.49,
+      "recognized_first_word_s": 96.825,
+      "recognized_last_word_s": 132.035,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 74,
+      "recognized_token_count": 74,
+      "differences": []
+    },
+    {
+      "id": "act-05",
+      "title": "Another reading, an inspectable finding",
+      "window_start_s": 132.49,
+      "window_end_s": 165.79999999999998,
+      "recognized_first_word_s": 133.25,
+      "recognized_last_word_s": 162.94688,
+      "possibly_dropped_or_truncated": false,
+      "normalized_similarity": 1.0,
+      "expected_token_coverage": 1.0,
+      "expected_token_count": 63,
+      "recognized_token_count": 63,
+      "differences": []
+    }
+  ],
+  "dropped_or_truncated_chapters": [],
+  "closing_nine_word_phrase_present": true,
+  "closing_expected_normalized": "keep the useful story inspect what you actually publish",
+  "final_recognized_words": "evidence and adds a model observation, It does not certify privacy. Keep the useful story. Inspect what you actually publish.",
+  "first_word_offset_from_dry_s": 0.0,
+  "last_word_offset_from_dry_s": -0.01812000000001035,
+  "measured_loudness": {
+    "integrated_lufs": "-16.03",
+    "true_peak_dbtp": "-1.50",
+    "loudness_range_lu": "4.10"
+  },
+  "canonical_files_unchanged": {
+    "script.json": true,
+    "transcript.json": true,
+    "transcript.srt": true,
+    "audio_meta.json": true
+  },
+  "status": "pass"
+}

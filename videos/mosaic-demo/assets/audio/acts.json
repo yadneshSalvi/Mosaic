@@ -1,0 +1,52 @@
+[
+  {
+    "id": "act-01",
+    "title": "The publishing decision",
+    "text": "The customer credit is public. Its connection to this internal incident isn't. For a designer publishing a case study, that difference matters. Mosaic helps remove the confidential connection while keeping the useful story. This is a fictional bundle of three real images: a support incident, a project registry, and a customer directory. Separately, each tells only part of the story.",
+    "path": "assets/audio/acts/act-01.wav",
+    "trim_leading_s": 0.15,
+    "trim_trailing_s": 0.2,
+    "gain_db": -1.7904346403757845,
+    "duration_s": 27.61
+  },
+  {
+    "id": "act-02",
+    "title": "The obvious mask leaves a route",
+    "text": "Read them together. Follow Incident zero forty-two, through client C seventeen and Project Cedar, to Northstar Health. These are source-backed links: select one and inspect the exact pixels. Now try hiding the client reference. The code disappears, but one route remains. The operations channel still connects the incident to the customer. The alternate route has its own visible evidence. A convincing-looking mask hasn't removed the association.",
+    "path": "assets/audio/acts/act-02.wav",
+    "trim_leading_s": 0.21,
+    "trim_trailing_s": 0.31,
+    "gain_db": -2.1594344913459507,
+    "duration_s": 33.32
+  },
+  {
+    "id": "act-03",
+    "title": "Keep the credit",
+    "text": "Undo that trial. Mosaic finds a one-mask repair: cover the shared customer name and both known routes disappear. But that erases the credit this case study needs. Mark that region Keep visible and find a new repair. Two identifiers in the incident are masked; the public credit stays intact. Mosaic finds the fewest candidate masks allowed by that preservation choice. The publishing decision drives the edit.",
+    "path": "assets/audio/acts/act-03.wav",
+    "trim_leading_s": 0.17,
+    "trim_trailing_s": 0.21,
+    "gain_db": -1.6301778841860834,
+    "duration_s": 30.14
+  },
+  {
+    "id": "act-04",
+    "title": "The exported files carry the proof",
+    "text": "Now export. Mosaic creates new P N G files, decodes those actual files again, and checks the masks, unchanged pixels, and kept credit. This is an output check, beyond the on-screen preview. Open the outputs: two opaque masks in the support image; public credit intact in the directory. A separate, consented fresh reading sends only exported images and the starting incident to a new model context. The protected answer and original evidence graph are withheld.",
+    "path": "assets/audio/acts/act-04.wav",
+    "trim_leading_s": 0.18,
+    "trim_trailing_s": 0.12,
+    "gain_db": 2.040980060248714,
+    "duration_s": 35.58
+  },
+  {
+    "id": "act-05",
+    "title": "Another reading, an inspectable finding",
+    "text": "In this separate, deliberately incomplete test, one channel link was left out of the original review. After export, the fresh reader proposes the surviving association. Inspect its returned region on the actual output, then reopen the exported bundle for review. This checks known evidence and adds a model observation. It does not certify privacy. Keep the useful story. Inspect what you actually publish.",
+    "path": "assets/audio/acts/act-05.wav",
+    "trim_leading_s": 0.19,
+    "trim_trailing_s": 0.16,
+    "gain_db": 0.47438628015944095,
+    "duration_s": 29.97
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "canvas": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "source": {
+    "width": 1600,
+    "height": 1000,
+    "stillPixelRatio": 2
+  },
+  "stage": {
+    "x": 96,
+    "y": 126,
+    "width": 1728,
+    "height": 858
+  },
+  "safe": {
+    "left": 64,
+    "right": 64,
+    "top": 36,
+    "bottom": 36
+  },
+  "brand": {
+    "canvas": "#f8f8f5",
+    "ink": "#24272f",
+    "accent": "#3655e7",
+    "display": "Manrope Variable",
+    "body": "DM Sans Variable"
+  },
+  "preset": "blue-professional",
+  "camera": {
+    "moveSeconds": 0.9,
+    "ease": "power3.inOut",
+    "minHoldSeconds": 2,
+    "recordingMaxScale": 1.9,
+    "stillMaxScale": 3.1
+  },
+  "provenance": {
+    "cameraPrimitive": "ui-focus-zoom; local authored source-coordinate adaptation",
+    "stagePrimitive": "browser-device-stage; no faux toolbar used"
+  }
+}
