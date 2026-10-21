@@ -1,6 +1,6 @@
 import sharp from "sharp";
 import { z } from "zod";
-import { validateEvidence, type Source } from "../src/lib/types";
+import { validateEvidence, type Source } from "../src/lib/types.ts";
 export class AnalysisError extends Error {
   constructor(
     message: string,

@@ -1,7 +1,10 @@
 import sharp from "sharp";
 import { z } from "zod";
-import { ReaderRequestSchema, parseReaderResponse } from "../src/lib/recipient";
-import { AnalysisError, providerSchema } from "./analysis";
+import {
+  ReaderRequestSchema,
+  parseReaderResponse,
+} from "../src/lib/recipient.ts";
+import { AnalysisError, providerSchema } from "./analysis.ts";
 const object = (properties: Record<string, unknown>) => ({
   type: "object",
   properties,

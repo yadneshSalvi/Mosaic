@@ -1,4 +1,4 @@
-import type { Rect, Region, Source } from "./types";
+import type { Rect, Region, Source } from "./types.ts";
 export type PixelRect = { x: number; y: number; width: number; height: number };
 export function pixelRect(
   rect: Rect,

@@ -1,5 +1,5 @@
-import type { Evidence, Relation, Source } from "./types";
-import { maskConflicts } from "./geometry";
+import type { Evidence, Relation, Source } from "./types.ts";
+import { maskConflicts } from "./geometry.ts";
 export type RouteResult = { paths: Relation[][]; complete: boolean };
 export function findRoutes(
   evidence: Evidence,

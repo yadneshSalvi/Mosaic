@@ -4,7 +4,7 @@ import { handleUpload } from "@vercel/blob/client";
 import { z } from "zod";
 import type { Express } from "express";
 import express from "express";
-import { AnalysisError } from "./analysis";
+import { AnalysisError } from "./analysis.ts";
 
 export const MAX_REQUEST_BYTES = 34 * 1024 * 1024;
 const Ticket = z
@@ -160,11 +160,9 @@ export function registerTransport(app: Express) {
       });
       res.json(result);
     } catch {
-      res
-        .status(400)
-        .json({
-          error: "The temporary upload could not be authorized. Retry.",
-        });
+      res.status(400).json({
+        error: "The temporary upload could not be authorized. Retry.",
+      });
     }
   });
   app.get("/api/cleanup", async (req, res) => {

@@ -4,10 +4,10 @@ import {
   RegionSchema,
   validateEvidence,
   type Workspace,
-} from "./types";
-import { findRoutes } from "./graph";
-import { maskConflicts, pixelRect } from "./geometry";
-import type { ExportResult } from "./redaction";
+} from "./types.ts";
+import { findRoutes } from "./graph.ts";
+import { maskConflicts, pixelRect } from "./geometry.ts";
+import type { ExportResult } from "./redaction.ts";
 
 // This deliberately has no protected target, original graph, filenames or annotations.
 export const ReaderRequestSchema = z

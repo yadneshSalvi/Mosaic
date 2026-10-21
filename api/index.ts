@@ -1,2 +1,2 @@
-import { createApp } from "../server/index";
+import { createApp } from "../server/index.ts";
 export default createApp();

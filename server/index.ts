@@ -2,9 +2,9 @@ import "dotenv/config";
 import express from "express";
 import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
-import { AnalysisError, analyzeImages } from "./analysis";
-import { readExportedBundle } from "./recipient";
-import { readUpload, registerTransport } from "./transport";
+import { AnalysisError, analyzeImages } from "./analysis.ts";
+import { readExportedBundle } from "./recipient.ts";
+import { readUpload, registerTransport } from "./transport.ts";
 export function createApp() {
   const app = express();
   app.disable("x-powered-by");
@@ -43,11 +43,9 @@ export function createApp() {
       (origin && !origins.includes(origin)) ||
       (process.env.VERCEL && !origin)
     ) {
-      res
-        .status(403)
-        .json({
-          error: "This API accepts requests only from the Mosaic workspace.",
-        });
+      res.status(403).json({
+        error: "This API accepts requests only from the Mosaic workspace.",
+      });
       return;
     }
     next();
