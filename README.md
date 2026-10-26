@@ -6,7 +6,7 @@
 
 Mosaic is a working evidence desk for designers and developers preparing client case studies. It shows how individually incomplete screenshots can disclose an association when read together, then helps remove the specific evidence that connects them.
 
-The [submission film source](videos/mosaic-demo/README.md) includes the story, actual demo captures, word-timed narration, original music and reproducible 1080p60 rendering instructions.
+The [submission film source](videos/mosaic-demo/README.md) includes the story, actual demo captures, word-timed narration, original music and reproducible 1080p60 rendering instructions. [Watch the published film](https://www.youtube.com/watch?v=a5rrf2zpPdg) and see the [publication details and chapters](docs/submission-video.md).
 
 ![The working evidence desk showing two identifier masks with the public customer credit kept visible](docs/screenshots/evidence-desk.webp)
 
@@ -101,7 +101,7 @@ See the [scope](devpost/scope.md), [PRD](devpost/prd.md), [technical spec](devpo
 
 ## Hackathon status
 
-Built using the Devpost Build With AI: Basics planning pack. Public planning documents precede implementation in Git history. Detailed working plans and personal learner context are intentionally ignored. The agent was explicitly authorized to implement autonomously; document statuses do not claim human review. The short actual demo video, human review/learning reflection, and final Devpost submission remain separate tasks. The app is deployed on Vercel and its core workflow and live AI endpoints have passed agent browser checks; human approval and Devpost submission remain pending.
+Built using the Devpost Build With AI: Basics planning pack. Public planning documents precede implementation in Git history. Detailed working plans and personal learner context are intentionally ignored. The agent was explicitly authorized to implement autonomously; document statuses do not claim human review. The [revised demo film is published on YouTube](docs/submission-video.md). Human review, the human learning reflection, and final Devpost submission remain separate tasks. The app is deployed on Vercel and its core workflow and live AI endpoints have passed agent browser checks; human approval and Devpost submission remain pending.
 
 ## License
 
