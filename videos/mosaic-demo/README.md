@@ -1,5 +1,13 @@
 # Mosaic submission film
 
+## Revised submission — 2026-10-26
+
+The current final film is `renders/mosaic-submission.mp4`: **172.56 seconds at 1080p60**, with a **40-second AI-agent chapter**. The original is preserved as `renders/mosaic-submission-original-2026-10-21.mp4`.
+
+The new whole-film editable project, script, Deepgram timings, stereo audio, review and reproduction notes are retained locally in the ignored `agent-revision/` directory. Start with its `README.md` and `index.html`. [Revision notes](../../docs/video-revision.md) describe the story and checks. The new soundtrack combines Lyria-generated instrumental music and code-synthesized effects, mastered to approximately −16 LUFS with −2 dBTP decoded stereo AAC.
+
+## Original 21 October edit
+
 A roughly 2:45, 1920×1080, 60 fps product demonstration, built from actual local software captures and actual exported artifacts. The fictional example is identified on screen. The edit is synchronized to real Deepgram word timestamps from Gemini 3.1 Flash TTS narration. Music and sound effects are original deterministic code synthesis.
 
 The story is locked in [SCRIPT.md](SCRIPT.md), with [STORYBOARD.md](STORYBOARD.md), [capture provenance](capture/provenance.md), and [audio production notes](audio-production.md). [transcript.srt](transcript.srt) is a separate caption file; the film keeps the interface clear of burned-in narration.

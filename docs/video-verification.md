@@ -1,5 +1,7 @@
 # Submission video verification
 
+**26 October update:** a revised cut adds a 40-second AI-agent chapter and retimes the existing demonstration. See [revision notes](video-revision.md). The timecodes below identify the original 21 October cut audited here.
+
 Independent agent audit, 21 October 2026, against [the public website](https://mosaic-evidence.vercel.app). The audit inventoried the final 165.7-second submission video's audio and rendered claims, then reproduced the demonstrated workflows through the deployed interface using fictional images.
 
 ## Video claims reproduced

@@ -12,3 +12,5 @@ assets/audio/acts/*.wav
 .waveform-cache/
 assets/audio/**/*.wav
 assets/audio/qc-original/
+
+agent-revision/
