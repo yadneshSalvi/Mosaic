@@ -101,7 +101,7 @@ See the [scope](devpost/scope.md), [PRD](devpost/prd.md), [technical spec](devpo
 
 ## Hackathon status
 
-Built using the Devpost Build With AI: Basics planning pack. Public planning documents precede implementation in Git history. Detailed working plans and personal learner context are intentionally ignored. The agent was explicitly authorized to implement autonomously; document statuses do not claim human review. The [revised demo film is published on YouTube](docs/submission-video.md). Human review, the human learning reflection, and final Devpost submission remain separate tasks. The app is deployed on Vercel and its core workflow and live AI endpoints have passed agent browser checks; human approval and Devpost submission remain pending.
+Built using the Devpost Build With AI: Basics planning pack. Public planning documents precede implementation in Git history. Detailed working plans and personal learner context are intentionally ignored. The agent was explicitly authorized to implement autonomously; document statuses do not claim human review. The [revised demo film is published on YouTube](docs/submission-video.md). Mosaic was [submitted to Build With AI: Basics on Devpost](https://devpost.com/software/mosaic-chry8s) on 27 October 2026, following explicit user agreement. The app is deployed on Vercel and its core workflow and live AI endpoints have passed agent browser checks. Human final review and the human learning reflection remain unestablished. See the [submission record and published story](devpost/submission.md).
 
 ## License
 

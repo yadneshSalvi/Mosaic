@@ -100,6 +100,8 @@ Activity mode: pending; reference map will remain independently useful.
 - [x] Verify unauthenticated private-Blob access is rejected and no temporary uploads remain after the fresh-reader check.
 - [x] Pass the current full suite: 52 tests across seven files, TypeScript, and production build.
 - [ ] Human final review and learning reflection completed.
-- [ ] Final Devpost submission completed.
+- [x] Final Devpost submission completed.
+
+On 27 October 2026 (IST), after explicit user agreement, Devpost displayed “Project submitted!” and “SUBMITTED TO Build With AI: Basics” for the [public Mosaic entry](https://devpost.com/software/mosaic-chry8s). Human review and learning checkpoints above remain unchanged.
 
 Hourly orphan cleanup is configured, but a completed scheduled retention cycle is not claimed. A fresh reading that returns no supported attribution is not a privacy guarantee. Production checks were performed by the agent; human checkpoints above remain unchanged.
